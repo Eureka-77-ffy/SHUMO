@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage[paperwidth=19.6cm,paperheight=7.55cm,margin=0.15cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}
+\setCJKmainfont{Songti SC}
+\definecolor{temp}{HTML}{B54B36}
+\definecolor{moist}{HTML}{3F4A9A}
+\definecolor{radiusc}{HTML}{26877C}
+\definecolor{gold}{HTML}{D98B28}
+\definecolor{neutral}{HTML}{70717A}
+\definecolor{pale}{HTML}{F7F6FC}
+\definecolor{palered}{HTML}{F7E1C8}
+\definecolor{paleblue}{HTML}{DAD9EE}
+\tikzset{
+  every node/.style={font=\small},
+  flow/.style={-{Latex[length=2.2mm,width=1.5mm]},line width=.8pt},
+  dim/.style={{Latex[length=1.8mm,width=1.2mm]}-{Latex[length=1.8mm,width=1.2mm]},line width=.65pt},
+  note/.style={rounded corners=2pt,draw=neutral!70,fill=pale,inner sep=4pt,align=left},
+  panel/.style={font=\bfseries\large,anchor=west}
+}
+\begin{document}
+\thispagestyle{empty}
+\noindent
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[panel] at (0,6.5) {(a) 圆柱几何与端面口径};
+  \fill[pale] (0.7,1.55) rectangle (8.0,5.15);
+  \draw[line width=.9pt] (0.7,1.55) rectangle (8.0,5.15);
+  \draw[dashed,neutral] (4.35,1.4) -- (4.35,5.3);
+  \draw[dash pattern=on 2pt off 1.5pt,neutral] (0.7,3.45) -- (8.0,3.45);
+  \node[above,neutral] at (4.35,5.2) {几何中截面 $z=0$};
+  \node[above,neutral] at (1.45,3.45) {轴线 $r=0$};
+  \draw[dim] (0.7,1.05) -- node[fill=white,inner sep=1pt] {$L=25\,\mathrm{cm}$} (8.0,1.05);
+  \draw[dim] (8.45,3.45) -- node[right,fill=white,inner sep=1pt] {$R(t)$} (8.45,5.15);
+  \draw[flow,temp] (1.8,5.72) -- (1.8,5.18);
+  \draw[flow,temp] (2.7,5.72) -- (2.7,5.18);
+  \draw[flow,moist] (5.6,5.72) -- (5.6,5.18);
+  \draw[flow,moist] (6.5,5.72) -- (6.5,5.18);
+  \node[temp,above] at (2.25,5.72) {$h(T_{\rm air}-T_s)$};
+  \node[moist,above] at (6.05,5.72) {$h_m(C_s-C_{\rm eq})$};
+  \draw[flow,temp] (0.05,4.35) -- (0.68,4.35);
+  \draw[flow,moist] (0.05,2.55) -- (0.68,2.55);
+  \node[left,temp] at (0.02,4.35) {端面换热};
+  \node[left,moist] at (0.02,2.55) {端面传质};
+  \node[note,text width=3.2cm] at (6.0,2.25) {一维主模型：端面绝热且不透湿；\\二维审查：端面与侧面同样暴露。};
+
+  \node[panel] at (9.2,6.5) {(b) 径向模型与收缩坐标};
+  \coordinate (O1) at (11.2,4.15);
+  \coordinate (O2) at (15.7,4.15);
+  \fill[paleblue] (O1) circle (1.55);
+  \draw[moist,line width=1pt] (O1) circle (1.55);
+  \fill[even odd rule,gold!28] (O1) circle (1.08) (O1) circle (0.72);
+  \draw[gold,line width=.75pt,dashed] (O1) circle (0.72);
+  \draw[gold,line width=.8pt] (O1) circle (1.08);
+  \node[gold,font=\bfseries\small] at ($(O1)+(-0.86,0.05)$) {$V_i$};
+  \draw[flow,moist] ($(O1)+(0.45,0.45)$) -- ($(O1)+(0.70,0.70)$);
+  \node[moist,font=\scriptsize] at ($(O1)+(0.15,1.23)$) {$J_{i-1/2}$};
+  \draw[flow,moist] ($(O1)+(0.78,-0.78)$) -- ($(O1)+(1.04,-1.04)$)
+    node[midway,below right=-1pt,font=\scriptsize] {$J_{i+1/2}$};
+  \fill[palered] (O2) circle (1.00);
+  \draw[temp,line width=1pt] (O2) circle (1.00);
+  \draw[flow,radiusc] (O1) -- ++(1.55,0) node[midway,above] {$r$};
+  \draw[flow,radiusc] (O2) -- ++(1.00,0) node[midway,above] {$r$};
+  \draw[flow,neutral] (12.95,4.15) -- node[above] {$R_0\rightarrow R(t)$} (14.5,4.15);
+  \node[below=1.75cm of O1,align=center] {固定域薄环控制体\\$0\le r\le R_0$};
+  \node[below=1.2cm of O2,align=center] {移动域：$\xi=r/R(t)$\\$0\le\xi\le1$};
+  \node[note,text width=7.0cm] at (13.45,1.15) {$Q1$--$Q3$：$R(t)=R_0=2\,\mathrm{cm}$；\\$Q4$：仅径向仿射收缩，材料速度与网格速度一致；\\$V_i=\pi(r_{i+1/2}^2-r_{i-1/2}^2)L$，面通量守恒闭合。};
+  \draw[decorate,decoration={brace,amplitude=5pt,mirror},line width=.65pt,neutral]
+    (9.55,0.35) -- (17.45,0.35) node[midway,below=5pt,align=center] {轴线取对称零通量；侧面采用对流换热与传质边界};
+\end{tikzpicture}
+\end{document}

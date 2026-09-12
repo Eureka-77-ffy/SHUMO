@@ -1,0 +1,38 @@
+{
+  "title": "四问统一建模与验证框架",
+  "style": "restrained conference figure",
+  "canvas": [
+    1400,
+    405
+  ],
+  "palette": {
+    "primary": "#314E73",
+    "event_accent": "#B88A3B",
+    "neutral": [
+      "#252A32",
+      "#697482",
+      "#AEB7C2",
+      "#F6F7F9"
+    ]
+  },
+  "layers": [
+    "输入",
+    "共享内核",
+    "四问",
+    "验证"
+  ],
+  "state_semantics": {
+    "independent": [
+      "Q1",
+      "Q2",
+      "Q4"
+    ],
+    "continued": "Q2 → Q3"
+  },
+  "key_outputs": {
+    "Q3_h": 57.474,
+    "Q4_h": 51.092
+  },
+  "editable": true,
+  "embedded_raster": false
+}

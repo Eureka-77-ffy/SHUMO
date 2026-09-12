@@ -1,0 +1,95 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb",
+    "src/moving/__init__.py": "02b9392873b91cc313fa19d1047f9082104a77a21608450ede6c8c139bb17712",
+    "src/moving/integration.py": "48fd59417077b05ad9890bb6f94d6011cb0839c0d066376cfa761e6c52ab8198",
+    "src/moving/model.py": "7a32ad11fc0520f92877874e5f17e13226684a04d11ffe84d4ab1eaad2a25e7d",
+    "scripts/question4.py": "a07f76c257afee6d18bf63b2ffc1135c489627946b433059216692eb87ed6b75"
+  },
+  "script_sha256": "9e9a79f234f01b0227fe2d624463c5c7dfb101e44caee8d3203ea497ae548484",
+  "jacobians": [
+    {
+      "group": "q23",
+      "time_s": 100.0,
+      "relative_error": 3.108631526311954e-10,
+      "physical_reference_operator_max_difference": 1.4432899320127035e-14
+    },
+    {
+      "group": "q23",
+      "time_s": 10000.0,
+      "relative_error": 3.2513327293451957e-10,
+      "physical_reference_operator_max_difference": 3.83026943495679e-15
+    },
+    {
+      "group": "q23",
+      "time_s": 100000.0,
+      "relative_error": 3.1583777276454443e-10,
+      "physical_reference_operator_max_difference": 8.43769498715119e-15
+    },
+    {
+      "group": "q4",
+      "time_s": 100.0,
+      "relative_error": 3.2503229207865487e-10,
+      "physical_reference_operator_max_difference": 7.66053886991358e-15
+    },
+    {
+      "group": "q4",
+      "time_s": 10000.0,
+      "relative_error": 3.208261872838872e-10,
+      "physical_reference_operator_max_difference": 1.9984014443252818e-15
+    },
+    {
+      "group": "q4",
+      "time_s": 100000.0,
+      "relative_error": 3.257434609290063e-10,
+      "physical_reference_operator_max_difference": 4.440892098500626e-15
+    }
+  ],
+  "radius_extrapolation_rejected": true,
+  "fixed_radius_degenerates_exactly_to_same_property_fixed_model": true,
+  "pure_D0_hm0_material_shrinkage": {
+    "profile_max_change": 0.0,
+    "relative_dry_mass_max_change": 2.220446049250313e-16,
+    "normalized_water_mass_range": 4.440892098500626e-16,
+    "incorrect_volume_concentration_compression_would_change_C": true
+  },
+  "batched_geometry_and_outside_domain_blank_mask": true,
+  "manufactured_solution": [
+    {
+      "n": 40,
+      "temperature_max_error": 0.0012123815819613526,
+      "moisture_max_error": 6.813685321738205e-06
+    },
+    {
+      "n": 80,
+      "temperature_max_error": 0.0003095115266766868,
+      "moisture_max_error": 2.0336658583808287e-06
+    },
+    {
+      "n": 160,
+      "temperature_max_error": 7.818178157492639e-05,
+      "moisture_max_error": 5.568464744865054e-07
+    },
+    {
+      "n": 320,
+      "temperature_max_error": 1.964604503612577e-05,
+      "moisture_max_error": 1.4529055958334425e-07
+    }
+  ],
+  "manufactured_problem": "smooth R(t), variable appendix4 b/k/D, prescribed nonuniform T,C, analytical sources and physical Robin data",
+  "status": "passed_Q4_material_coordinate_kernel_and_manufactured_checks"
+}

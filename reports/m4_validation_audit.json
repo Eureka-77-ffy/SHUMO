@@ -1,0 +1,38 @@
+{
+  "status": "passed_requested_endface_assessment_and_unified_error_budget_not_full_paper_completion",
+  "script_sha256": "3b6d9e7f2fbd832fb9fb041ae5653bdc3022906fba23e7ed79c3fd549d763503",
+  "original_inputs_unchanged": 8,
+  "prior_audited_artifacts_unchanged": 54,
+  "geometry_cached_runs": 29,
+  "matched_geometry_contrasts": 17,
+  "budget_rows_read_back": 270,
+  "unquantified_model_categories": 7,
+  "primary_workbooks_changed": false,
+  "completed_scope": [
+    "conditional end-face geometry audit with paired spatial/time comparisons",
+    "Q1 original nonlinear independent weak-form sample check",
+    "unified traceable error ledger and scoped written assessment"
+  ],
+  "not_completed_or_not_claimed": [
+    "experimental physical validation",
+    "full 2D absolute solution at submission precision",
+    "universal error bound across end exposure/anisotropy/sorption assumptions",
+    "full manuscript figures references and final review"
+  ],
+  "artifacts_sha256": {
+    "reports/endface_assessment.md": "4f321d8db47525aabe9473ff5e484f6246fed25381243af39ed64eab5bd5bddd",
+    "reports/error_budget.md": "4a0f9ed9b6101afa0393bf852e76e7e27aea0b8d2af3e23589c296b7fa848907",
+    "reports/endface_audit.json": "68a58b748f3418b5301be43a3a26d7dacf1e3ee2eb0f0482267dc4c9cf86f0e7",
+    "reports/endface_kernel_checks.json": "4170a314856858d01e839c447418ecef7587edb21062b0e99981f00f11d8d555",
+    "reports/endface_diagnostics.json": "527fe2d55556edbb63da91a63d833186ce47b9c10a1089ea109d09222f9e280e",
+    "reports/q1_nonlinear_independent.json": "23da983ef0e48a82a00dc7d1f9558570914240b159aa5efafdbf906b1f733dff",
+    "reports/unified_error_budget.json": "d87c211e12898b7afda91f19aebb934371e0ba78141aed1d7d275994c07bb249",
+    "tables/endface_comparison.csv": "ebda2d92bba5095bb6cdd58102674960e78e7be5a00f57bf66efafd0cbcc937c",
+    "tables/unified_error_budget.csv": "a0350d78b010e19d8651ea5bfeada82b5147a57478c04b279c2e5a4f7d28ebf0",
+    "validation/endface_suite.py": "62a74289f6f04f3d8a7a5223d91cd702b6ca09a99e63f2a645aa7a6f93ca5aa6",
+    "validation/m4_scope_audit.py": "3b6d9e7f2fbd832fb9fb041ae5653bdc3022906fba23e7ed79c3fd549d763503",
+    "README.md": "304beefb47d0a6956e77e05807ddfdc3c17bbd9674cd33bd4af796018c1a159a",
+    "执行计划.md": "c4d7b0a232cd570518f73ade2674edb60e75ca2ec075cb264fb1cf9caefb7ace",
+    "reports/model_contract.md": "87b822577c380845e1e27af135e06cf1ad0c86711ec1cfc7e62d6c5ef0034345"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "status": "generated_for_user_layout_selection",
+  "backend": "Python/matplotlib only",
+  "palette": "B 靛蓝鎏金",
+  "official_figures_overwritten": false,
+  "formal_figure_hashes_unchanged": true,
+  "formal_figure_checks": {
+    "fig03_q2_coupling.svg": true,
+    "fig03_q2_coupling.pdf": true,
+    "fig03_q2_coupling.png": true,
+    "fig03_q2_coupling.tiff": true,
+    "fig04_q3_endpoint.svg": true,
+    "fig04_q3_endpoint.pdf": true,
+    "fig04_q3_endpoint.png": true,
+    "fig04_q3_endpoint.tiff": true,
+    "fig05_q4_shrinkage.svg": true,
+    "fig05_q4_shrinkage.pdf": true,
+    "fig05_q4_shrinkage.png": true,
+    "fig05_q4_shrinkage.tiff": true
+  },
+  "comparison_board": "figures/layout_previews/b_indigo_gold/enriched_layout_board.png",
+  "contracts": {
+    "fig03_q2_enriched": {
+      "core_conclusion": "3小时内热场趋稳而水分梯度仍显著；温升提高扩散率，但失水抵消部分增益并造成中心—表面状态路径分离。",
+      "archetype": "asymmetric mixed-modality figure",
+      "panel_map": {
+        "a": "温度时空场（主证据）",
+        "b": "含水率时空场（主证据）",
+        "c": "中心、表面与环境温度的分阶段响应",
+        "d": "中心与表面的温度—含水率状态路径",
+        "e": "中心与表面局部扩散率轨迹",
+        "f": "3小时扩散率对数变化的温度项、含水项及净效应分解"
+      },
+      "evidence_hierarchy": {
+        "hero": "a-b",
+        "mechanism": "d-f",
+        "support": "c-e"
+      },
+      "reviewer_risk": "扩散率与分解项来自题定经验物性式，只作模型机制诊断。",
+      "source_data": [
+        "results/final/q23_full_precision.npz",
+        "config/model_config.json",
+        "original_appendix_1"
+      ]
+    },
+    "fig04_q3_enriched": {
+      "core_conclusion": "全域终点由最后湿点控制，57.4740小时才达到阈值；表面值或体积平均值会分别提前44.92和21.45小时停机。",
+      "archetype": "asymmetric mixed-modality figure",
+      "panel_map": {
+        "a": "全时域含水率场（主证据）",
+        "b": "三种停机判据的阈值到达时刻",
+        "c": "全域最大值、平均值与表面值轨迹",
+        "d": "截面达标比例随时间增长",
+        "e": "典型时刻径向剖面",
+        "f": "临界点邻域与首个严格达标整数秒"
+      },
+      "evidence_hierarchy": {
+        "hero": "a",
+        "event_definition": "b-c-f",
+        "spatial_mechanism": "d-e"
+      },
+      "reviewer_risk": "临界时刻对应等号，严格小于阈值从其后时刻开始；截面比例是模型场的几何诊断量。",
+      "source_data": [
+        "results/final/q23_full_precision.npz",
+        "reports/final_result_validation.json"
+      ]
+    },
+    "fig05_q4_enriched": {
+      "core_conclusion": "收缩将扩散路径倍率提高到2.78、交换尺度提高到1.67，并与物性形成显著非加性交互。",
+      "archetype": "asymmetric mixed-modality figure",
+      "panel_map": {
+        "a": "材料坐标含水率场（主证据）",
+        "b": "物理坐标含水率场及移动边界（主证据）",
+        "c": "半径、路径与表面积体积比的同步几何变化",
+        "d": "收缩域内全域判据与统计量",
+        "e": "物性×几何的2×2交互图",
+        "f": "不同时间物理半径上的剖面与收缩端点"
+      },
+      "evidence_hierarchy": {
+        "hero": "a-b",
+        "mechanism": "c-e",
+        "support": "d-f"
+      },
+      "reviewer_risk": "四组因子对照是受控模型情景，不是实验因果识别；物理域外必须保持空白。",
+      "source_data": [
+        "results/final/q4_full_precision.npz",
+        "tables/q4_factorial.csv",
+        "original_appendix_2"
+      ]
+    }
+  },
+  "derived_source_data": [
+    "figures/layout_previews/b_indigo_gold/source_data/q3_threshold_crossings.csv",
+    "figures/layout_previews/b_indigo_gold/source_data/q4_factorial_used.csv"
+  ],
+  "qa": {
+    "fig03_q2_enriched": {
+      "svg_editable_text": true,
+      "pdf_single_page": true,
+      "png_pixels": [
+        4389,
+        4299
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "png_600dpi": true,
+      "tiff_pixels": [
+        4389,
+        4299
+      ],
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ],
+      "tiff_600dpi": true,
+      "files": {
+        "svg": {
+          "bytes": 113200,
+          "sha256": "00af2323637e3abd14278bcdf2e200dca119858911b9d6e6d40c0bae0c19099c"
+        },
+        "pdf": {
+          "bytes": 55739,
+          "sha256": "e2529c2333fa158dd4b9136b1d875e706ba601a7c464faeb4c96280bb1a5e496"
+        },
+        "png": {
+          "bytes": 908260,
+          "sha256": "10e6e6bad67fe462aa8125037d6fd36f4e1d5d11ed04ddeca465c4b04e5b69ec"
+        },
+        "tiff": {
+          "bytes": 9181330,
+          "sha256": "0f265376916241f3bf1df483f4c0e2a66f1993b8cccf09e9f933d968823d69d4"
+        }
+      }
+    },
+    "fig04_q3_enriched": {
+      "svg_editable_text": true,
+      "pdf_single_page": true,
+      "png_pixels": [
+        4302,
+        4343
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "png_600dpi": true,
+      "tiff_pixels": [
+        4302,
+        4343
+      ],
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ],
+      "tiff_600dpi": true,
+      "files": {
+        "svg": {
+          "bytes": 431625,
+          "sha256": "24b7fe8466eb7ffbc1b1d5fe03ec02a15a062abd978e5bcbf6f2ccde038c1fca"
+        },
+        "pdf": {
+          "bytes": 143496,
+          "sha256": "0fd247b1cb905af4f14ce33c36b8cdfd161c3ff9e298be9a5239b076ff9f9e5c"
+        },
+        "png": {
+          "bytes": 838774,
+          "sha256": "f6ca0e4dfe3968dc87085bb3551e4b9a467c875d08bc58717f6835513c9e96d5"
+        },
+        "tiff": {
+          "bytes": 3931042,
+          "sha256": "5c86a25f8cd506c6c3db8a5e126a337c9b0874c6546f4a84d2ac6ba721cc3aeb"
+        }
+      }
+    },
+    "fig05_q4_enriched": {
+      "svg_editable_text": true,
+      "pdf_single_page": true,
+      "png_pixels": [
+        4389,
+        4359
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "png_600dpi": true,
+      "tiff_pixels": [
+        4389,
+        4359
+      ],
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ],
+      "tiff_600dpi": true,
+      "files": {
+        "svg": {
+          "bytes": 110645,
+          "sha256": "ed495dbadc2c99df6d1a6890cadea0999d12ed49b766db626ae62bddf387bf6d"
+        },
+        "pdf": {
+          "bytes": 63268,
+          "sha256": "0805cd598409c3dd7351c97b7c3d1cebe27cfef9d8033550255973cba9e54e76"
+        },
+        "png": {
+          "bytes": 938719,
+          "sha256": "dc24f3519b1034bc187611fe918c24428578a0c0088a743a954269809696bfad"
+        },
+        "tiff": {
+          "bytes": 4074496,
+          "sha256": "a507f0a3decc655b837856ad9af7b569373bd18a794e80e41902381bcfba925d"
+        }
+      }
+    }
+  }
+}

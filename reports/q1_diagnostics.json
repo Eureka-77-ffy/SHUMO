@@ -1,0 +1,52 @@
+{
+  "heat_bessel_full_export_max_abs_C": 1.285251038041224e-06,
+  "fields": {
+    "temperature": {
+      "minimum_sampled": 27.999999999999996,
+      "maximum_sampled": 36.78556071418121,
+      "radial_monotonicity_violation_max": 2.1316282072803006e-14,
+      "surface_half_cell_flux_residual_max": 9.60457853693697e-07,
+      "pchip_vs_piecewise_linear_export_max": 1.5677263220936766e-06,
+      "independent_balance_absolute": 1.0618954604524333e-09,
+      "balance_normalization": 22.0,
+      "independent_balance_relative": 4.8267975475110603e-11,
+      "centre_1800": 33.575343540663425,
+      "surface_1800": 36.78556071418121,
+      "weighted_mean_1800": 35.16791275870973,
+      "ambient_1800": 41.513
+    },
+    "moisture": {
+      "minimum_sampled": 1.510234208557036,
+      "maximum_sampled": 2.5500000000000007,
+      "radial_monotonicity_violation_max": 2.6645352591003757e-15,
+      "surface_half_cell_flux_residual_max": 8.296948180987153e-16,
+      "pchip_vs_piecewise_linear_export_max": 9.070851940684577e-07,
+      "independent_balance_absolute": 2.691332989801509e-10,
+      "balance_normalization": 2.55,
+      "independent_balance_relative": 1.0554247018829449e-10,
+      "centre_1800": 2.549992400144181,
+      "surface_1800": 1.510234208557036,
+      "weighted_mean_1800": 2.2935572888242657,
+      "ambient_1800": 0.03307
+    }
+  },
+  "heat_bessel_dense_profiles_max_abs_C": 1.4831063452902526e-06,
+  "dense_profile_sampling": {
+    "times_s": [
+      1,
+      10,
+      100,
+      300,
+      600,
+      900,
+      1200,
+      1500,
+      1800
+    ],
+    "radial_points": 1001,
+    "is_continuous_error_bound": false
+  },
+  "initial_water_removed_fraction_1800": 0.10056576908852322,
+  "D_centre_1800_m2_s": 4.937649958034358e-09,
+  "D_surface_1800_m2_s": 3.8829593456861904e-09
+}

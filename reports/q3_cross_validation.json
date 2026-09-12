@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "scope": "Q3 numerical and event cross-validation; not experimental validation",
+  "critical_time_s": 206906.4911824653,
+  "critical_time_h": 57.47402532846259,
+  "first_strict_integer_second": 206907.0,
+  "methods": [
+    {
+      "role": "主解",
+      "scheme": "环形FVM，N=1280；BDF，最大步长30 s",
+      "event_time_s": 206906.4911824653,
+      "delta_from_primary_s": 0.0,
+      "event_time_h": 57.47402532846259,
+      "display_4dp_h": 57.474
+    },
+    {
+      "role": "全新重复计算",
+      "scheme": "同主解；新标签、新缓存、重新积分",
+      "event_time_s": 206906.4911824653,
+      "delta_from_primary_s": 0.0,
+      "event_time_h": 57.47402532846259,
+      "display_4dp_h": 57.474
+    },
+    {
+      "role": "积分器替换",
+      "scheme": "环形FVM，N=1280；Radau，最大步长30 s",
+      "event_time_s": 206906.4914023509,
+      "delta_from_primary_s": 0.0002198855800088495,
+      "event_time_h": 57.474025389541914,
+      "display_4dp_h": 57.474
+    },
+    {
+      "role": "空间加密",
+      "scheme": "环形FVM，N=2560；BDF，最大步长30 s",
+      "event_time_s": 206906.41522665246,
+      "delta_from_primary_s": -0.07595581284840591,
+      "event_time_h": 57.474004229625685,
+      "display_4dp_h": 57.474
+    },
+    {
+      "role": "独立离散与程序",
+      "scheme": "P1有限元，N=2560；自编BDF2，步长3.75 s",
+      "event_time_s": 206906.49328128976,
+      "delta_from_primary_s": 0.002098824450513348,
+      "event_time_h": 57.474025911469376,
+      "display_4dp_h": 57.474
+    }
+  ],
+  "event_neighborhood": {
+    "times_s": [
+      206905.4911824653,
+      206906.4911824653,
+      206907.0,
+      206907.4911824653
+    ],
+    "g_equals_maxC_minus_0p15": [
+      2.9127804149209346e-07,
+      0.0,
+      -1.4820598820408648e-07,
+      -2.912749381134283e-07
+    ],
+    "slope_per_s": -2.912764898027609e-07
+  },
+  "final_state": {
+    "maximum": 0.15,
+    "maximum_output_radius_cm": 0.0,
+    "surface": 0.05264694390693769,
+    "cross_section_mean": 0.12430773353384993,
+    "radial_profile_nonincreasing": true
+  },
+  "water_balance_relative": 6.488291385646032e-10,
+  "independent_sampled_field_max_difference": {
+    "temperature": 3.0281105267704334e-05,
+    "moisture": 3.308300025040012e-07
+  },
+  "result3_workbook": {
+    "data_rows": 3449,
+    "last_time_s": 206906.4911824653,
+    "last_row_maximum": 0.15,
+    "final_sha256": "7f1efee8dc8af9a7a0cb3a5ea503b306b88d13965cf5c8efeb96ec03b57df4aa",
+    "submission_sha256": "7f1efee8dc8af9a7a0cb3a5ea503b306b88d13965cf5c8efeb96ec03b57df4aa"
+  },
+  "checks": {
+    "fresh_repeat_bitwise_time_match": true,
+    "independent_fem_within_0p01_s": true,
+    "fine_primary_mesh_within_0p1_s": true,
+    "radau_within_0p001_s": true,
+    "all_methods_round_to_57p4740_h": true,
+    "event_sign_change_verified": true,
+    "global_max_monotone_on_accepted_nodes_and_midpoints": true,
+    "manufactured_interior_peak_detected_exactly": true,
+    "water_balance_relative_below_1e_minus_8": true,
+    "terminal_profile_nonincreasing": true,
+    "workbook_terminal_time_matches_event": true,
+    "workbook_terminal_maximum_is_0p15": true,
+    "final_and_submission_workbooks_identical": true
+  },
+  "interpretation": "The selected one-dimensional model has a reproducible downward global-threshold crossing. Agreement across implementations establishes numerical robustness only; it does not replace internal-moisture experiments or remove model-form uncertainty."
+}

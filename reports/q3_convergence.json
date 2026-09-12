@@ -1,0 +1,546 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb"
+  },
+  "script_sha256": "e689b9f7aae3bc6dca261c95877ac9c10f7d428525aa24131850703d864efbd6",
+  "complete": true,
+  "mesh_series": [
+    {
+      "label": "q3_mesh320",
+      "n": 320,
+      "event_time_s": 206908.01581066748
+    },
+    {
+      "label": "q3_mesh640",
+      "n": 640,
+      "event_time_s": 206906.79568684965,
+      "event_delta_s": -1.22012381782406,
+      "difference_from_previous": {
+        "common_output_count": 3269,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.8093808975550019e-06,
+            "time_s": 11100.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 9
+          },
+          "moisture": {
+            "max_abs": 4.1504151879756535e-06,
+            "time_s": 11460.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 373
+          }
+        }
+      }
+    },
+    {
+      "label": "q3_final",
+      "n": 1280,
+      "event_time_s": 206906.4911824653,
+      "event_delta_s": -0.30450438434490934,
+      "difference_from_previous": {
+        "common_output_count": 196107,
+        "fields": {
+          "temperature": {
+            "max_abs": 4.576638303888103e-07,
+            "time_s": 11079.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 113
+          },
+          "moisture": {
+            "max_abs": 1.0395171157195904e-06,
+            "time_s": 11476.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 5398
+          }
+        }
+      }
+    },
+    {
+      "label": "q3_mesh2560",
+      "n": 2560,
+      "event_time_s": 206906.41522665246,
+      "event_delta_s": -0.07595581284840591,
+      "difference_from_previous": {
+        "common_output_count": 196107,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.1489154161381521e-07,
+            "time_s": 11080.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 35
+          },
+          "moisture": {
+            "max_abs": 2.601347004471677e-07,
+            "time_s": 11473.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 1373
+          }
+        }
+      }
+    }
+  ],
+  "temporal": [
+    {
+      "label": "q3_cap60",
+      "max_step_s": 60.0,
+      "rtol": 1e-10,
+      "method": "BDF",
+      "event_delta_s": -0.0031525409140158445,
+      "difference_from_baseline": {
+        "common_output_count": 196107,
+        "fields": {
+          "temperature": {
+            "max_abs": 5.331934005425865e-09,
+            "time_s": 15508.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 3
+          },
+          "moisture": {
+            "max_abs": 1.5645679751763453e-09,
+            "time_s": 117308.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 35
+          }
+        }
+      },
+      "statistics": {
+        "accepted_steps": 9712,
+        "accepted_max_step_s": 60.0,
+        "accepted_min_step_s": 1.509761204943061e-10,
+        "nfev": 19851,
+        "nlu": 2825,
+        "njev": 185,
+        "minimum_accepted_moisture": 0.05265110703435427,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 3.2296083585237056e-09,
+        "water_balance_relative": 1.2665130817740022e-09,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.12124490365386009,
+        "heat_corrected_balance_relative": 1.6526645837505596e-09,
+        "event_found": true,
+        "event_time_s": 206906.4880299244,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206853.56528913244,
+          206906.4880299244
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206905.4880299244,
+          206906.4880299244,
+          206907.0,
+          206907.4880299244
+        ],
+        "post_event_g": [
+          2.9127804138107116e-07,
+          0.0,
+          -1.491244136508918e-07,
+          -2.912749748618104e-07
+        ],
+        "event_slope_per_s": -2.912765081214408e-07,
+        "first_checked_integer_second": 206907.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 24.418722916999997
+      }
+    },
+    {
+      "label": "q3_cap15",
+      "max_step_s": 15.0,
+      "rtol": 1e-10,
+      "method": "BDF",
+      "event_delta_s": 0.0007548579596914351,
+      "difference_from_baseline": {
+        "common_output_count": 196107,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.1904951691121823e-08,
+            "time_s": 15077.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 0
+          },
+          "moisture": {
+            "max_abs": 7.158497128401109e-10,
+            "time_s": 84762.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 10
+          }
+        }
+      },
+      "statistics": {
+        "accepted_steps": 18970,
+        "accepted_max_step_s": 15.0,
+        "accepted_min_step_s": 1.509761204943061e-10,
+        "nfev": 38274,
+        "nlu": 5030,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265110703310047,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 7.35875804735997e-10,
+        "water_balance_relative": 2.88578746955293e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.015095647424459457,
+        "heat_corrected_balance_relative": 2.0576569501356704e-10,
+        "event_found": true,
+        "event_time_s": 206906.49193732327,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206900.656525961,
+          206906.49193732327
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206905.49193732327,
+          206906.49193732327,
+          206907.0,
+          206907.49193732327
+        ],
+        "post_event_g": [
+          2.9127804151984904e-07,
+          0.0,
+          -1.4798627995249447e-07,
+          -2.9127496764536076e-07
+        ],
+        "event_slope_per_s": -2.912765045826049e-07,
+        "first_checked_integer_second": 206907.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 39.046525917
+      }
+    },
+    {
+      "label": "q3_radau",
+      "max_step_s": 30.0,
+      "rtol": 1e-10,
+      "method": "Radau",
+      "event_delta_s": 0.0002198855800088495,
+      "difference_from_baseline": {
+        "common_output_count": 196107,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.9961596819939587e-08,
+            "time_s": 14550.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 1
+          },
+          "moisture": {
+            "max_abs": 7.393242684727852e-10,
+            "time_s": 79360.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 11
+          }
+        }
+      },
+      "statistics": {
+        "accepted_steps": 9043,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.70986277225893e-06,
+        "nfev": 63967,
+        "nlu": 16240,
+        "njev": 213,
+        "minimum_accepted_moisture": 0.052651107033321855,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 8.881784197001252e-16,
+        "water_balance_relative": 3.4830526262750014e-16,
+        "heat_corrected_balance_tail_max_abs_J_m3": 1.6167759895324707e-06,
+        "heat_corrected_balance_relative": 2.2037944171136395e-14,
+        "event_found": true,
+        "event_time_s": 206906.4914023509,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206883.38226404035,
+          206906.4914023509
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206905.4914023509,
+          206906.4914023509,
+          206907.0,
+          206907.4914023509
+        ],
+        "post_event_g": [
+          2.912780414643379e-07,
+          0.0,
+          -1.481422958748979e-07,
+          -2.9127535328132836e-07
+        ],
+        "event_slope_per_s": -2.9127669737283313e-07,
+        "first_checked_integer_second": 206907.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 35.44096562499999
+      }
+    },
+    {
+      "label": "q3_tol6",
+      "max_step_s": 60.0,
+      "rtol": 1e-06,
+      "method": "BDF",
+      "event_delta_s": 3.7530643226054963,
+      "difference_from_baseline": {
+        "common_output_count": 3269,
+        "fields": {
+          "temperature": {
+            "max_abs": 0.00014097163975179683,
+            "time_s": 12180.0,
+            "radius_cm": 1.7000000000000002,
+            "four_decimal_rounding_differences": 434
+          },
+          "moisture": {
+            "max_abs": 3.93943126719698e-06,
+            "time_s": 25320.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 1125
+          }
+        }
+      },
+      "statistics": {
+        "accepted_steps": 5142,
+        "accepted_max_step_s": 60.0,
+        "accepted_min_step_s": 1.502303348388523e-08,
+        "nfev": 10618,
+        "nlu": 1937,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265110620083763,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.1106669280946946e-05,
+        "water_balance_relative": 4.355556580763509e-06,
+        "heat_corrected_balance_tail_max_abs_J_m3": 321.0871576941572,
+        "heat_corrected_balance_relative": 4.376673640099596e-06,
+        "event_found": true,
+        "event_time_s": 206910.24424678792,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206900.52878368105,
+          206910.24424678792
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206909.24424678792,
+          206910.24424678792,
+          206911.0,
+          206911.24424678792
+        ],
+        "post_event_g": [
+          2.9127812437024225e-07,
+          0.0,
+          -2.2013237932494434e-07,
+          -2.912751781991574e-07
+        ],
+        "event_slope_per_s": -2.912766512846998e-07,
+        "first_checked_integer_second": 206911.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 8.092738499999996
+      }
+    },
+    {
+      "label": "q3_tol7",
+      "max_step_s": 60.0,
+      "rtol": 1e-07,
+      "method": "BDF",
+      "event_delta_s": 0.5822339619917329,
+      "difference_from_baseline": {
+        "common_output_count": 3269,
+        "fields": {
+          "temperature": {
+            "max_abs": 7.162599864329877e-06,
+            "time_s": 14820.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 32
+          },
+          "moisture": {
+            "max_abs": 2.80898540594432e-07,
+            "time_s": 86520.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 119
+          }
+        }
+      },
+      "statistics": {
+        "accepted_steps": 5785,
+        "accepted_max_step_s": 60.00000000000364,
+        "accepted_min_step_s": 4.751200322061777e-09,
+        "nfev": 11904,
+        "nlu": 2054,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265110683710463,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 7.848564280710235e-07,
+        "water_balance_relative": 3.077868345376563e-07,
+        "heat_corrected_balance_tail_max_abs_J_m3": 31.16559312865138,
+        "heat_corrected_balance_relative": 4.2481185141064787e-07,
+        "event_found": true,
+        "event_time_s": 206907.0734164273,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206884.97717320273,
+          206907.0734164273
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206906.0734164273,
+          206907.0734164273,
+          206908.0,
+          206908.0734164273
+        ],
+        "post_event_g": [
+          2.9127806006057355e-07,
+          0.0,
+          -2.6989067908322895e-07,
+          -2.912749893502209e-07
+        ],
+        "event_slope_per_s": -2.912765247053972e-07,
+        "first_checked_integer_second": 206908.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 8.675222042000001
+      }
+    },
+    {
+      "label": "q3_tol8",
+      "max_step_s": 60.0,
+      "rtol": 1e-08,
+      "method": "BDF",
+      "event_delta_s": 0.04978337400825694,
+      "difference_from_baseline": {
+        "common_output_count": 3269,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.2316185546978886e-06,
+            "time_s": 13320.0,
+            "radius_cm": 1.9,
+            "four_decimal_rounding_differences": 6
+          },
+          "moisture": {
+            "max_abs": 1.0091393443101282e-07,
+            "time_s": 32700.0,
+            "radius_cm": 0.0,
+            "four_decimal_rounding_differences": 13
+          }
+        }
+      },
+      "statistics": {
+        "accepted_steps": 6714,
+        "accepted_max_step_s": 60.000000000007276,
+        "accepted_min_step_s": 1.5024852473288774e-09,
+        "nfev": 13762,
+        "nlu": 2266,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265110700972107,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.7503729532464263e-07,
+        "water_balance_relative": 6.864207659789908e-08,
+        "heat_corrected_balance_tail_max_abs_J_m3": 2.391711253672838,
+        "heat_corrected_balance_relative": 3.2600928899966245e-08,
+        "event_found": true,
+        "event_time_s": 206906.54096583932,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206855.5709258399,
+          206906.54096583932
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206905.54096583932,
+          206906.54096583932,
+          206907.0,
+          206907.54096583932
+        ],
+        "post_event_g": [
+          2.9127804379580624e-07,
+          0.0,
+          -1.3370537821355555e-07,
+          -2.912749730854536e-07
+        ],
+        "event_slope_per_s": -2.912765084406299e-07,
+        "first_checked_integer_second": 206907.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 10.19925570800001
+      }
+    }
+  ],
+  "is_strict_error_bound": false,
+  "baseline_event_time_s": 206906.4911824653,
+  "baseline_statistics": {
+    "accepted_steps": 12731,
+    "accepted_max_step_s": 30.000000000014552,
+    "accepted_min_step_s": 1.509761204943061e-10,
+    "nfev": 25796,
+    "nlu": 3520,
+    "njev": 167,
+    "minimum_accepted_moisture": 0.05265110703324066,
+    "global_max_temporal_increase_at_checked_points": 0.0,
+    "water_balance_tail_max_abs": 1.654514303339738e-09,
+    "water_balance_relative": 6.488291385646032e-10,
+    "heat_corrected_balance_tail_max_abs_J_m3": 0.04995087534189224,
+    "heat_corrected_balance_relative": 6.808702066402789e-10,
+    "event_found": true,
+    "event_time_s": 206906.4911824653,
+    "boundary_extension": "main",
+    "boundary_platform_T_Ceq": [
+      49.99893442622951,
+      0.04998754098360656
+    ],
+    "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+    "event_bracket_s": [
+      206886.7275234526,
+      206906.4911824653
+    ],
+    "balance_quadrature_order": 8,
+    "post_event_times_s": [
+      206905.4911824653,
+      206906.4911824653,
+      206907.0,
+      206907.4911824653
+    ],
+    "post_event_g": [
+      2.9127804149209346e-07,
+      0.0,
+      -1.4820598820408648e-07,
+      -2.912749381134283e-07
+    ],
+    "event_slope_per_s": -2.912764898027609e-07,
+    "first_checked_integer_second": 206907.0,
+    "strict_inequality_holds_at_critical_time": false,
+    "elapsed_s": 24.203440999999998
+  }
+}

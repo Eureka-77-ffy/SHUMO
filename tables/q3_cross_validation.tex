@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+  \caption{问题三临界时间交叉验证}
+  \label{tab:q3-cross-validation}
+  \centering
+  \small
+  \begin{tabular}{llrr}
+    \toprule
+    证据 & 空间与时间离散 & $t_*/\mathrm{s}$ & 相对主解$/\mathrm{s}$ \\
+    \midrule
+    主解 & FVM $N=1280$，BDF 30 s & 206906.491182 & --- \\
+    全新复算 & 同主解，新缓存重新积分 & 206906.491182 & $0$ \\
+    积分器替换 & FVM $N=1280$，Radau 30 s & 206906.491402 & $+0.000220$ \\
+    空间加密 & FVM $N=2560$，BDF 30 s & 206906.415227 & $-0.075956$ \\
+    独立程序 & P1 FEM $N=2560$，BDF2 3.75 s & 206906.493281 & $+0.002099$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,474 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb",
+    "src/moving/__init__.py": "02b9392873b91cc313fa19d1047f9082104a77a21608450ede6c8c139bb17712",
+    "src/moving/integration.py": "48fd59417077b05ad9890bb6f94d6011cb0839c0d066376cfa761e6c52ab8198",
+    "src/moving/model.py": "7a32ad11fc0520f92877874e5f17e13226684a04d11ffe84d4ab1eaad2a25e7d",
+    "scripts/question4.py": "a07f76c257afee6d18bf63b2ffc1135c489627946b433059216692eb87ed6b75"
+  },
+  "script_sha256": "545671e73df60b21f7643d367ea06dce866af3b5e0f8e796ddb96f29f36f1580",
+  "mesh_series": [
+    {
+      "label": "q4_grid160",
+      "n": 160,
+      "event_time_s": 183936.1458791226
+    },
+    {
+      "label": "q4_grid320",
+      "n": 320,
+      "event_time_s": 183932.4445425459,
+      "difference_from_previous": {
+        "common_times": 3068,
+        "event_delta_s": -3.7013365766906645,
+        "fields": {
+          "temperature": {
+            "max_abs": 0.00011999886641689272,
+            "time_s": 3720.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 1092
+          },
+          "moisture": {
+            "max_abs": 0.0002674500551953507,
+            "time_s": 1.0,
+            "position": "surface",
+            "four_decimal_rounding_differences": 2046
+          }
+        }
+      }
+    },
+    {
+      "label": "q4_grid640",
+      "n": 640,
+      "event_time_s": 183931.5199837351,
+      "difference_from_previous": {
+        "common_times": 3068,
+        "event_delta_s": -0.9245588108024094,
+        "fields": {
+          "temperature": {
+            "max_abs": 3.0083219172638564e-05,
+            "time_s": 3720.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 276
+          },
+          "moisture": {
+            "max_abs": 6.697292686519418e-05,
+            "time_s": 1.0,
+            "position": "surface",
+            "four_decimal_rounding_differences": 451
+          }
+        }
+      }
+    },
+    {
+      "label": "q4_final",
+      "n": 1280,
+      "event_time_s": 183931.2887197449,
+      "difference_from_previous": {
+        "common_times": 3068,
+        "event_delta_s": -0.23126399022294208,
+        "fields": {
+          "temperature": {
+            "max_abs": 7.5315828453881295e-06,
+            "time_s": 3720.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 72
+          },
+          "moisture": {
+            "max_abs": 1.6750121424546904e-05,
+            "time_s": 1.0,
+            "position": "surface",
+            "four_decimal_rounding_differences": 117
+          }
+        }
+      }
+    },
+    {
+      "label": "q4_grid2560",
+      "n": 2560,
+      "event_time_s": 183931.230754375,
+      "difference_from_previous": {
+        "common_times": 3068,
+        "event_delta_s": -0.057965369895100594,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.8840302260514363e-06,
+            "time_s": 3720.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 16
+          },
+          "moisture": {
+            "max_abs": 4.188031590413033e-06,
+            "time_s": 1.0,
+            "position": "surface",
+            "four_decimal_rounding_differences": 32
+          }
+        }
+      }
+    }
+  ],
+  "temporal": [
+    {
+      "label": "q4_cap60",
+      "difference": {
+        "common_times": 3068,
+        "event_delta_s": -0.0022791984665673226,
+        "fields": {
+          "temperature": {
+            "max_abs": 5.574598560542654e-09,
+            "time_s": 15420.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 0
+          },
+          "moisture": {
+            "max_abs": 1.3812563037784997e-09,
+            "time_s": 146100.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 1
+          }
+        }
+      },
+      "statistics": {
+        "nfev": 49990,
+        "njev": 342,
+        "nlu": 6543,
+        "accepted_steps": 24635,
+        "accepted_max_step_s": 60.0,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.05260831703348175,
+        "water_balance_max_abs": 1.5091332628003329e-09,
+        "water_balance_relative": 5.918169658040522e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.09870468825101852,
+        "heat_corrected_balance_relative": 1.3357974434737725e-09,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183931.28644054642,
+        "end_time_s": 183931.28644054642,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          183930.28644054642,
+          183931.28644054642,
+          183932.0,
+          183932.28644054642
+        ],
+        "post_event_g": [
+          5.134886130742089e-07,
+          0.0,
+          -3.663999376124494e-07,
+          -5.134812286755608e-07
+        ],
+        "event_slope_per_s": -5.134849208748848e-07,
+        "first_strict_integer_second": 183932.0,
+        "elapsed_s": 46.139642916000014
+      }
+    },
+    {
+      "label": "q4_cap15",
+      "difference": {
+        "common_times": 3068,
+        "event_delta_s": 0.00046168064000084996,
+        "fields": {
+          "temperature": {
+            "max_abs": 8.931635875342181e-09,
+            "time_s": 15060.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 0
+          },
+          "moisture": {
+            "max_abs": 5.010364900748243e-10,
+            "time_s": 77580.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 0
+          }
+        }
+      },
+      "statistics": {
+        "nfev": 65298,
+        "njev": 335,
+        "nlu": 8279,
+        "accepted_steps": 32314,
+        "accepted_max_step_s": 15.000000000007276,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.052608317030881466,
+        "water_balance_max_abs": 8.648859406434894e-10,
+        "water_balance_relative": 3.3917095711509394e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.03268630802631378,
+        "heat_corrected_balance_relative": 4.423527136533523e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183931.28918142553,
+        "end_time_s": 183931.28918142553,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.14999999999999997,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          183930.28918142553,
+          183931.28918142553,
+          183932.0,
+          183932.28918142553
+        ],
+        "post_event_g": [
+          5.134886073288047e-07,
+          -2.7755575615628914e-17,
+          -3.649924115722847e-07,
+          -5.134811499607483e-07
+        ],
+        "event_slope_per_s": -5.134848786447765e-07,
+        "first_strict_integer_second": 183932.0,
+        "elapsed_s": 76.51171279100001
+      }
+    },
+    {
+      "label": "q4_radau",
+      "difference": {
+        "common_times": 3068,
+        "event_delta_s": 9.46315994951874e-05,
+        "fields": {
+          "temperature": {
+            "max_abs": 9.827516578297946e-09,
+            "time_s": 15060.0,
+            "position": "0 cm",
+            "four_decimal_rounding_differences": 0
+          },
+          "moisture": {
+            "max_abs": 1.7943646568596705e-09,
+            "time_s": 1.0,
+            "position": "surface",
+            "four_decimal_rounding_differences": 0
+          }
+        }
+      },
+      "statistics": {
+        "nfev": 109330,
+        "njev": 513,
+        "nlu": 22572,
+        "accepted_steps": 15354,
+        "accepted_max_step_s": 30.000000000014552,
+        "accepted_min_step_s": 1.358341632798474e-07,
+        "minimum_accepted_moisture": 0.052608317031118505,
+        "water_balance_max_abs": 2.220446049250313e-15,
+        "water_balance_relative": 8.707631565687503e-16,
+        "heat_corrected_balance_max_abs_J_m3": 1.2293457984924316e-06,
+        "heat_corrected_balance_relative": 1.663707169202744e-14,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183931.2888143765,
+        "end_time_s": 183931.2888143765,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 0.0,
+        "post_event_time_s": [
+          183930.2888143765,
+          183931.2888143765,
+          183932.0,
+          183932.2888143765
+        ],
+        "post_event_g": [
+          5.134886073565603e-07,
+          2.7755575615628914e-17,
+          -3.6518176849131834e-07,
+          -5.134821209062945e-07
+        ],
+        "event_slope_per_s": -5.134853641314274e-07,
+        "first_strict_integer_second": 183932.0,
+        "elapsed_s": 96.91841545899996
+      }
+    },
+    {
+      "label": "q4_tol6",
+      "difference": {
+        "common_times": 3068,
+        "event_delta_s": 3.1133888871409,
+        "fields": {
+          "temperature": {
+            "max_abs": 0.00022258031241761955,
+            "time_s": 6420.0,
+            "position": "1.1 cm",
+            "four_decimal_rounding_differences": 2760
+          },
+          "moisture": {
+            "max_abs": 1.0122886687335964e-05,
+            "time_s": 840.0,
+            "position": "1.9 cm",
+            "four_decimal_rounding_differences": 956
+          }
+        }
+      },
+      "statistics": {
+        "nfev": 16828,
+        "njev": 335,
+        "nlu": 3316,
+        "accepted_steps": 8079,
+        "accepted_max_step_s": 60.0,
+        "accepted_min_step_s": 1.4177203411236405e-08,
+        "minimum_accepted_moisture": 0.052608315767114194,
+        "water_balance_max_abs": 1.675507745479976e-05,
+        "water_balance_relative": 6.570618609725397e-06,
+        "heat_corrected_balance_max_abs_J_m3": 1523.6007977500558,
+        "heat_corrected_balance_relative": 2.0619304782497238e-05,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183934.40210863203,
+        "end_time_s": 183934.40210863203,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 8.881784197001252e-16,
+        "post_event_time_s": [
+          183933.40210863203,
+          183934.40210863203,
+          183935.0,
+          183935.40210863203
+        ],
+        "post_event_g": [
+          5.134892918923217e-07,
+          2.7755575615628914e-17,
+          -3.070066503796376e-07,
+          -5.134813223228729e-07
+        ],
+        "event_slope_per_s": -5.134853071075973e-07,
+        "first_strict_integer_second": 183935.0,
+        "elapsed_s": 22.720109917000002
+      }
+    },
+    {
+      "label": "q4_tol7",
+      "difference": {
+        "common_times": 3068,
+        "event_delta_s": 0.4120100369909778,
+        "fields": {
+          "temperature": {
+            "max_abs": 1.3785093472051813e-05,
+            "time_s": 6480.0,
+            "position": "0.1 cm",
+            "four_decimal_rounding_differences": 213
+          },
+          "moisture": {
+            "max_abs": 6.655264912502901e-07,
+            "time_s": 3300.0,
+            "position": "1.7 cm",
+            "four_decimal_rounding_differences": 89
+          }
+        }
+      },
+      "statistics": {
+        "nfev": 21242,
+        "njev": 335,
+        "nlu": 3819,
+        "accepted_steps": 10286,
+        "accepted_max_step_s": 60.0,
+        "accepted_min_step_s": 4.483808879740536e-09,
+        "minimum_accepted_moisture": 0.05260831683370296,
+        "water_balance_max_abs": 1.5157387514008747e-06,
+        "water_balance_relative": 5.944073534905391e-07,
+        "heat_corrected_balance_max_abs_J_m3": 88.97897599637508,
+        "heat_corrected_balance_relative": 1.2041767292410808e-06,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183931.70072978188,
+        "end_time_s": 183931.70072978188,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 8.881784197001252e-16,
+        "post_event_time_s": [
+          183930.70072978188,
+          183931.70072978188,
+          183932.0,
+          183932.70072978188
+        ],
+        "post_event_g": [
+          5.134888710622842e-07,
+          0.0,
+          -1.5367041059088926e-07,
+          -5.134815256047087e-07
+        ],
+        "event_slope_per_s": -5.134851983334965e-07,
+        "first_strict_integer_second": 183932.0,
+        "elapsed_s": 27.706623792000016
+      }
+    },
+    {
+      "label": "q4_tol8",
+      "difference": {
+        "common_times": 3068,
+        "event_delta_s": 0.038993167399894446,
+        "fields": {
+          "temperature": {
+            "max_abs": 8.905716839535671e-07,
+            "time_s": 6660.0,
+            "position": "1.3 cm",
+            "four_decimal_rounding_differences": 11
+          },
+          "moisture": {
+            "max_abs": 1.0665347227600819e-07,
+            "time_s": 1.0,
+            "position": "surface",
+            "four_decimal_rounding_differences": 8
+          }
+        }
+      },
+      "statistics": {
+        "nfev": 27722,
+        "njev": 335,
+        "nlu": 4492,
+        "accepted_steps": 13526,
+        "accepted_max_step_s": 60.0,
+        "accepted_min_step_s": 1.4169927453622222e-09,
+        "minimum_accepted_moisture": 0.052608317006049087,
+        "water_balance_max_abs": 1.357539622937054e-07,
+        "water_balance_relative": 5.323684795831585e-08,
+        "heat_corrected_balance_max_abs_J_m3": 3.573714666068554,
+        "heat_corrected_balance_relative": 4.8364054425650255e-08,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183931.3277129123,
+        "end_time_s": 183931.3277129123,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 8.881784197001252e-16,
+        "post_event_time_s": [
+          183930.3277129123,
+          183931.3277129123,
+          183932.0,
+          183932.3277129123
+        ],
+        "post_event_g": [
+          5.134887784141728e-07,
+          0.0,
+          -3.4520710484597927e-07,
+          -5.134810016904634e-07
+        ],
+        "event_slope_per_s": -5.134848900523181e-07,
+        "first_strict_integer_second": 183932.0,
+        "elapsed_s": 31.997963165999977
+      }
+    }
+  ],
+  "complete": true
+}

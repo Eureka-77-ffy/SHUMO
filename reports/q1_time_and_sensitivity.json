@@ -1,0 +1,880 @@
+{
+  "reference": "q1_final",
+  "scope": "Q1 local numerical acceptance, not full independent nonlinear spatial validation",
+  "comparisons": [
+    {
+      "label": "tol_1e-6",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 5.961551797994957e-05,
+          "time_s": 851,
+          "radius_cm": 0.0,
+          "rounding_differences": 11869,
+          "paper_rounding_differences": 13
+        },
+        "moisture": {
+          "max_abs": 2.0745372280472907e-05,
+          "time_s": 345,
+          "radius_cm": 2.0,
+          "rounding_differences": 830,
+          "paper_rounding_differences": 1
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-06,
+          "atol": 1e-08,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 621,
+          "accepted_max_step_s": 15.39396144945863,
+          "accepted_min_step_s": 6.409411480490235e-05,
+          "nfev": 1302,
+          "njev": 30,
+          "nlu": 267,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 6.651191516304777e-05,
+          "augmented_balance_max_abs": 1.2434497875801753e-14,
+          "elapsed_s": 0.21744454199999996
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-06,
+          "atol": 1e-08,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 450,
+          "accepted_max_step_s": 40.32820082997887,
+          "accepted_min_step_s": 1.822267303775228e-08,
+          "nfev": 973,
+          "njev": 30,
+          "nlu": 208,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.2406631608730123e-06,
+          "augmented_balance_max_abs": 7.216449660063518e-16,
+          "elapsed_s": 0.28228537499999984
+        }
+      }
+    },
+    {
+      "label": "tol_1e-7",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 7.104258287427001e-06,
+          "time_s": 1681,
+          "radius_cm": 2.0,
+          "rounding_differences": 639,
+          "paper_rounding_differences": 1
+        },
+        "moisture": {
+          "max_abs": 1.4799517840113907e-06,
+          "time_s": 815,
+          "radius_cm": 2.0,
+          "rounding_differences": 61,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-07,
+          "atol": 1e-09,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 880,
+          "accepted_max_step_s": 10.885859812419994,
+          "accepted_min_step_s": 2.437656803522259e-05,
+          "nfev": 1820,
+          "njev": 30,
+          "nlu": 332,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 3.5674876128766186e-06,
+          "augmented_balance_max_abs": 1.9539925233402755e-14,
+          "elapsed_s": 0.31555720799999953
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-07,
+          "atol": 1e-09,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 585,
+          "accepted_max_step_s": 21.163787456614045,
+          "accepted_min_step_s": 5.773509751971016e-09,
+          "nfev": 1230,
+          "njev": 30,
+          "nlu": 242,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.1159153667783528e-07,
+          "augmented_balance_max_abs": 8.049116928532385e-16,
+          "elapsed_s": 0.2820046669999998
+        }
+      }
+    },
+    {
+      "label": "tol_1e-8",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 6.1726202460477e-07,
+          "time_s": 481,
+          "radius_cm": 2.0,
+          "rounding_differences": 71,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.272529042140036e-07,
+          "time_s": 1738,
+          "radius_cm": 1.5,
+          "rounding_differences": 9,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-08,
+          "atol": 1e-10,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 1250,
+          "accepted_max_step_s": 7.212291700288233,
+          "accepted_min_step_s": 6.4887879034358775e-06,
+          "nfev": 2560,
+          "njev": 30,
+          "nlu": 406,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 4.3906832569717835e-07,
+          "augmented_balance_max_abs": 1.1546319456101628e-14,
+          "elapsed_s": 0.4022700840000004
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-08,
+          "atol": 1e-10,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 794,
+          "accepted_max_step_s": 14.158149419869119,
+          "accepted_min_step_s": 1.82578255110195e-09,
+          "nfev": 1648,
+          "njev": 30,
+          "nlu": 290,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 3.506256751606429e-08,
+          "augmented_balance_max_abs": 7.494005416219807e-16,
+          "elapsed_s": 0.3878466660000006
+        }
+      }
+    },
+    {
+      "label": "cap_60",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 6.94279833624023e-09,
+          "time_s": 1681,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.0955680807001045e-09,
+          "time_s": 1083,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 2517,
+          "accepted_max_step_s": 3.838191359965549,
+          "accepted_min_step_s": 7.435091902152635e-07,
+          "nfev": 5094,
+          "njev": 30,
+          "nlu": 641,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 8.168328236024536e-10,
+          "augmented_balance_max_abs": 1.2434497875801753e-14,
+          "elapsed_s": 0.74927425
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 60.0,
+          "accepted_steps": 1447,
+          "accepted_max_step_s": 8.552227243608854,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 2954,
+          "njev": 30,
+          "nlu": 422,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 3.5135133691355236e-10,
+          "augmented_balance_max_abs": 9.43689570931383e-16,
+          "elapsed_s": 0.6207370000000001
+        }
+      }
+    },
+    {
+      "label": "cap_2",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 5.151726156782388e-09,
+          "time_s": 1648,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.0262681815476071e-09,
+          "time_s": 1392,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 2.0,
+          "accepted_steps": 2588,
+          "accepted_max_step_s": 2.0,
+          "accepted_min_step_s": 6.520124316011788e-07,
+          "nfev": 5236,
+          "njev": 30,
+          "nlu": 655,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.5056818014613782e-09,
+          "augmented_balance_max_abs": 1.3322676295501878e-14,
+          "elapsed_s": 0.7837997919999999
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 2.0,
+          "accepted_steps": 1796,
+          "accepted_max_step_s": 2.0,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 3652,
+          "njev": 30,
+          "nlu": 488,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 2.95982766074232e-10,
+          "augmented_balance_max_abs": 7.771561172376096e-16,
+          "elapsed_s": 0.7887984170000006
+        }
+      }
+    },
+    {
+      "label": "cap_0p5",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 5.660929502937506e-09,
+          "time_s": 1278,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.6078316456002995e-09,
+          "time_s": 546,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 0.5,
+          "accepted_steps": 4651,
+          "accepted_max_step_s": 0.5000000000000284,
+          "accepted_min_step_s": 6.30927615929977e-07,
+          "nfev": 9362,
+          "njev": 30,
+          "nlu": 995,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 8.045777377674312e-10,
+          "augmented_balance_max_abs": 1.4210854715202004e-14,
+          "elapsed_s": 1.4351192089999998
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 0.5,
+          "accepted_steps": 4269,
+          "accepted_max_step_s": 0.5000000000000568,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 8598,
+          "njev": 30,
+          "nlu": 1031,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 3.030635187251107e-10,
+          "augmented_balance_max_abs": 1.4155343563970746e-15,
+          "elapsed_s": 1.7331611250000005
+        }
+      }
+    },
+    {
+      "label": "radau",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 5.9370037774897355e-09,
+          "time_s": 1097,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 2.2638384500339725e-09,
+          "time_s": 545,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "Radau",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 2163,
+          "accepted_max_step_s": 1.0000000000000284,
+          "accepted_min_step_s": 9.999999999999999e-05,
+          "nfev": 15201,
+          "njev": 30,
+          "nlu": 4064,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 9.769962616701378e-15,
+          "augmented_balance_max_abs": 1.865174681370263e-14,
+          "elapsed_s": 2.1378485830000002
+        },
+        "moisture": {
+          "method": "Radau",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 2132,
+          "accepted_max_step_s": 1.0000000000001137,
+          "accepted_min_step_s": 4.299625130281175e-08,
+          "nfev": 15019,
+          "njev": 30,
+          "nlu": 3856,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.0269562977782698e-15,
+          "augmented_balance_max_abs": 1.0269562977782698e-15,
+          "elapsed_s": 3.205068542000001
+        }
+      }
+    },
+    {
+      "label": "kirchhoff",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 4.38291891668996e-09,
+          "time_s": 1279,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.0187576293674283e-07,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 1,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 3139,
+          "accepted_max_step_s": 1.0,
+          "accepted_min_step_s": 7.170588105509523e-07,
+          "nfev": 6338,
+          "njev": 30,
+          "nlu": 738,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.0897176494495397e-09,
+          "augmented_balance_max_abs": 1.5987211554602254e-14,
+          "elapsed_s": 0.8388136670000002
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 2575,
+          "accepted_max_step_s": 1.0000000000001137,
+          "accepted_min_step_s": 1.8526059432361847e-10,
+          "nfev": 5210,
+          "njev": 30,
+          "nlu": 645,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 2.786782193897608e-10,
+          "augmented_balance_max_abs": 6.38378239159465e-16,
+          "elapsed_s": 1.3002054160000007
+        }
+      }
+    },
+    {
+      "label": "fine2560",
+      "comparison_to_reference": {
+        "temperature": {
+          "max_abs": 9.641447462627184e-07,
+          "time_s": 1800,
+          "radius_cm": 0.0,
+          "rounding_differences": 71,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 9.154213245210485e-07,
+          "time_s": 1,
+          "radius_cm": 2.0,
+          "rounding_differences": 34,
+          "paper_rounding_differences": 0
+        }
+      },
+      "fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 3202,
+          "accepted_max_step_s": 1.0000000000000568,
+          "accepted_min_step_s": 5.285005499899853e-08,
+          "nfev": 6464,
+          "njev": 30,
+          "nlu": 774,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.49456980125251e-09,
+          "augmented_balance_max_abs": 1.4210854715202004e-14,
+          "elapsed_s": 1.2998940830000016
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 2644,
+          "accepted_max_step_s": 1.0,
+          "accepted_min_step_s": 2.7821559557578594e-11,
+          "nfev": 5356,
+          "njev": 32,
+          "nlu": 680,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 3.9772610205268677e-10,
+          "augmented_balance_max_abs": 8.604228440844963e-16,
+          "elapsed_s": 1.4280036659999986
+        }
+      }
+    }
+  ],
+  "step_cap_series": [
+    {
+      "coarse_s": 2.0,
+      "fine_s": 1.0,
+      "coarse_fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 2.0,
+          "accepted_steps": 2588,
+          "accepted_max_step_s": 2.0,
+          "accepted_min_step_s": 6.520124316011788e-07,
+          "nfev": 5236,
+          "njev": 30,
+          "nlu": 655,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.5056818014613782e-09,
+          "augmented_balance_max_abs": 1.3322676295501878e-14,
+          "elapsed_s": 0.7837997919999999
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 2.0,
+          "accepted_steps": 1796,
+          "accepted_max_step_s": 2.0,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 3652,
+          "njev": 30,
+          "nlu": 488,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 2.95982766074232e-10,
+          "augmented_balance_max_abs": 7.771561172376096e-16,
+          "elapsed_s": 0.7887984170000006
+        }
+      },
+      "fine_fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 3146,
+          "accepted_max_step_s": 1.0000000000000568,
+          "accepted_min_step_s": 5.898878043808509e-07,
+          "nfev": 6352,
+          "njev": 30,
+          "nlu": 740,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.0618954604524333e-09,
+          "augmented_balance_max_abs": 1.5987211554602254e-14,
+          "elapsed_s": 1.000857209
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 2566,
+          "accepted_max_step_s": 1.0000000000000568,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 5192,
+          "njev": 30,
+          "nlu": 639,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 2.691332989801509e-10,
+          "augmented_balance_max_abs": 8.326672684688674e-16,
+          "elapsed_s": 1.0436609170000002
+        }
+      },
+      "difference": {
+        "temperature": {
+          "max_abs": 5.151726156782388e-09,
+          "time_s": 1648,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.0262681815476071e-09,
+          "time_s": 1392,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      }
+    },
+    {
+      "coarse_s": 1.0,
+      "fine_s": 0.5,
+      "coarse_fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 3146,
+          "accepted_max_step_s": 1.0000000000000568,
+          "accepted_min_step_s": 5.898878043808509e-07,
+          "nfev": 6352,
+          "njev": 30,
+          "nlu": 740,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 1.0618954604524333e-09,
+          "augmented_balance_max_abs": 1.5987211554602254e-14,
+          "elapsed_s": 1.000857209
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 1.0,
+          "accepted_steps": 2566,
+          "accepted_max_step_s": 1.0000000000000568,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 5192,
+          "njev": 30,
+          "nlu": 639,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 2.691332989801509e-10,
+          "augmented_balance_max_abs": 8.326672684688674e-16,
+          "elapsed_s": 1.0436609170000002
+        }
+      },
+      "fine_fields": {
+        "temperature": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 0.5,
+          "accepted_steps": 4651,
+          "accepted_max_step_s": 0.5000000000000284,
+          "accepted_min_step_s": 6.30927615929977e-07,
+          "nfev": 9362,
+          "njev": 30,
+          "nlu": 995,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 8.045777377674312e-10,
+          "augmented_balance_max_abs": 1.4210854715202004e-14,
+          "elapsed_s": 1.4351192089999998
+        },
+        "moisture": {
+          "method": "BDF",
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step_cap_s": 0.5,
+          "accepted_steps": 4269,
+          "accepted_max_step_s": 0.5000000000000568,
+          "accepted_min_step_s": 1.82578293611412e-10,
+          "nfev": 8598,
+          "njev": 30,
+          "nlu": 1031,
+          "balance_quadrature_order": 8,
+          "independent_balance_max_abs": 3.030635187251107e-10,
+          "augmented_balance_max_abs": 1.4155343563970746e-15,
+          "elapsed_s": 1.7331611250000005
+        }
+      },
+      "difference": {
+        "temperature": {
+          "max_abs": 5.660929502937506e-09,
+          "time_s": 1278,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 1.6078316456002995e-09,
+          "time_s": 546,
+          "radius_cm": 2.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      }
+    }
+  ],
+  "sensitivities": [
+    {
+      "parameter": "h_multiplier",
+      "multiplier": 0.9,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.37676293356763324,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 36448,
+          "paper_rounding_differences": 34
+        },
+        "moisture": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      },
+      "temperature_centre_1800": 33.297468565729794,
+      "temperature_surface_1800": 36.408797780613575,
+      "temperature_mean_1800": 34.83961983903701,
+      "moisture_centre_1800": 2.549992400144181,
+      "moisture_surface_1800": 1.510234208557036,
+      "moisture_mean_1800": 2.2935572888242657
+    },
+    {
+      "parameter": "h_multiplier",
+      "multiplier": 1.1,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.330060988184556,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 36448,
+          "paper_rounding_differences": 34
+        },
+        "moisture": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        }
+      },
+      "temperature_centre_1800": 33.823372450870906,
+      "temperature_surface_1800": 37.115621702365765,
+      "temperature_mean_1800": 35.45789670026612,
+      "moisture_centre_1800": 2.549992400144181,
+      "moisture_surface_1800": 1.510234208557036,
+      "moisture_mean_1800": 2.2935572888242657
+    },
+    {
+      "parameter": "hm_multiplier",
+      "multiplier": 0.9,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 0.07411073309500193,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 17506,
+          "paper_rounding_differences": 16
+        }
+      },
+      "temperature_centre_1800": 33.575343540663425,
+      "temperature_surface_1800": 36.78556071418121,
+      "temperature_mean_1800": 35.16791275870973,
+      "moisture_centre_1800": 2.5499930548652663,
+      "moisture_surface_1800": 1.5843449416520379,
+      "moisture_mean_1800": 2.3116831448128456
+    },
+    {
+      "parameter": "hm_multiplier",
+      "multiplier": 1.1,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 0.06934254013173358,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 17464,
+          "paper_rounding_differences": 16
+        }
+      },
+      "temperature_centre_1800": 33.575343540663425,
+      "temperature_surface_1800": 36.78556071418121,
+      "temperature_mean_1800": 35.16791275870973,
+      "moisture_centre_1800": 2.5499917654888713,
+      "moisture_surface_1800": 1.4408916684253024,
+      "moisture_mean_1800": 2.2766608556393644
+    },
+    {
+      "parameter": "D_multiplier",
+      "multiplier": 0.9,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 0.03504117454224209,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 20002,
+          "paper_rounding_differences": 19
+        }
+      },
+      "temperature_centre_1800": 33.575343540663425,
+      "temperature_surface_1800": 36.78556071418121,
+      "temperature_mean_1800": 35.16791275870973,
+      "moisture_centre_1800": 2.5499978124744733,
+      "moisture_surface_1800": 1.4751930340147938,
+      "moisture_mean_1800": 2.297667090985388
+    },
+    {
+      "parameter": "D_multiplier",
+      "multiplier": 1.1,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 0.031081900726911416,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 20863,
+          "paper_rounding_differences": 18
+        }
+      },
+      "temperature_centre_1800": 33.575343540663425,
+      "temperature_surface_1800": 36.78556071418121,
+      "temperature_mean_1800": 35.16791275870973,
+      "moisture_centre_1800": 2.549978961958518,
+      "moisture_surface_1800": 1.5413161092839474,
+      "moisture_mean_1800": 2.2899390255283025
+    },
+    {
+      "parameter": "beta_multiplier",
+      "multiplier": 0.9,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 0.0012918984211380824,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 9289,
+          "paper_rounding_differences": 10
+        }
+      },
+      "temperature_centre_1800": 33.575343540663425,
+      "temperature_surface_1800": 36.78556071418121,
+      "temperature_mean_1800": 35.16791275870973,
+      "moisture_centre_1800": 2.549992394195693,
+      "moisture_surface_1800": 1.5089423101358979,
+      "moisture_mean_1800": 2.29328890985126
+    },
+    {
+      "parameter": "beta_multiplier",
+      "multiplier": 1.1,
+      "scenario_not_statistical_confidence_interval": true,
+      "comparison_to_baseline": {
+        "temperature": {
+          "max_abs": 0.0,
+          "time_s": 1,
+          "radius_cm": 0.0,
+          "rounding_differences": 0,
+          "paper_rounding_differences": 0
+        },
+        "moisture": {
+          "max_abs": 0.0012915940982594076,
+          "time_s": 1800,
+          "radius_cm": 2.0,
+          "rounding_differences": 9306,
+          "paper_rounding_differences": 10
+        }
+      },
+      "temperature_centre_1800": 33.575343540663425,
+      "temperature_surface_1800": 36.78556071418121,
+      "temperature_mean_1800": 35.16791275870973,
+      "moisture_centre_1800": 2.5499924060932897,
+      "moisture_surface_1800": 1.5115258026552953,
+      "moisture_mean_1800": 2.2938256840886773
+    }
+  ],
+  "complete": true
+}

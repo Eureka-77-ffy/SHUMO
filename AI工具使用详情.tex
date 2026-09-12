@@ -1,0 +1,33 @@
+\documentclass[12pt,a4paper]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\renewcommand{\arraystretch}{1.5}
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{center}
+	{\zihao{2}\bfseries AI工具使用详情}
+\end{center}
+
+\begin{table}[htbp]
+	\centering
+	\caption{AI工具使用详情记录表}
+	\begin{tabularx}{\textwidth}{>{\bfseries\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X}
+		\toprule
+		记录项目 & 本队实际记录 \\
+		\midrule
+		工具名称、版本或型号 & MathModel桌面端内置AI助手；服务模型为OpenAI \texttt{gpt-5.6-sol}（使用日期：2026年9月12日）。 \\
+		具体使用目的和环节 & 用于检查LaTeX论文结构与语言、审阅数值程序、设计交叉验证方案、辅助整理科研图表，以及比较优秀论文的框架和表达方式。AI未替代题目附件中的原始数据。 \\
+		主要提示方式与使用过程 & 向工具提供赛题、附件、论文源文件、计算代码和六篇参考论文，按“审阅---提出问题---修改---重新编译与复算”的顺序迭代。典型提示包括“对第三问进行交叉验证”“按优秀论文检查全文是否存在致命错误”“减少框架图文字和配色”等。 \\
+		采纳、人工修改和核验 & 采纳了部分语言修改、版式建议和验证代码，并结合题意重新调整。关键结果由主有限体积程序、独立有限元、网格加密、积分器替换、事件前后回代和累计守恒共同核验；结果工作簿经逐项回读。模型口径、图表取舍和最终文字由参赛队确认。 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+% 若还使用过其他AI工具，提交前应按真实记录在本表中追加，不得遗漏。
+
+\end{document}

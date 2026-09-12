@@ -1,0 +1,1321 @@
+{
+  "status": "completed_conditional_endface_assumption_audit_not_experimental_validation",
+  "fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb",
+    "src/moving/__init__.py": "02b9392873b91cc313fa19d1047f9082104a77a21608450ede6c8c139bb17712",
+    "src/moving/integration.py": "48fd59417077b05ad9890bb6f94d6011cb0839c0d066376cfa761e6c52ab8198",
+    "src/moving/model.py": "7a32ad11fc0520f92877874e5f17e13226684a04d11ffe84d4ab1eaad2a25e7d",
+    "scripts/question4.py": "a07f76c257afee6d18bf63b2ffc1135c489627946b433059216692eb87ed6b75",
+    "validation/endface_model.py": "bec9911806e2e799dd94a367ab8c5eee5010d146ecc8faac785e16135764fd53",
+    "validation/endface_run.py": "6957cbd92edc2afab7e7bffbc8d970d71abe710999111018321d009fb5ccd403"
+  },
+  "script_sha256": "93127c34ecb0f3b54fd46480594b6b4e8d45d2d8fec0afbf442dc1478e68fbb4",
+  "cases": [
+    {
+      "group": "q1",
+      "nr": 32,
+      "nz": 32,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q1_r32_z32_e1_tol1e-08_dt120",
+      "insulated_label": "q1_r32_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": null,
+      "event_insulated_s": null,
+      "paired_event_difference_s": null,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 1.5784045359623633e-07,
+          "time_s": 1800.0,
+          "radius_column": 15,
+          "midplane_first3h_max_abs": 1.5784045359623633e-07,
+          "end_vs_1D_max_abs_excluding_corner": 3.7029068710757116
+        },
+        "moisture": {
+          "midplane_max_abs": 7.82145637145959e-09,
+          "time_s": 300.0,
+          "radius_column": 20,
+          "midplane_first3h_max_abs": 7.82145637145959e-09,
+          "end_vs_1D_max_abs_excluding_corner": 0.9903390764728373
+        }
+      },
+      "radial_C_monotonicity_violation": 8.881784197001252e-16,
+      "axial_C_monotonicity_violation": 1.7763568394002505e-15,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": null,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.275166718529551,
+          "mean_C_1D": 2.293699510417414,
+          "mean_C_difference": -0.01853279188786283,
+          "centre_C_difference": 1.4028334049953628e-11,
+          "end_centre_temperature_C": 37.276265846169295,
+          "middle_centre_temperature_C": 33.573359115747564,
+          "end_centre_moisture": 1.5596463361417034
+        }
+      ],
+      "water_balance_relative": 2.9744222335692735e-09,
+      "common_times": 10
+    },
+    {
+      "group": "q1",
+      "nr": 64,
+      "nz": 32,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q1_r64_z32_e1_tol1e-08_dt120",
+      "insulated_label": "q1_r64_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": null,
+      "event_insulated_s": null,
+      "paired_event_difference_s": null,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 1.584387021580369e-07,
+          "time_s": 1800.0,
+          "radius_column": 15,
+          "midplane_first3h_max_abs": 1.584387021580369e-07,
+          "end_vs_1D_max_abs_excluding_corner": 3.702053371730429
+        },
+        "moisture": {
+          "midplane_max_abs": 1.0895720325976299e-08,
+          "time_s": 10.0,
+          "radius_column": 20,
+          "midplane_first3h_max_abs": 1.0895720325976299e-08,
+          "end_vs_1D_max_abs_excluding_corner": 0.9903421781578123
+        }
+      },
+      "radial_C_monotonicity_violation": 8.881784197001252e-16,
+      "axial_C_monotonicity_violation": 2.6645352591003757e-15,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": null,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.275060814665224,
+          "mean_C_1D": 2.2935927877816455,
+          "mean_C_difference": -0.01853197311642152,
+          "centre_C_difference": 1.1614265105208688e-11,
+          "end_centre_temperature_C": 37.27689282782095,
+          "middle_centre_temperature_C": 33.57483959680316,
+          "end_centre_moisture": 1.5596485880729143
+        }
+      ],
+      "water_balance_relative": 2.9745532181171005e-09,
+      "common_times": 10
+    },
+    {
+      "group": "q1",
+      "nr": 64,
+      "nz": 64,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q1_r64_z64_e1_tol1e-08_dt120",
+      "insulated_label": "q1_r64_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": null,
+      "event_insulated_s": null,
+      "paired_event_difference_s": null,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 1.0505134540039762e-07,
+          "time_s": 600.0,
+          "radius_column": 20,
+          "midplane_first3h_max_abs": 1.0505134540039762e-07,
+          "end_vs_1D_max_abs_excluding_corner": 3.698551353459578
+        },
+        "moisture": {
+          "midplane_max_abs": 1.5394099772692016e-08,
+          "time_s": 100.0,
+          "radius_column": 19,
+          "midplane_first3h_max_abs": 1.5394099772692016e-08,
+          "end_vs_1D_max_abs_excluding_corner": 0.987126006247077
+        }
+      },
+      "radial_C_monotonicity_violation": 1.3322676295501878e-15,
+      "axial_C_monotonicity_violation": 2.220446049250313e-15,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": null,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.275011205985784,
+          "mean_C_1D": 2.2935927877816455,
+          "mean_C_difference": -0.018581581795861446,
+          "centre_C_difference": 1.3771650486660292e-11,
+          "end_centre_temperature_C": 37.2733908095501,
+          "middle_centre_temperature_C": 33.57483949691612,
+          "end_centre_moisture": 1.5628647599836496
+        }
+      ],
+      "water_balance_relative": 2.921245750744329e-09,
+      "common_times": 10
+    },
+    {
+      "group": "q1",
+      "nr": 128,
+      "nz": 64,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q1_r128_z64_e1_tol1e-08_dt120",
+      "insulated_label": "q1_r128_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": null,
+      "event_insulated_s": null,
+      "paired_event_difference_s": null,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 1.0519291393507046e-07,
+          "time_s": 600.0,
+          "radius_column": 20,
+          "midplane_first3h_max_abs": 1.0519291393507046e-07,
+          "end_vs_1D_max_abs_excluding_corner": 3.6983338908820116
+        },
+        "moisture": {
+          "midplane_max_abs": 1.559899009961896e-08,
+          "time_s": 10.0,
+          "radius_column": 20,
+          "midplane_first3h_max_abs": 1.559899009961896e-08,
+          "end_vs_1D_max_abs_excluding_corner": 0.9871267373342438
+        }
+      },
+      "radial_C_monotonicity_violation": 1.3322676295501878e-15,
+      "axial_C_monotonicity_violation": 2.220446049250313e-15,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": null,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.274984723454025,
+          "mean_C_1D": 2.29356609978281,
+          "mean_C_difference": -0.01858137632878476,
+          "centre_C_difference": 1.2997602993891633e-11,
+          "end_centre_temperature_C": 37.273551417839016,
+          "middle_centre_temperature_C": 33.57521756780157,
+          "end_centre_moisture": 1.5628652651914905
+        }
+      ],
+      "water_balance_relative": 2.9217417809764685e-09,
+      "common_times": 10
+    },
+    {
+      "group": "q23",
+      "nr": 32,
+      "nz": 32,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q23_r32_z32_e1_tol1e-08_dt120",
+      "insulated_label": "q23_r32_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 207076.3107960016,
+      "event_insulated_s": 207084.51230307907,
+      "paired_event_difference_s": -8.201507077465067,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 0.0017065895883234816,
+          "time_s": 9000.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 0.0017065895883234816,
+          "end_vs_1D_max_abs_excluding_corner": 3.7573326083538063
+        },
+        "moisture": {
+          "midplane_max_abs": 2.315830512533701e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 2.315830512533701e-05,
+          "end_vs_1D_max_abs_excluding_corner": 0.9757030373113045
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0004115810477920423,
+      "axial_C_monotonicity_violation": 0.0013929038402773486,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.2632396698314565,
+          "mean_C_1D": 2.2827634980935883,
+          "mean_C_difference": -0.019523828262131726,
+          "centre_C_difference": 9.026290825886463e-11,
+          "end_centre_temperature_C": 35.94502997928898,
+          "middle_centre_temperature_C": 32.18769733837809,
+          "end_centre_moisture": 1.7092970061675645
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 1.3278600109603493,
+          "mean_C_1D": 1.3828053862487968,
+          "mean_C_difference": -0.05494537528844745,
+          "centre_C_difference": -2.315830512533701e-05,
+          "end_centre_temperature_C": 50.010422775012195,
+          "middle_centre_temperature_C": 49.85057314295426,
+          "end_centre_moisture": 0.9129391258385763
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.7348111999824732,
+          "mean_C_1D": 0.7820086346853922,
+          "mean_C_difference": -0.04719743470291893,
+          "centre_C_difference": -1.0039522928773081e-05,
+          "end_centre_temperature_C": 49.99893270805156,
+          "middle_centre_temperature_C": 49.99892143239527,
+          "end_centre_moisture": 0.4186793954561296
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.129614204134664,
+          "mean_C_1D": 0.13295020562749124,
+          "mean_C_difference": -0.0033360014928272286,
+          "centre_C_difference": -2.7069121526779316e-06,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.053406672346071604
+        }
+      ],
+      "water_balance_relative": 6.019969638250766e-08,
+      "common_times": 124
+    },
+    {
+      "group": "q23",
+      "nr": 64,
+      "nz": 32,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q23_r64_z32_e1_tol1e-08_dt120",
+      "insulated_label": "q23_r64_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 206940.8986258509,
+      "event_insulated_s": 206949.06915560717,
+      "paired_event_difference_s": -8.170529756258475,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 0.001704577155869913,
+          "time_s": 9000.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 0.001704577155869913,
+          "end_vs_1D_max_abs_excluding_corner": 3.756772322463604
+        },
+        "moisture": {
+          "midplane_max_abs": 2.3129685194689387e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 2.3129685194689387e-05,
+          "end_vs_1D_max_abs_excluding_corner": 0.9757618247798159
+        }
+      },
+      "radial_C_monotonicity_violation": 0.00021239656514993044,
+      "axial_C_monotonicity_violation": 0.0013972322316391228,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.2631485591868703,
+          "mean_C_1D": 2.2826713709413156,
+          "mean_C_difference": -0.019522811754445257,
+          "centre_C_difference": 8.268585816040286e-11,
+          "end_centre_temperature_C": 35.945621546490166,
+          "middle_centre_temperature_C": 32.188849191461024,
+          "end_centre_moisture": 1.709323781302993
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 1.3276607930040476,
+          "mean_C_1D": 1.3825966559484537,
+          "mean_C_difference": -0.05493586294440611,
+          "centre_C_difference": -2.3129685194689387e-05,
+          "end_centre_temperature_C": 50.010450716134095,
+          "middle_centre_temperature_C": 49.85071265324877,
+          "end_centre_moisture": 0.9127372494851749
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.7346089279475905,
+          "mean_C_1D": 0.7817897494141738,
+          "mean_C_difference": -0.04718082146658331,
+          "centre_C_difference": -1.0017275806406545e-05,
+          "end_centre_temperature_C": 49.99893271744869,
+          "middle_centre_temperature_C": 49.99892149692489,
+          "end_centre_moisture": 0.418525622249788
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.12957301001329358,
+          "mean_C_1D": 0.13290585776580383,
+          "mean_C_difference": -0.0033328477525102485,
+          "centre_C_difference": -2.6979852523756342e-06,
+          "end_centre_temperature_C": 49.99893442622952,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.05340425120364655
+        }
+      ],
+      "water_balance_relative": 6.033455182087071e-08,
+      "common_times": 123
+    },
+    {
+      "group": "q23",
+      "nr": 64,
+      "nz": 64,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q23_r64_z64_e1_tol1e-08_dt120",
+      "insulated_label": "q23_r64_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 206941.4318535849,
+      "event_insulated_s": 206949.06915560717,
+      "paired_event_difference_s": -7.637302022281801,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 0.0016812740659233327,
+          "time_s": 9000.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 0.0016812740659233327,
+          "end_vs_1D_max_abs_excluding_corner": 3.753183356219722
+        },
+        "moisture": {
+          "midplane_max_abs": 2.2641320473804072e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 2.2641320473804072e-05,
+          "end_vs_1D_max_abs_excluding_corner": 0.9747733737929603
+        }
+      },
+      "radial_C_monotonicity_violation": 0.00021773076320608098,
+      "axial_C_monotonicity_violation": 0.0007519895583267822,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.263107165186294,
+          "mean_C_1D": 2.2826713709413156,
+          "mean_C_difference": -0.01956420575502138,
+          "centre_C_difference": 9.746425888579324e-11,
+          "end_centre_temperature_C": 35.942032580246284,
+          "middle_centre_temperature_C": 32.188849158191566,
+          "end_centre_moisture": 1.7118602637634046
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 1.3276022364139446,
+          "mean_C_1D": 1.3825966559484537,
+          "mean_C_difference": -0.05499441953450912,
+          "centre_C_difference": -2.2641320473804072e-05,
+          "end_centre_temperature_C": 50.010311904572646,
+          "middle_centre_temperature_C": 49.850703895260885,
+          "end_centre_moisture": 0.91323946086079
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.7345705705479163,
+          "mean_C_1D": 0.7817897494141738,
+          "mean_C_difference": -0.04721917886625748,
+          "centre_C_difference": -9.800968228335094e-06,
+          "end_centre_temperature_C": 49.998932717387184,
+          "middle_centre_temperature_C": 49.998921499816966,
+          "end_centre_moisture": 0.4186836422943002
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.1295644597796704,
+          "mean_C_1D": 0.13290585776580383,
+          "mean_C_difference": -0.003341397986133421,
+          "centre_C_difference": -2.5071245287888733e-06,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.05340770140933932
+        }
+      ],
+      "water_balance_relative": 5.679639956603225e-08,
+      "common_times": 123
+    },
+    {
+      "group": "q23",
+      "nr": 128,
+      "nz": 64,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q23_r128_z64_e1_tol1e-08_dt120",
+      "insulated_label": "q23_r128_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 206909.05692013045,
+      "event_insulated_s": 206916.6870439909,
+      "paired_event_difference_s": -7.630123860464664,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 0.0016807878569480295,
+          "time_s": 9000.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 0.0016807878569480295,
+          "end_vs_1D_max_abs_excluding_corner": 3.7530399640962457
+        },
+        "moisture": {
+          "midplane_max_abs": 2.2634303102009312e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 2.2634303102009312e-05,
+          "end_vs_1D_max_abs_excluding_corner": 0.9747869733573078
+        }
+      },
+      "radial_C_monotonicity_violation": 0.000109696661289016,
+      "axial_C_monotonicity_violation": 0.0007525269824346648,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.2630843678986876,
+          "mean_C_1D": 2.2826483187251396,
+          "mean_C_difference": -0.019563950826452015,
+          "centre_C_difference": 9.50377554431725e-11,
+          "end_centre_temperature_C": 35.942184935383565,
+          "middle_centre_temperature_C": 32.18914490543747,
+          "end_centre_moisture": 1.7118669822018502
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 1.3275524280180404,
+          "mean_C_1D": 1.3825444662638577,
+          "mean_C_difference": -0.05499203824581733,
+          "centre_C_difference": -2.2634303102009312e-05,
+          "end_centre_temperature_C": 50.010318993270566,
+          "middle_centre_temperature_C": 49.85073890000194,
+          "end_centre_moisture": 0.9131878431898783
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.7345200282415199,
+          "mean_C_1D": 0.7817350494407314,
+          "mean_C_difference": -0.047215021199211504,
+          "centre_C_difference": -9.796461871047768e-06,
+          "end_centre_temperature_C": 49.9989327197291,
+          "middle_centre_temperature_C": 49.998921515902055,
+          "end_centre_moisture": 0.41864465968458825
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.12955566092153853,
+          "mean_C_1D": 0.13289633439830115,
+          "mean_C_difference": -0.003340673476762618,
+          "centre_C_difference": -2.505076600906042e-06,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.053407121316626414
+        }
+      ],
+      "water_balance_relative": 5.7044484691459736e-08,
+      "common_times": 123
+    },
+    {
+      "group": "q4",
+      "nr": 32,
+      "nz": 32,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q4_r32_z32_e1_tol1e-08_dt120",
+      "insulated_label": "q4_r32_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 184059.74669528333,
+      "event_insulated_s": 184059.77711493845,
+      "paired_event_difference_s": -0.0304196551151108,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 9.456757599224375e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 9.456757599224375e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.051468676950936
+        },
+        "moisture": {
+          "midplane_max_abs": 1.2181318482795689e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 6.365410722963816e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.7108684813685415
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0015132071896004629,
+      "axial_C_monotonicity_violation": 0.003238083226414501,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.3301156159567262,
+          "mean_C_1D": 2.344936202377347,
+          "mean_C_difference": -0.014820586420620785,
+          "centre_C_difference": -2.220446049250313e-15,
+          "end_centre_temperature_C": 36.08774275879449,
+          "middle_centre_temperature_C": 31.036274026228764,
+          "end_centre_moisture": 1.1471293338297375
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.6018305615463864,
+          "mean_C_1D": 1.644324814018085,
+          "mean_C_difference": -0.04249425247169869,
+          "centre_C_difference": -4.864824796335654e-07,
+          "end_centre_temperature_C": 50.01766135420107,
+          "middle_centre_temperature_C": 49.82105796419327,
+          "end_centre_moisture": 0.7430199476135438
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.0252132507410987,
+          "mean_C_1D": 1.065767381722209,
+          "mean_C_difference": -0.04055413098111038,
+          "centre_C_difference": -9.584830555908752e-07,
+          "end_centre_temperature_C": 49.99893304705504,
+          "middle_centre_temperature_C": 49.99892136470546,
+          "end_centre_moisture": 0.3984936582168389
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12020548288718863,
+          "mean_C_1D": 0.1226163605375055,
+          "mean_C_difference": -0.0024108776503168755,
+          "centre_C_difference": -1.7943874608405963e-08,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622952,
+          "end_centre_moisture": 0.05259707913438517
+        }
+      ],
+      "water_balance_relative": 4.0483250912768434e-08,
+      "common_times": 111
+    },
+    {
+      "group": "q4",
+      "nr": 64,
+      "nz": 32,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q4_r64_z32_e1_tol1e-08_dt120",
+      "insulated_label": "q4_r64_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 183962.3207555543,
+      "event_insulated_s": 183962.34202889272,
+      "paired_event_difference_s": -0.02127333841053769,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 9.44177585679995e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 9.44177585679995e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.050780841314943
+        },
+        "moisture": {
+          "midplane_max_abs": 1.2183432902546087e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 6.355352017983762e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.7112989763478215
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0007668333055916854,
+      "axial_C_monotonicity_violation": 0.003264180556997509,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.3298613025229717,
+          "mean_C_1D": 2.3446798224889336,
+          "mean_C_difference": -0.01481851996596184,
+          "centre_C_difference": 0.0,
+          "end_centre_temperature_C": 36.08820104697048,
+          "middle_centre_temperature_C": 31.037420149804607,
+          "end_centre_moisture": 1.147135204342893
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.601465291238577,
+          "mean_C_1D": 1.643947825705352,
+          "mean_C_difference": -0.04248253446677497,
+          "centre_C_difference": -4.871460244082471e-07,
+          "end_centre_temperature_C": 50.017688020164066,
+          "middle_centre_temperature_C": 49.82126580750811,
+          "end_centre_moisture": 0.7432185977426764
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.0248624067074097,
+          "mean_C_1D": 1.0653981682814178,
+          "mean_C_difference": -0.04053576157400807,
+          "centre_C_difference": -9.565269569744572e-07,
+          "end_centre_temperature_C": 49.99893305530366,
+          "middle_centre_temperature_C": 49.998921434515196,
+          "end_centre_moisture": 0.3983599241645309
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12017535761077257,
+          "mean_C_1D": 0.12258424136881406,
+          "mean_C_difference": -0.0024088837580414912,
+          "centre_C_difference": -1.2498287432771704e-08,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.052595062971989105
+        }
+      ],
+      "water_balance_relative": 4.0313932758499956e-08,
+      "common_times": 111
+    },
+    {
+      "group": "q4",
+      "nr": 64,
+      "nz": 64,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q4_r64_z64_e1_tol1e-08_dt120",
+      "insulated_label": "q4_r64_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 183962.32248974073,
+      "event_insulated_s": 183962.34202889272,
+      "paired_event_difference_s": -0.019539151981007308,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 8.978901743006418e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 8.978901743006418e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.045993512887062
+        },
+        "moisture": {
+          "midplane_max_abs": 1.125551844172179e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 5.980333915855951e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.7106736275264867
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0008086930943387305,
+      "axial_C_monotonicity_violation": 0.0017485751071213418,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.3297431914656705,
+          "mean_C_1D": 2.3446798224889336,
+          "mean_C_difference": -0.014936631023263036,
+          "centre_C_difference": 0.0,
+          "end_centre_temperature_C": 36.0834137185426,
+          "middle_centre_temperature_C": 31.037420120723507,
+          "end_centre_moisture": 1.151976521633876
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.601330975467125,
+          "mean_C_1D": 1.643947825705352,
+          "mean_C_difference": -0.04261685023822692,
+          "centre_C_difference": -4.4192016313004956e-07,
+          "end_centre_temperature_C": 50.01750455152769,
+          "middle_centre_temperature_C": 49.821261178766974,
+          "end_centre_moisture": 0.7438439465640111
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.0247749900159675,
+          "mean_C_1D": 1.0653981682814178,
+          "mean_C_difference": -0.040623178265450255,
+          "centre_C_difference": -8.976343242039775e-07,
+          "end_centre_temperature_C": 49.99893305569589,
+          "middle_centre_temperature_C": 49.99892143366803,
+          "end_centre_moisture": 0.39847470459362466
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12016958500723414,
+          "mean_C_1D": 0.12258424136881406,
+          "mean_C_difference": -0.00241465636157992,
+          "centre_C_difference": -1.1501209679076752e-08,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.9989344262295,
+          "end_centre_moisture": 0.05259561837255827
+        }
+      ],
+      "water_balance_relative": 3.950807698423236e-08,
+      "common_times": 111
+    },
+    {
+      "group": "q4",
+      "nr": 128,
+      "nz": 64,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q4_r128_z64_e1_tol1e-08_dt120",
+      "insulated_label": "q4_r128_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 183938.89765831572,
+      "event_insulated_s": 183938.91632685732,
+      "paired_event_difference_s": -0.01866854159743525,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 8.97401074482218e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 8.97401074482218e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.045815545060954
+        },
+        "moisture": {
+          "midplane_max_abs": 1.1255653173947167e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 5.974079225756768e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.7107802368034766
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0004055995150960001,
+      "axial_C_monotonicity_violation": 0.0017520889774866877,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.3296795261904406,
+          "mean_C_1D": 2.3446156359845056,
+          "mean_C_difference": -0.014936109794065011,
+          "centre_C_difference": 0.0,
+          "end_centre_temperature_C": 36.083533593299876,
+          "middle_centre_temperature_C": 31.037717963309063,
+          "end_centre_moisture": 1.1519780310346355
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.6012397292262137,
+          "mean_C_1D": 1.6438536401553707,
+          "mean_C_difference": -0.042613910929157006,
+          "centre_C_difference": -4.4156716949572683e-07,
+          "end_centre_temperature_C": 50.017511202063524,
+          "middle_centre_temperature_C": 49.82131315044519,
+          "end_centre_moisture": 0.7438933760044333
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.024687431338389,
+          "mean_C_1D": 1.0653060019561735,
+          "mean_C_difference": -0.04061857061778462,
+          "centre_C_difference": -8.971692131432007e-07,
+          "end_centre_temperature_C": 49.998933057752794,
+          "middle_centre_temperature_C": 49.998921451083525,
+          "end_centre_moisture": 0.3984403366813294
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12016310568070734,
+          "mean_C_1D": 0.12257731897476329,
+          "mean_C_difference": -0.0024142132940559446,
+          "centre_C_difference": -1.0984560455673531e-08,
+          "end_centre_temperature_C": 49.99893442622952,
+          "middle_centre_temperature_C": 49.99893442622952,
+          "end_centre_moisture": 0.05259513113241887
+        }
+      ],
+      "water_balance_relative": 3.957891739837712e-08,
+      "common_times": 111
+    },
+    {
+      "group": "q4",
+      "nr": 64,
+      "nz": 64,
+      "rtol": 1e-10,
+      "max_step_s": 30.0,
+      "exposed_label": "q4_r64_z64_e1_tol1e-10_dt30",
+      "insulated_label": "q4_r64_z3_e0_tol1e-10_dt30",
+      "event_exposed_s": 183962.32414036276,
+      "event_insulated_s": 183962.35258054896,
+      "paired_event_difference_s": -0.028440186200896278,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 8.972099750081952e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 8.972099750081952e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.045993669466654
+        },
+        "moisture": {
+          "midplane_max_abs": 1.1507170434299496e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 5.985991958779024e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.7106736441987618
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0008086931679887055,
+      "axial_C_monotonicity_violation": 0.0017485752439814206,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.329743190285,
+          "mean_C_1D": 2.3446798212185693,
+          "mean_C_difference": -0.01493663093356945,
+          "centre_C_difference": 0.0,
+          "end_centre_temperature_C": 36.08341349273559,
+          "middle_centre_temperature_C": 31.037419822852293,
+          "end_centre_moisture": 1.1519765001293336
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.601330974969002,
+          "mean_C_1D": 1.6439478262490452,
+          "mean_C_difference": -0.04261685128004333,
+          "centre_C_difference": -4.476055170954396e-07,
+          "end_centre_temperature_C": 50.01750468477979,
+          "middle_centre_temperature_C": 49.82126118379527,
+          "end_centre_moisture": 0.7438439452876361
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.0247749752958069,
+          "mean_C_1D": 1.0653981529817516,
+          "mean_C_difference": -0.0406231776859447,
+          "centre_C_difference": -9.02294830185113e-07,
+          "end_centre_temperature_C": 49.998933055636904,
+          "middle_centre_temperature_C": 49.998921433155196,
+          "end_centre_moisture": 0.39847469022500687
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12016958741562231,
+          "mean_C_1D": 0.12258424722731025,
+          "mean_C_difference": -0.0024146598116879386,
+          "centre_C_difference": -1.6425422189048078e-08,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.052595618519303146
+        }
+      ],
+      "water_balance_relative": 2.6862364184883824e-10,
+      "common_times": 111
+    },
+    {
+      "group": "q23",
+      "nr": 128,
+      "nz": 128,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q23_r128_z128_e1_tol1e-08_dt120",
+      "insulated_label": "q23_r128_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 206909.1973678036,
+      "event_insulated_s": 206916.6870439909,
+      "paired_event_difference_s": -7.489676187309669,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 0.0016748030375310918,
+          "time_s": 9000.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 0.0016748030375310918,
+          "end_vs_1D_max_abs_excluding_corner": 3.7521431975122397
+        },
+        "moisture": {
+          "midplane_max_abs": 2.250814800230927e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 2.250814800230927e-05,
+          "end_vs_1D_max_abs_excluding_corner": 0.9745402764323525
+        }
+      },
+      "radial_C_monotonicity_violation": 0.00011036466272762446,
+      "axial_C_monotonicity_violation": 0.0003831805488327955,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.263073962357461,
+          "mean_C_1D": 2.2826483187251396,
+          "mean_C_difference": -0.019574356367678458,
+          "centre_C_difference": 9.408118728515547e-11,
+          "end_centre_temperature_C": 35.94128816879956,
+          "middle_centre_temperature_C": 32.189144902475036,
+          "end_centre_moisture": 1.7125014278005146
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 1.3275377790041252,
+          "mean_C_1D": 1.3825444662638577,
+          "mean_C_difference": -0.05500668725973257,
+          "centre_C_difference": -2.250814800230927e-05,
+          "end_centre_temperature_C": 50.01028421492336,
+          "middle_centre_temperature_C": 49.85073666560126,
+          "end_centre_moisture": 0.9133129352852272
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.7345105304331488,
+          "mean_C_1D": 0.7817350494407314,
+          "mean_C_difference": -0.04722451900758251,
+          "centre_C_difference": -9.74139231901816e-06,
+          "end_centre_temperature_C": 49.9989327197027,
+          "middle_centre_temperature_C": 49.99892151666107,
+          "end_centre_moisture": 0.4186829845216018
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.12955336347449203,
+          "mean_C_1D": 0.13289633439830115,
+          "mean_C_difference": -0.003342970923809113,
+          "centre_C_difference": -2.4547390620188736e-06,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.053408188723918906
+        }
+      ],
+      "water_balance_relative": 5.55459251579154e-08,
+      "common_times": 123
+    },
+    {
+      "group": "q4",
+      "nr": 128,
+      "nz": 128,
+      "rtol": 1e-08,
+      "max_step_s": 120.0,
+      "exposed_label": "q4_r128_z128_e1_tol1e-08_dt120",
+      "insulated_label": "q4_r128_z3_e0_tol1e-08_dt120",
+      "event_exposed_s": 183938.89810256014,
+      "event_insulated_s": 183938.91632685732,
+      "paired_event_difference_s": -0.018224297178676352,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 8.851215098104603e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 8.851215098104603e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.044633825690603
+        },
+        "moisture": {
+          "midplane_max_abs": 1.1071149788044465e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 5.881627744841467e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.710629518297929
+        }
+      },
+      "radial_C_monotonicity_violation": 0.00041095250115907866,
+      "axial_C_monotonicity_violation": 0.0008952567760214247,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.3296497133481484,
+          "mean_C_1D": 2.3446156359845056,
+          "mean_C_difference": -0.01496592263635721,
+          "centre_C_difference": 0.0,
+          "end_centre_temperature_C": 36.082351873929525,
+          "middle_centre_temperature_C": 31.03771797704179,
+          "end_centre_moisture": 1.1531709025887937
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.6012063916343704,
+          "mean_C_1D": 1.6438536401553707,
+          "mean_C_difference": -0.042647248521000325,
+          "centre_C_difference": -4.30083544777915e-07,
+          "end_centre_temperature_C": 50.017465425964765,
+          "middle_centre_temperature_C": 49.821311922488725,
+          "end_centre_moisture": 0.7440440945099809
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.0246663255882986,
+          "mean_C_1D": 1.0653060019561735,
+          "mean_C_difference": -0.04063967636787491,
+          "centre_C_difference": -8.829752795591617e-07,
+          "end_centre_temperature_C": 49.998933057833554,
+          "middle_centre_temperature_C": 49.99892145071098,
+          "end_centre_moisture": 0.3984624101656307
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12016223559355345,
+          "mean_C_1D": 0.12257731897476329,
+          "mean_C_difference": -0.00241508338120984,
+          "centre_C_difference": -1.0728712446228528e-08,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622952,
+          "end_centre_moisture": 0.05259515488156469
+        }
+      ],
+      "water_balance_relative": 3.9687783865416604e-08,
+      "common_times": 111
+    },
+    {
+      "group": "q23",
+      "nr": 64,
+      "nz": 64,
+      "rtol": 1e-09,
+      "max_step_s": 60.0,
+      "exposed_label": "q23_r64_z64_e1_tol1e-09_dt60",
+      "insulated_label": "q23_r64_z3_e0_tol1e-09_dt60",
+      "event_exposed_s": 206941.4183832324,
+      "event_insulated_s": 206949.07535952725,
+      "paired_event_difference_s": -7.656976294849301,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 0.0016812284245375508,
+          "time_s": 9000.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 0.0016812284245375508,
+          "end_vs_1D_max_abs_excluding_corner": 3.7531834650320093
+        },
+        "moisture": {
+          "midplane_max_abs": 2.2638331708346726e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 2.2638331708346726e-05,
+          "end_vs_1D_max_abs_excluding_corner": 0.9747734123215017
+        }
+      },
+      "radial_C_monotonicity_violation": 0.00021773090137644502,
+      "axial_C_monotonicity_violation": 0.0007519897941532516,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 2.2631071626632098,
+          "mean_C_1D": 2.282671368248632,
+          "mean_C_difference": -0.01956420558542238,
+          "centre_C_difference": 1.0655032411932552e-11,
+          "end_centre_temperature_C": 35.94203232455065,
+          "middle_centre_temperature_C": 32.18884886228716,
+          "end_centre_moisture": 1.7118602451508513
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 1.327602226635135,
+          "mean_C_1D": 1.3825966451394314,
+          "mean_C_difference": -0.054994418504296316,
+          "centre_C_difference": -2.2638331708346726e-05,
+          "end_centre_temperature_C": 50.01031193553404,
+          "middle_centre_temperature_C": 49.850703939195135,
+          "end_centre_moisture": 0.9132394449491026
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.7345705984531504,
+          "mean_C_1D": 0.7817898449624255,
+          "mean_C_difference": -0.047219246509275115,
+          "centre_C_difference": -9.89303937726227e-06,
+          "end_centre_temperature_C": 49.99893271734817,
+          "middle_centre_temperature_C": 49.998921499731026,
+          "end_centre_moisture": 0.4186836860805793
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.02,
+          "mean_C_2D": 0.12956446148348355,
+          "mean_C_1D": 0.13290586479505906,
+          "mean_C_difference": -0.003341403311575508,
+          "centre_C_difference": -2.514390517155407e-06,
+          "end_centre_temperature_C": 49.99893442622951,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.053407701595830685
+        }
+      ],
+      "water_balance_relative": 9.443510026251127e-09,
+      "common_times": 123
+    },
+    {
+      "group": "q4",
+      "nr": 128,
+      "nz": 64,
+      "rtol": 1e-10,
+      "max_step_s": 30.0,
+      "exposed_label": "q4_r128_z64_e1_tol1e-10_dt30",
+      "insulated_label": "q4_r128_z3_e0_tol1e-10_dt30",
+      "event_exposed_s": 183938.89934290847,
+      "event_insulated_s": 183938.92775452763,
+      "paired_event_difference_s": -0.02841161916148849,
+      "fields": {
+        "temperature": {
+          "midplane_max_abs": 8.967865315412382e-05,
+          "time_s": 10800.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 8.967865315412382e-05,
+          "end_vs_1D_max_abs_excluding_corner": 5.045815701918556
+        },
+        "moisture": {
+          "midplane_max_abs": 1.1506917170223119e-06,
+          "time_s": 16200.0,
+          "radius_column": 0,
+          "midplane_first3h_max_abs": 5.983066901915635e-07,
+          "end_vs_1D_max_abs_excluding_corner": 1.7107802542908268
+        }
+      },
+      "radial_C_monotonicity_violation": 0.0004055995512164401,
+      "axial_C_monotonicity_violation": 0.001752089114190003,
+      "sampled_argmax_is_geometric_centre_for_t_ge_6h": true,
+      "snapshots": [
+        {
+          "time_s": 1800.0,
+          "radius_m": 0.01873,
+          "mean_C_2D": 2.3296795250073035,
+          "mean_C_1D": 2.344615634710884,
+          "mean_C_difference": -0.014936109703580502,
+          "centre_C_difference": 0.0,
+          "end_centre_temperature_C": 36.08353336740306,
+          "middle_centre_temperature_C": 31.03771766522932,
+          "end_centre_moisture": 1.1519780095169627
+        },
+        {
+          "time_s": 10800.0,
+          "radius_m": 0.01552,
+          "mean_C_2D": 1.6012397286582263,
+          "mean_C_1D": 1.6438536404237505,
+          "mean_C_difference": -0.042613911765524204,
+          "centre_C_difference": -4.4788579733889833e-07,
+          "end_centre_temperature_C": 50.01751134746233,
+          "middle_centre_temperature_C": 49.82131316228128,
+          "end_centre_moisture": 0.743893374807474
+        },
+        {
+          "time_s": 21600.0,
+          "radius_m": 0.013740000000000002,
+          "mean_C_2D": 1.0246874165554876,
+          "mean_C_1D": 1.0653059865781511,
+          "mean_C_difference": -0.04061857002266356,
+          "centre_C_difference": -9.01802987396394e-07,
+          "end_centre_temperature_C": 49.99893305769324,
+          "middle_centre_temperature_C": 49.998921450565085,
+          "end_centre_moisture": 0.39844032223513753
+        },
+        {
+          "time_s": 172800.0,
+          "radius_m": 0.012,
+          "mean_C_2D": 0.12016310810813136,
+          "mean_C_1D": 0.12257732518979715,
+          "mean_C_difference": -0.0024142170816657954,
+          "centre_C_difference": -1.6407169789456333e-08,
+          "end_centre_temperature_C": 49.99893442622952,
+          "middle_centre_temperature_C": 49.99893442622951,
+          "end_centre_moisture": 0.05259513128068952
+        }
+      ],
+      "water_balance_relative": 2.9082252945713934e-10,
+      "common_times": 111
+    }
+  ],
+  "cache_artifacts_sha256": {
+    "results/cache/endface/q1_r64_z3_e0_tol1e-08_dt120.json": "36431775139825d0fa29f6a3544cefc7ea1e3c8610fcc37ae087a9d245460ee6",
+    "results/cache/endface/q1_r64_z3_e0_tol1e-08_dt120.npz": "8ae40cf0de7e946e8cb8413f01ad21743c6562a076516fd5b9f59ea879cbcb87",
+    "results/cache/endface/q23_r64_z64_e1_tol1e-09_dt60.json": "493ec119427125e29484ed9b7356a364739bbab82efc8cce7651aa5281b2fc20",
+    "results/cache/endface/q23_r64_z64_e1_tol1e-09_dt60.npz": "f1d00757342919677c78bce3273b17acad1c6752fd9b6a6b4da1f618d9bc2aa8",
+    "results/cache/endface/q4_r64_z32_e1_tol1e-08_dt120.json": "95a8428ac54acd77034e66dce975c4bfea5d777caf0898bd50d1a468abd05b4c",
+    "results/cache/endface/q4_r64_z32_e1_tol1e-08_dt120.npz": "4c7a22f9541fd4a54dd45408a37d5e9ae191fa79fc022c93b16a6172e1ee6e79",
+    "results/cache/endface/q4_r64_z64_e1_tol1e-08_dt120.json": "2388011b3993c97e6e9257f1c793bc64b4a66e1c222742d7455cb95ac9fb305c",
+    "results/cache/endface/q4_r64_z64_e1_tol1e-08_dt120.npz": "0e1498948c9c0a2b668b2d718044870f5b56fc15f2f3cc2856df4a57a86a502e",
+    "results/cache/endface/q23_r32_z32_e1_tol1e-08_dt120.json": "2b3b5528fbf7dabd669f36ba00b76d4134095d3189d36631c4f63106566e817e",
+    "results/cache/endface/q23_r32_z32_e1_tol1e-08_dt120.npz": "99a58806ff1320e57631a7dd2927a95c72ad3156ae9c598e005e56ea09de9786",
+    "results/cache/endface/q4_r128_z128_e1_tol1e-08_dt120.json": "f4043945f3b3ce12c24aca8313095c02a4f38016b4199f92e78c787af4a6ac8d",
+    "results/cache/endface/q4_r128_z128_e1_tol1e-08_dt120.npz": "9f903e2e8aace264f9d192225a9fc3a84ee2edace1da3f6793a154d1f8d7a1d2",
+    "results/cache/endface/q23_r64_z3_e0_tol1e-09_dt60.json": "2dbd1b576eafe542fa2789017d9498516b3b36639a737efd394ff68acea98934",
+    "results/cache/endface/q23_r64_z3_e0_tol1e-09_dt60.npz": "05058213beea1f846137f2e723e3d5ba7b89a29790bfd4e392ad5828c8cc5895",
+    "results/cache/endface/q23_r64_z3_e0_tol1e-08_dt120.json": "e05bb81d76b451986e9e2b10bc1135f1b869b0548f0a0743a1289c291315c9d3",
+    "results/cache/endface/q23_r64_z3_e0_tol1e-08_dt120.npz": "afdca7a7d628b6caef12d1df414fc7f7f4648b346c7bb82d70262a8fd80f941e",
+    "results/cache/endface/q4_r128_z3_e0_tol1e-10_dt30.json": "7ae456e00ba341acdf741ba601d6cc349f8ab684f2c892aab8d387be9a1fb1ad",
+    "results/cache/endface/q4_r128_z3_e0_tol1e-10_dt30.npz": "0b5817e3cab99f2da84be6f97268426161946fe344919a1621ff8038d4e3725d",
+    "results/cache/endface/q4_r32_z32_e1_tol1e-08_dt120.json": "824a1c99e3d906875bd1511b9e42da0d3fac1daddf2b67cbd6efca1baed6a485",
+    "results/cache/endface/q4_r32_z32_e1_tol1e-08_dt120.npz": "c88ff5cc43da152a04d3014e072973b6487538f268b3b8f8d2a5793c36467bc9",
+    "results/cache/endface/q23_r64_z32_e1_tol1e-08_dt120.json": "a4bb0c163590d8b540c0a7a536ee3543bbaf7f1291771fc4cd5efaf86136070c",
+    "results/cache/endface/q23_r64_z32_e1_tol1e-08_dt120.npz": "5e8e70c56ba34d8e1d8f2a1804912683dc818344563563852a6112519573d0cf",
+    "results/cache/endface/q1_r64_z64_e1_tol1e-08_dt120.json": "3db5af3f6b2fa137ea870de3c8820f0040f9e1e0f850da9effd3e47c475364b4",
+    "results/cache/endface/q1_r64_z64_e1_tol1e-08_dt120.npz": "bdac5a13cdfa1091c9640526730f6c26bf9648d061235c6bf77d79d21235e8c8",
+    "results/cache/endface/q4_r32_z3_e0_tol1e-08_dt120.json": "07fadf20c8172be33148585ca5b7a5dd16451f1645f935b4ca0a6dbece3a6a5a",
+    "results/cache/endface/q4_r32_z3_e0_tol1e-08_dt120.npz": "6e0d873dd1a0fb5a3ab44cc5622e7b77d2cc8fd431cca201735c47a73b86255e",
+    "results/cache/endface/q4_r64_z3_e0_tol1e-08_dt120.json": "9c3d33ecb3457d4e7d186e75783e3ba3a123489cd24c7a969abe27677ad8f133",
+    "results/cache/endface/q4_r64_z3_e0_tol1e-08_dt120.npz": "3b83bf30add738a99d4da154b7105cf609d2760804f5bc99079c2f58ba76a613",
+    "results/cache/endface/q4_r128_z64_e1_tol1e-08_dt120.json": "00b10b17f43c5cfdbf26054485a547d4e4a29bf73b2ca8810e1895db31d7b8ab",
+    "results/cache/endface/q4_r128_z64_e1_tol1e-08_dt120.npz": "49ffd9a7cf80fa3d62ab67c0ac7001f51a4c00292a8356f8492f6952c9affb8d",
+    "results/cache/endface/q23_r32_z3_e0_tol1e-08_dt120.json": "1a44c39a6123eb5748ce889ace41b38b91a77fba4e79455ab2bba5fdc2c10d0f",
+    "results/cache/endface/q23_r32_z3_e0_tol1e-08_dt120.npz": "f4b9232a9be7d7a506d629516454d6a132e7e515e56d57c3a4f53050a840ac38",
+    "results/cache/endface/q4_r64_z3_e0_tol1e-10_dt30.json": "2ad5c54286a4d30159dd403da9abe1cf20a9491679a336dd7d30ced95ac1524e",
+    "results/cache/endface/q4_r64_z3_e0_tol1e-10_dt30.npz": "07047225a7e4d6554abd69109e107f55cf1ff1f4d59bdb67879aba80f6500a39",
+    "results/cache/endface/q1_r128_z3_e0_tol1e-08_dt120.json": "fa1cc2d2de830e12d046e9ee0e23b93036901a84e1e7023747cbf80e226c5873",
+    "results/cache/endface/q1_r128_z3_e0_tol1e-08_dt120.npz": "a02821d3b61f4cdf7eb829e6c7ed78a41add9f1abf1c294f4d3225349c80aba9",
+    "results/cache/endface/q1_r64_z32_e1_tol1e-08_dt120.json": "43f7d73abd86842724ac5d6c08e5f73e305eac546c03ae78a23769f8cbef9aa6",
+    "results/cache/endface/q1_r64_z32_e1_tol1e-08_dt120.npz": "5a47af37b8e2f9b157f8cf74585dff06a6ef9d33ecc2ac4848c2bd935ecd7899",
+    "results/cache/endface/q4_r64_z64_e1_tol1e-10_dt30.json": "29f1603814555f93ad223aeeeea42e73116232393914e0dc567b1f1a0de8eb17",
+    "results/cache/endface/q4_r64_z64_e1_tol1e-10_dt30.npz": "9d2274459106998f110e699ec96a093d1b91e3c5296f4d8098ad6b536375ba7d",
+    "results/cache/endface/q23_r128_z64_e1_tol1e-08_dt120.json": "4899c4e643b2f6184ef185d46dcce48b8c21aab10506f9094f77709089b244cf",
+    "results/cache/endface/q23_r128_z64_e1_tol1e-08_dt120.npz": "ac12335c5f5f919ad6157dfb9934d081dea4b2b125b9ea059efb6c60babbfc18",
+    "results/cache/endface/q23_r128_z128_e1_tol1e-08_dt120.json": "a4972418592551f66785b486b93f9274045381417800e79a35bd4fe64687b88b",
+    "results/cache/endface/q23_r128_z128_e1_tol1e-08_dt120.npz": "602b1680e7629cb7038f9da8fbeca8e25bbf538e593c4e0ea563381c8d45e42b",
+    "results/cache/endface/q23_r128_z3_e0_tol1e-08_dt120.json": "8a2cf05f83429161b05c91679dcc2196a3c114637f6508386f8680b906a4d73c",
+    "results/cache/endface/q23_r128_z3_e0_tol1e-08_dt120.npz": "b112442458a0a98200c9be9626ec778c2d64ab44315057a10da5ba0edf482705",
+    "results/cache/endface/q1_r128_z64_e1_tol1e-08_dt120.json": "711fd076eb7db772b5c5551fbbeae60609ca179fe768e461f4494211a8d59f5c",
+    "results/cache/endface/q1_r128_z64_e1_tol1e-08_dt120.npz": "e46811f727a78efe02afbd5e267681d7d6c48a7ba8dc8a36d52254b47993c22d",
+    "results/cache/endface/q1_r32_z32_e1_tol1e-08_dt120.json": "f6ff7c509f99964ad0bc22cb2af4957df9fe149d06ac069e843c9c0185b1156d",
+    "results/cache/endface/q1_r32_z32_e1_tol1e-08_dt120.npz": "9c560b3cf417ca4ee876d5793881dc82c38cd0c7d2efa18db27025c175c26848",
+    "results/cache/endface/q1_r32_z3_e0_tol1e-08_dt120.json": "fe5b2938678292c2923ae34d3123750bf1867eed310736673744ece2c98b5c01",
+    "results/cache/endface/q1_r32_z3_e0_tol1e-08_dt120.npz": "dcdee06b38d84803b02c6a55ff9f989fa51a0d04e578183f0ee38fedde0ecd02",
+    "results/cache/endface/q4_r128_z3_e0_tol1e-08_dt120.json": "d6a98b33877224ff33541e70c799a495b606d8c344807fb00039651559116ef4",
+    "results/cache/endface/q4_r128_z3_e0_tol1e-08_dt120.npz": "6ed9d7a9480123917d2aa126b62300f15936f81561e2bc1a0c339a26d1e2740c",
+    "results/cache/endface/q4_r128_z64_e1_tol1e-10_dt30.json": "33353b9549dd20cf92e748582bacb2d962bf64c18388b325f7733bd9c0eaa3b4",
+    "results/cache/endface/q4_r128_z64_e1_tol1e-10_dt30.npz": "bb14516212dab4635cbc100ffb04fc5535cf9a85dbca58fb8b61603b6c1190df",
+    "results/cache/endface/q23_r64_z64_e1_tol1e-08_dt120.json": "60b107986c26817d876016724d827e93ec34f722f341ab071a9e86177e5a626b",
+    "results/cache/endface/q23_r64_z64_e1_tol1e-08_dt120.npz": "677f556e90c52bf2e55f82e8ff66bcc4a30d56788584e6f3e1f93afb9ca1a7dd"
+  },
+  "geometry": {
+    "R0_m": 0.02,
+    "half_length_m": 0.125,
+    "axial_to_radial_time_scale_ratio_initial": 39.0625,
+    "end_fraction_initial": 0.07407407407407407,
+    "end_fraction_Q4_event": 0.04580152671755725
+  },
+  "assumptions": [
+    "same ambient on exposed side and ends",
+    "end h and hm equal side h and hm for exposed scenario",
+    "isotropic k and D",
+    "fixed length and symmetric ends",
+    "Q4 affine radial material motion, no axial shrinkage"
+  ],
+  "limitations": [
+    "paired coarse-grid increments are not rigorous model-error bounds",
+    "corner field values are not exported as true surface data",
+    "unknown actual end exposure and anisotropy remain uncalibrated",
+    "official 1D workbooks unchanged"
+  ],
+  "complete": true
+}

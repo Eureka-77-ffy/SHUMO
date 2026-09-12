@@ -1,0 +1,42 @@
+{
+  "status": "Q23_numerical_and_independent_event_milestone_accepted_model_validity_pending",
+  "q2_parent_label": "q2_final",
+  "q3_tail_label": "q3_final",
+  "property_set": "q23",
+  "physical_time_origin_s": 0.0,
+  "critical_time_s": 206906.4911824653,
+  "critical_time_h": 57.47402532846259,
+  "first_checked_strict_integer_second": 206907.0,
+  "first_strict_continuous_minimum_exists": false,
+  "all_export_last_digits_proven_stable": false,
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb"
+  },
+  "parameters": {
+    "n": 1280,
+    "grading": 2.0,
+    "rtol": 1e-10,
+    "atol_temperature": 1e-11,
+    "atol_moisture": 1e-13,
+    "max_step_s": 30.0,
+    "boundary_scenario": "main"
+  },
+  "prefix_max_step_s": 2.0,
+  "extension": "mean of observations 3-4 h, held after 4 h",
+  "full_result2_xlsx_generated": true,
+  "full_result3_xlsx_generated": true
+}

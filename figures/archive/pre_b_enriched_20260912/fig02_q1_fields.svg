@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="526.695582pt" height="389.975761pt" viewBox="0 0 526.695582 389.975761" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-12T02:20:21.922941</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 389.975761 
+L 526.695582 389.975761 
+L 526.695582 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 35.712672 168.659496 
+L 219.474977 168.659496 
+L 219.474977 20.844175 
+L 35.712672 20.844175 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+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" id="imageae0c2c45ce" transform="scale(1 -1) translate(0 -148.32)" x="36" y="-20.16" width="183.6" height="148.32"/>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m2c38d07e2b" d="M 0 0 
+L 0 3 
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="35.712672" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="35.712672" y="179.983496" transform="rotate(-0 35.712672 179.983496)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="66.339723" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="66.339723" y="179.983496" transform="rotate(-0 66.339723 179.983496)">5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="96.966774" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="96.966774" y="179.983496" transform="rotate(-0 96.966774 179.983496)">10</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="127.593824" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="127.593824" y="179.983496" transform="rotate(-0 127.593824 179.983496)">15</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="158.220875" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="158.220875" y="179.983496" transform="rotate(-0 158.220875 179.983496)">20</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="188.847926" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="188.847926" y="179.983496" transform="rotate(-0 188.847926 179.983496)">25</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="219.474977" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="219.474977" y="179.983496" transform="rotate(-0 219.474977 179.983496)">30</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="127.593824" y="190.876542" transform="rotate(-0 127.593824 190.876542)">时间 / min</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_8">
+      <defs>
+       <path id="maacfaadcc3" d="M 0 0 
+L -3 0 
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="171.071496" transform="rotate(-0 29.212672 171.071496)">0.00</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="150.18258" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="152.59458" transform="rotate(-0 29.212672 152.59458)">0.25</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="131.705665" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="134.117665" transform="rotate(-0 29.212672 134.117665)">0.50</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="113.22875" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="115.64075" transform="rotate(-0 29.212672 115.64075)">0.75</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="94.751835" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="97.163835" transform="rotate(-0 29.212672 97.163835)">1.00</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="76.27492" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="78.68692" transform="rotate(-0 29.212672 78.68692)">1.25</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="57.798005" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="60.210005" transform="rotate(-0 29.212672 60.210005)">1.50</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="39.32109" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="41.73309" transform="rotate(-0 29.212672 41.73309)">1.75</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="20.844175" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="23.256175" transform="rotate(-0 29.212672 23.256175)">2.00</text>
+     </g>
+    </g>
+    <g id="text_18">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="13.273828" y="94.751835" transform="rotate(-90 13.273828 94.751835)">距中心距离 / cm</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 35.712672 168.659496 
+L 35.712672 20.844175 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 35.712672 168.659496 
+L 219.474977 168.659496 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_19">
+    <text style="font: 700 9px 'Songti SC'; text-anchor: start" x="11.823572" y="13.68" transform="rotate(-0 11.823572 13.68)">a</text>
+   </g>
+   <g id="text_20">
+    <text style="font: 8.1px 'Songti SC'; text-anchor: start" x="35.712672" y="16.844175" transform="rotate(-0 35.712672 16.844175)">温度时空传播</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 294.021195 168.659496 
+L 477.7835 168.659496 
+L 477.7835 20.844175 
+L 294.021195 20.844175 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+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" id="imagedc47dc033b" transform="scale(1 -1) translate(0 -148.32)" x="293.76" y="-20.16" width="184.32" height="148.32"/>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_8">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="294.021195" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="294.021195" y="179.983496" transform="rotate(-0 294.021195 179.983496)">0</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="324.648246" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="324.648246" y="179.983496" transform="rotate(-0 324.648246 179.983496)">5</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="355.275297" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="355.275297" y="179.983496" transform="rotate(-0 355.275297 179.983496)">10</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="385.902348" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="385.902348" y="179.983496" transform="rotate(-0 385.902348 179.983496)">15</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="416.529399" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="416.529399" y="179.983496" transform="rotate(-0 416.529399 179.983496)">20</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="447.15645" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="447.15645" y="179.983496" transform="rotate(-0 447.15645 179.983496)">25</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="477.7835" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="477.7835" y="179.983496" transform="rotate(-0 477.7835 179.983496)">30</text>
+     </g>
+    </g>
+    <g id="text_28">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="385.902348" y="190.876542" transform="rotate(-0 385.902348 190.876542)">时间 / min</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_10">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="171.071496" transform="rotate(-0 287.521195 171.071496)">0.00</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="150.18258" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="152.59458" transform="rotate(-0 287.521195 152.59458)">0.25</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="131.705665" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="134.117665" transform="rotate(-0 287.521195 134.117665)">0.50</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="113.22875" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="115.64075" transform="rotate(-0 287.521195 115.64075)">0.75</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="94.751835" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_33">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="97.163835" transform="rotate(-0 287.521195 97.163835)">1.00</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="76.27492" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="78.68692" transform="rotate(-0 287.521195 78.68692)">1.25</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="57.798005" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_35">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="60.210005" transform="rotate(-0 287.521195 60.210005)">1.50</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="39.32109" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_36">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="41.73309" transform="rotate(-0 287.521195 41.73309)">1.75</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="20.844175" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_37">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="23.256175" transform="rotate(-0 287.521195 23.256175)">2.00</text>
+     </g>
+    </g>
+    <g id="text_38">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="271.582352" y="94.751835" transform="rotate(-90 271.582352 94.751835)">距中心距离 / cm</text>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 294.021195 168.659496 
+L 294.021195 20.844175 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 294.021195 168.659496 
+L 477.7835 168.659496 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_39">
+    <text style="font: 700 9px 'Songti SC'; text-anchor: start" x="270.132096" y="13.68" transform="rotate(-0 270.132096 13.68)">b</text>
+   </g>
+   <g id="text_40">
+    <text style="font: 8.1px 'Songti SC'; text-anchor: start" x="294.021195" y="16.844175" transform="rotate(-0 294.021195 16.844175)">水分时空迁移</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_8">
+    <path d="M 35.712672 359.403246 
+L 219.474977 359.403246 
+L 219.474977 211.587925 
+L 35.712672 211.587925 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_15">
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="35.712672" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_41">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="35.712672" y="370.727246" transform="rotate(-0 35.712672 370.727246)">0.00</text>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="58.68296" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="58.68296" y="370.727246" transform="rotate(-0 58.68296 370.727246)">0.25</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="81.653248" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="81.653248" y="370.727246" transform="rotate(-0 81.653248 370.727246)">0.50</text>
+     </g>
+    </g>
+    <g id="xtick_18">
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="104.623536" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="104.623536" y="370.727246" transform="rotate(-0 104.623536 370.727246)">0.75</text>
+     </g>
+    </g>
+    <g id="xtick_19">
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="127.593824" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_45">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="127.593824" y="370.727246" transform="rotate(-0 127.593824 370.727246)">1.00</text>
+     </g>
+    </g>
+    <g id="xtick_20">
+     <g id="line2d_38">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="150.564113" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_46">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="150.564113" y="370.727246" transform="rotate(-0 150.564113 370.727246)">1.25</text>
+     </g>
+    </g>
+    <g id="xtick_21">
+     <g id="line2d_39">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="173.534401" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_47">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="173.534401" y="370.727246" transform="rotate(-0 173.534401 370.727246)">1.50</text>
+     </g>
+    </g>
+    <g id="xtick_22">
+     <g id="line2d_40">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="196.504689" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_48">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="196.504689" y="370.727246" transform="rotate(-0 196.504689 370.727246)">1.75</text>
+     </g>
+    </g>
+    <g id="xtick_23">
+     <g id="line2d_41">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="219.474977" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_49">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="219.474977" y="370.727246" transform="rotate(-0 219.474977 370.727246)">2.00</text>
+     </g>
+    </g>
+    <g id="text_50">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="127.593824" y="381.732792" transform="rotate(-0 127.593824 381.732792)">距中心距离 / cm</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_19">
+     <g id="line2d_42">
+      <path d="M 35.712672 352.684367 
+L 219.474977 352.684367 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_43">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="352.684367" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_51">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="355.096367" transform="rotate(-0 29.212672 355.096367)">28</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_44">
+      <path d="M 35.712672 322.093818 
+L 219.474977 322.093818 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_45">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="322.093818" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_52">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="324.505818" transform="rotate(-0 29.212672 324.505818)">30</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_46">
+      <path d="M 35.712672 291.503269 
+L 219.474977 291.503269 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_47">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="291.503269" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_53">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="293.915269" transform="rotate(-0 29.212672 293.915269)">32</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_48">
+      <path d="M 35.712672 260.91272 
+L 219.474977 260.91272 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_49">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="260.91272" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_54">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="263.32472" transform="rotate(-0 29.212672 263.32472)">34</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_50">
+      <path d="M 35.712672 230.32217 
+L 219.474977 230.32217 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_51">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="35.712672" y="230.32217" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_55">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="29.212672" y="232.73417" transform="rotate(-0 29.212672 232.73417)">36</text>
+     </g>
+    </g>
+    <g id="text_56">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="17.884266" y="285.495585" transform="rotate(-90 17.884266 285.495585)">温度 / ℃</text>
+    </g>
+   </g>
+   <g id="line2d_52">
+    <path d="M 35.712672 352.684367 
+L 44.900787 352.684367 
+L 54.088902 352.684367 
+L 63.277018 352.684367 
+L 72.465133 352.684367 
+L 81.653248 352.684367 
+L 90.841363 352.684367 
+L 100.029479 352.684367 
+L 109.217594 352.684367 
+L 118.405709 352.684367 
+L 127.593824 352.684367 
+L 136.78194 352.684367 
+L 145.970055 352.684367 
+L 155.15817 352.684367 
+L 164.346286 352.684367 
+L 173.534401 352.684367 
+L 182.722516 352.684367 
+L 191.910631 352.684367 
+L 201.098747 352.684367 
+L 210.286862 352.684367 
+L 219.474977 352.684367 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #433e85; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_53">
+    <path d="M 35.712672 352.06045 
+L 44.900787 352.047519 
+L 54.088902 352.008249 
+L 63.277018 351.94121 
+L 72.465133 351.844014 
+L 81.653248 351.713298 
+L 90.841363 351.544716 
+L 100.029479 351.332913 
+L 109.217594 351.071496 
+L 118.405709 350.752983 
+L 127.593824 350.368723 
+L 136.78194 349.90877 
+L 145.970055 349.361689 
+L 155.15817 348.714283 
+L 164.346286 347.95123 
+L 173.534401 347.054631 
+L 182.722516 346.003514 
+L 191.910631 344.773322 
+L 201.098747 343.335478 
+L 210.286862 341.657094 
+L 219.474977 339.700908 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #297b8e; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_54">
+    <path d="M 35.712672 332.428928 
+L 44.900787 332.347758 
+L 54.088902 332.103853 
+L 63.277018 331.696027 
+L 72.465133 331.12232 
+L 81.653248 330.380025 
+L 90.841363 329.465731 
+L 100.029479 328.375368 
+L 109.217594 327.104276 
+L 118.405709 325.647281 
+L 127.593824 323.998778 
+L 136.78194 322.152832 
+L 145.970055 320.103275 
+L 155.15817 317.843802 
+L 164.346286 315.368065 
+L 173.534401 312.669748 
+L 182.722516 309.742629 
+L 191.910631 306.580622 
+L 201.098747 303.177803 
+L 210.286862 299.528414 
+L 219.474977 295.626863 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #2eb37c; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_55">
+    <path d="M 35.712672 267.407957 
+L 44.900787 267.287715 
+L 54.088902 266.926958 
+L 63.277018 266.325575 
+L 72.465133 265.483368 
+L 81.653248 264.400026 
+L 90.841363 263.075092 
+L 100.029479 261.507924 
+L 109.217594 259.697646 
+L 118.405709 257.643096 
+L 127.593824 255.342787 
+L 136.78194 252.794871 
+L 145.970055 249.997142 
+L 155.15817 246.947067 
+L 164.346286 243.641866 
+L 173.534401 240.07865 
+L 182.722516 236.254593 
+L 191.910631 232.167136 
+L 201.098747 227.81419 
+L 210.286862 223.19431 
+L 219.474977 218.306803 
+" clip-path="url(#p40c4c2345c)" style="fill: none; stroke: #b0dd2f; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 35.712672 359.403246 
+L 35.712672 211.587925 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 35.712672 359.403246 
+L 219.474977 359.403246 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_57">
+    <text style="font: 700 9px 'Songti SC'; text-anchor: start" x="11.823572" y="204.42375" transform="rotate(-0 11.823572 204.42375)">c</text>
+   </g>
+   <g id="text_58">
+    <text style="font: 8.1px 'Songti SC'; text-anchor: start" x="35.712672" y="207.587925" transform="rotate(-0 35.712672 207.587925)">温度径向剖面</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_56">
+     <path d="M 41.652672 219.969925 
+L 48.252672 219.969925 
+L 54.852672 219.969925 
+" style="fill: none; stroke: #433e85; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_59">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="60.132672" y="222.279925" transform="rotate(-0 60.132672 222.279925)">0 min</text>
+    </g>
+    <g id="line2d_57">
+     <path d="M 41.652672 228.939738 
+L 48.252672 228.939738 
+L 54.852672 228.939738 
+" style="fill: none; stroke: #297b8e; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_60">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="60.132672" y="231.249738" transform="rotate(-0 60.132672 231.249738)">5 min</text>
+    </g>
+    <g id="line2d_58">
+     <path d="M 88.493078 219.969925 
+L 95.093078 219.969925 
+L 101.693078 219.969925 
+" style="fill: none; stroke: #2eb37c; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_61">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="106.973078" y="222.279925" transform="rotate(-0 106.973078 222.279925)">15 min</text>
+    </g>
+    <g id="line2d_59">
+     <path d="M 88.493078 228.939738 
+L 95.093078 228.939738 
+L 101.693078 228.939738 
+" style="fill: none; stroke: #b0dd2f; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_62">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="106.973078" y="231.249738" transform="rotate(-0 106.973078 231.249738)">30 min</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_11">
+    <path d="M 294.021195 359.403246 
+L 477.7835 359.403246 
+L 477.7835 211.587925 
+L 294.021195 211.587925 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_7">
+    <g id="xtick_24">
+     <g id="line2d_60">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="294.021195" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_63">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="294.021195" y="370.727246" transform="rotate(-0 294.021195 370.727246)">0.00</text>
+     </g>
+    </g>
+    <g id="xtick_25">
+     <g id="line2d_61">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="316.991483" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_64">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="316.991483" y="370.727246" transform="rotate(-0 316.991483 370.727246)">0.25</text>
+     </g>
+    </g>
+    <g id="xtick_26">
+     <g id="line2d_62">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="339.961772" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_65">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="339.961772" y="370.727246" transform="rotate(-0 339.961772 370.727246)">0.50</text>
+     </g>
+    </g>
+    <g id="xtick_27">
+     <g id="line2d_63">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="362.93206" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_66">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="362.93206" y="370.727246" transform="rotate(-0 362.93206 370.727246)">0.75</text>
+     </g>
+    </g>
+    <g id="xtick_28">
+     <g id="line2d_64">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="385.902348" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_67">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="385.902348" y="370.727246" transform="rotate(-0 385.902348 370.727246)">1.00</text>
+     </g>
+    </g>
+    <g id="xtick_29">
+     <g id="line2d_65">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="408.872636" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_68">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="408.872636" y="370.727246" transform="rotate(-0 408.872636 370.727246)">1.25</text>
+     </g>
+    </g>
+    <g id="xtick_30">
+     <g id="line2d_66">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="431.842924" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_69">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="431.842924" y="370.727246" transform="rotate(-0 431.842924 370.727246)">1.50</text>
+     </g>
+    </g>
+    <g id="xtick_31">
+     <g id="line2d_67">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="454.813212" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_70">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="454.813212" y="370.727246" transform="rotate(-0 454.813212 370.727246)">1.75</text>
+     </g>
+    </g>
+    <g id="xtick_32">
+     <g id="line2d_68">
+      <g>
+       <use xlink:href="#m2c38d07e2b" x="477.7835" y="359.403246" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_71">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: middle" x="477.7835" y="370.727246" transform="rotate(-0 477.7835 370.727246)">2.00</text>
+     </g>
+    </g>
+    <g id="text_72">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="385.902348" y="381.732792" transform="rotate(-0 385.902348 381.732792)">距中心距离 / cm</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_8">
+    <g id="ytick_24">
+     <g id="line2d_69">
+      <path d="M 294.021195 341.083189 
+L 477.7835 341.083189 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_70">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="341.083189" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_73">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="343.495189" transform="rotate(-0 287.521195 343.495189)">1.6</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_71">
+      <path d="M 294.021195 315.235529 
+L 477.7835 315.235529 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_72">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="315.235529" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_74">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="317.647529" transform="rotate(-0 287.521195 317.647529)">1.8</text>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_73">
+      <path d="M 294.021195 289.387869 
+L 477.7835 289.387869 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_74">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="289.387869" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_75">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="291.799869" transform="rotate(-0 287.521195 291.799869)">2.0</text>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_75">
+      <path d="M 294.021195 263.540209 
+L 477.7835 263.540209 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_76">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="263.540209" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_76">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="265.952209" transform="rotate(-0 287.521195 265.952209)">2.2</text>
+     </g>
+    </g>
+    <g id="ytick_28">
+     <g id="line2d_77">
+      <path d="M 294.021195 237.692549 
+L 477.7835 237.692549 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_78">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="237.692549" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_77">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="240.104549" transform="rotate(-0 287.521195 240.104549)">2.4</text>
+     </g>
+    </g>
+    <g id="ytick_29">
+     <g id="line2d_79">
+      <path d="M 294.021195 211.844888 
+L 477.7835 211.844888 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #e6e6e6; stroke-width: 0.55; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_80">
+      <g>
+       <use xlink:href="#maacfaadcc3" x="294.021195" y="211.844888" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_78">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: end" x="287.521195" y="214.256888" transform="rotate(-0 287.521195 214.256888)">2.6</text>
+     </g>
+    </g>
+    <g id="text_79">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="274.72507" y="285.495585" transform="rotate(-90 274.72507 285.495585)">干基含水率 / (kg/kg)</text>
+    </g>
+   </g>
+   <g id="line2d_81">
+    <path d="M 294.021195 218.306803 
+L 303.209311 218.306803 
+L 312.397426 218.306803 
+L 321.585541 218.306803 
+L 330.773656 218.306803 
+L 339.961772 218.306803 
+L 349.149887 218.306803 
+L 358.338002 218.306803 
+L 367.526117 218.306803 
+L 376.714233 218.306803 
+L 385.902348 218.306803 
+L 395.090463 218.306803 
+L 404.278578 218.306803 
+L 413.466694 218.306803 
+L 422.654809 218.306803 
+L 431.842924 218.306803 
+L 441.031039 218.306803 
+L 450.219155 218.306803 
+L 459.40727 218.306803 
+L 468.595385 218.306803 
+L 477.7835 218.306803 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #433e85; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_82">
+    <path d="M 294.021195 218.306803 
+L 303.209311 218.306803 
+L 312.397426 218.306803 
+L 321.585541 218.306803 
+L 330.773656 218.306803 
+L 339.961772 218.306803 
+L 349.149887 218.306803 
+L 358.338002 218.306803 
+L 367.526117 218.306803 
+L 376.714233 218.306804 
+L 385.902348 218.306804 
+L 395.090463 218.306807 
+L 404.278578 218.306878 
+L 413.466694 218.30793 
+L 422.654809 218.319359 
+L 431.842924 218.410222 
+L 441.031039 218.940967 
+L 450.219155 221.234675 
+L 459.40727 228.658058 
+L 468.595385 247.017834 
+L 477.7835 282.817936 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #297b8e; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_83">
+    <path d="M 294.021195 218.306804 
+L 303.209311 218.306804 
+L 312.397426 218.306804 
+L 321.585541 218.306804 
+L 330.773656 218.306808 
+L 339.961772 218.30683 
+L 349.149887 218.306941 
+L 358.338002 218.307463 
+L 367.526117 218.309676 
+L 376.714233 218.318172 
+L 385.902348 218.347658 
+L 395.090463 218.4401 
+L 404.278578 218.7019 
+L 413.466694 219.371966 
+L 422.654809 220.923665 
+L 431.842924 224.181504 
+L 441.031039 230.402873 
+L 450.219155 241.259934 
+L 459.40727 258.687385 
+L 468.595385 284.654379 
+L 477.7835 321.088452 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #2eb37c; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_84">
+    <path d="M 294.021195 218.307786 
+L 303.209311 218.308143 
+L 312.397426 218.309535 
+L 321.585541 218.313167 
+L 330.773656 218.321977 
+L 339.961772 218.342487 
+L 349.149887 218.388358 
+L 358.338002 218.486672 
+L 367.526117 218.688173 
+L 376.714233 219.082522 
+L 385.902348 219.818843 
+L 395.090463 221.130102 
+L 404.278578 223.35757 
+L 413.466694 226.96921 
+L 422.654809 232.564876 
+L 431.842924 240.862783 
+L 441.031039 252.667092 
+L 450.219155 268.825984 
+L 459.40727 290.205231 
+L 468.595385 317.734252 
+L 477.7835 352.684367 
+" clip-path="url(#p5ec24b298b)" style="fill: none; stroke: #b0dd2f; stroke-width: 1.45; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 294.021195 359.403246 
+L 294.021195 211.587925 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 294.021195 359.403246 
+L 477.7835 359.403246 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_80">
+    <text style="font: 700 9px 'Songti SC'; text-anchor: start" x="270.132096" y="204.42375" transform="rotate(-0 270.132096 204.42375)">d</text>
+   </g>
+   <g id="text_81">
+    <text style="font: 8.1px 'Songti SC'; text-anchor: start" x="294.021195" y="207.587925" transform="rotate(-0 294.021195 207.587925)">含水率径向剖面</text>
+   </g>
+   <g id="legend_2">
+    <g id="line2d_85">
+     <path d="M 299.961195 341.265621 
+L 306.561195 341.265621 
+L 313.161195 341.265621 
+" style="fill: none; stroke: #433e85; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_82">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="318.441195" y="343.575621" transform="rotate(-0 318.441195 343.575621)">0 min</text>
+    </g>
+    <g id="line2d_86">
+     <path d="M 299.961195 350.235433 
+L 306.561195 350.235433 
+L 313.161195 350.235433 
+" style="fill: none; stroke: #297b8e; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_83">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="318.441195" y="352.545433" transform="rotate(-0 318.441195 352.545433)">5 min</text>
+    </g>
+    <g id="line2d_87">
+     <path d="M 346.801602 341.265621 
+L 353.401602 341.265621 
+L 360.001602 341.265621 
+" style="fill: none; stroke: #2eb37c; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_84">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="365.281602" y="343.575621" transform="rotate(-0 365.281602 343.575621)">15 min</text>
+    </g>
+    <g id="line2d_88">
+     <path d="M 346.801602 350.235433 
+L 353.401602 350.235433 
+L 360.001602 350.235433 
+" style="fill: none; stroke: #b0dd2f; stroke-width: 1.45; stroke-linecap: square"/>
+    </g>
+    <g id="text_85">
+     <text style="font: 6.6px 'Songti SC'; text-anchor: start" x="365.281602" y="352.545433" transform="rotate(-0 365.281602 352.545433)">30 min</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g id="patch_14">
+    <path d="M 228.230636 168.659496 
+L 235.621402 168.659496 
+L 235.621402 20.844175 
+L 228.230636 20.844175 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAAoAAADOCAYAAAAHS5MfAAAA8ElEQVR4nOWXQQ4CMQwDjcT/X8qdUz18wQej0LBnK5p6Ezd98H6h4HtKkU5PkQoVV3S9osYYqdujVYyUhazykbii04q6gJG/ZNRYPqo/rt4TKRpk1O+HFF9gVCjUIh91AyNaFPakjK5vKaQVT91HKJ8aj/mo2PBT99F9w50JmfNRdR+Z81Gr5toXzAz17jm/76NSRuYyXL5grs/YXcicj7pirvnDnUKbQsr15YP0rcAkI6lQbUba2UPuIxcwOq2oCxhpC60LGBnrR/qMDoVo6jCuL5r08/EMMpIJfeb6kf6/1qZ+VLmib+hHj13DLGL8AHF/xN1V4SZCAAAAAElFTkSuQmCC" id="imageff44b35c3f" transform="scale(1 -1) translate(0 -148.32)" x="228.24" y="-20.16" width="7.2" height="148.32"/>
+   <g id="matplotlib.axis_9"/>
+   <g id="matplotlib.axis_10">
+    <g id="ytick_30">
+     <g id="line2d_89">
+      <defs>
+       <path id="m20ba346119" d="M 0 0 
+L 3 0 
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="168.659496" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_86">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="171.071496" transform="rotate(-0 242.121402 171.071496)">28</text>
+     </g>
+    </g>
+    <g id="ytick_31">
+     <g id="line2d_90">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="151.834693" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_87">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="154.246693" transform="rotate(-0 242.121402 154.246693)">29</text>
+     </g>
+    </g>
+    <g id="ytick_32">
+     <g id="line2d_91">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="135.009891" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_88">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="137.421891" transform="rotate(-0 242.121402 137.421891)">30</text>
+     </g>
+    </g>
+    <g id="ytick_33">
+     <g id="line2d_92">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="118.185089" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_89">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="120.597089" transform="rotate(-0 242.121402 120.597089)">31</text>
+     </g>
+    </g>
+    <g id="ytick_34">
+     <g id="line2d_93">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="101.360287" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_90">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="103.772287" transform="rotate(-0 242.121402 103.772287)">32</text>
+     </g>
+    </g>
+    <g id="ytick_35">
+     <g id="line2d_94">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="84.535485" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_91">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="86.947485" transform="rotate(-0 242.121402 86.947485)">33</text>
+     </g>
+    </g>
+    <g id="ytick_36">
+     <g id="line2d_95">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="67.710683" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_92">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="70.122683" transform="rotate(-0 242.121402 70.122683)">34</text>
+     </g>
+    </g>
+    <g id="ytick_37">
+     <g id="line2d_96">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="50.885881" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_93">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="53.297881" transform="rotate(-0 242.121402 53.297881)">35</text>
+     </g>
+    </g>
+    <g id="ytick_38">
+     <g id="line2d_97">
+      <g>
+       <use xlink:href="#m20ba346119" x="235.621402" y="34.061079" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_94">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="242.121402" y="36.473079" transform="rotate(-0 242.121402 36.473079)">36</text>
+     </g>
+    </g>
+    <g id="text_95">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="258.361136" y="94.751835" transform="rotate(-90 258.361136 94.751835)">温度 / ℃</text>
+    </g>
+   </g>
+   <g id="LineCollection_1"/>
+   <g id="patch_15">
+    <path d="M 228.230636 168.659496 
+L 231.926019 168.659496 
+L 235.621402 168.659496 
+L 235.621402 20.844175 
+L 231.926019 20.844175 
+L 228.230636 20.844175 
+L 228.230636 168.659496 
+z
+" style="fill: none; stroke: #000000; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g id="patch_16">
+    <path d="M 486.539159 168.659496 
+L 493.929926 168.659496 
+L 493.929926 20.844175 
+L 486.539159 20.844175 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAAoAAADOCAYAAAAHS5MfAAABGElEQVR4nO1YQQ7DMAxik///3R3WwF7QiklEXrr4jIAax4n6eL0lGFUeDCjBQ5aJQ7FPWrA9ymSUx/g0leEnQ9sjEO+jwlkjLq34PCIuLaSzRlxaNqPS86i+odDejxdVex6vqv5zKEb60qz8PUN/KBSWls1Ik5ETLiT1ZZ0+12PCApAHpMtIc3xqwtMV6MqaccaDcY9YwKPSg3u4u0f5/ajGPirMeEw4M2jLWum1J3uHM/+yV5hx+Izqyppsk5ZHiG+ylgtEeAEw30fE55E36qP6zrUmfIxcIMKMXKDhvFcf5QIRluYSWTP9n0Lxa5i/71ET5lFpILfH86rt8aoKPpAmkKNNWit4VNwj09JyGccCHrmzPi+b8QNIY87lagXl7QAAAABJRU5ErkJggg==" id="image55b2af403b" transform="scale(1 -1) translate(0 -148.32)" x="486.72" y="-20.16" width="7.2" height="148.32"/>
+   <g id="matplotlib.axis_11"/>
+   <g id="matplotlib.axis_12">
+    <g id="ytick_39">
+     <g id="line2d_98">
+      <g>
+       <use xlink:href="#m20ba346119" x="493.929926" y="155.898199" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_96">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="500.429926" y="158.310199" transform="rotate(-0 500.429926 158.310199)">1.6</text>
+     </g>
+    </g>
+    <g id="ytick_40">
+     <g id="line2d_99">
+      <g>
+       <use xlink:href="#m20ba346119" x="493.929926" y="127.465773" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_97">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="500.429926" y="129.877773" transform="rotate(-0 500.429926 129.877773)">1.8</text>
+     </g>
+    </g>
+    <g id="ytick_41">
+     <g id="line2d_100">
+      <g>
+       <use xlink:href="#m20ba346119" x="493.929926" y="99.033347" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_98">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="500.429926" y="101.445347" transform="rotate(-0 500.429926 101.445347)">2.0</text>
+     </g>
+    </g>
+    <g id="ytick_42">
+     <g id="line2d_101">
+      <g>
+       <use xlink:href="#m20ba346119" x="493.929926" y="70.600921" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_99">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="500.429926" y="73.012921" transform="rotate(-0 500.429926 73.012921)">2.2</text>
+     </g>
+    </g>
+    <g id="ytick_43">
+     <g id="line2d_102">
+      <g>
+       <use xlink:href="#m20ba346119" x="493.929926" y="42.168495" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_100">
+      <text style="font: 6.7px 'Songti SC'; text-anchor: start" x="500.429926" y="44.580495" transform="rotate(-0 500.429926 44.580495)">2.4</text>
+     </g>
+    </g>
+    <g id="text_101">
+     <text style="font: 7.5px 'Songti SC'; text-anchor: middle" x="518.452613" y="94.751835" transform="rotate(-90 518.452613 94.751835)">干基含水率 / (kg/kg)</text>
+    </g>
+   </g>
+   <g id="LineCollection_2"/>
+   <g id="patch_17">
+    <path d="M 486.539159 168.659496 
+L 490.234542 168.659496 
+L 493.929926 168.659496 
+L 493.929926 20.844175 
+L 490.234542 20.844175 
+L 486.539159 20.844175 
+L 486.539159 168.659496 
+z
+" style="fill: none; stroke: #000000; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p40c4c2345c">
+   <rect x="35.712672" y="211.587925" width="183.762305" height="147.81532"/>
+  </clipPath>
+  <clipPath id="p5ec24b298b">
+   <rect x="294.021195" y="211.587925" width="183.762305" height="147.81532"/>
+  </clipPath>
+ </defs>
+</svg>

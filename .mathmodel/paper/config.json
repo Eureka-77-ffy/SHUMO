@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "template": {
+    "source": "builtin",
+    "id": "cumcm"
+  },
+  "entryFile": "document.tex",
+  "problemNumber": "A",
+  "language": "zh-CN"
+}

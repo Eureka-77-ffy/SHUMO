@@ -1,0 +1,5 @@
+﻿scenario,properties,geometry,critical_time_h,radius_cm
+A,q23,fixed,57.47402531955963,2.0
+B,q23,linear,25.24396162445027,1.203
+C,q4,fixed,129.8484228275102,2.0
+D,q4,linear,51.09202464437358,1.2

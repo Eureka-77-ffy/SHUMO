@@ -1,0 +1,1366 @@
+{
+  "status": "conditionally_accepted_for_figure_generation_under_model_contract",
+  "script_sha256": "7b5f2e31fa01306472af738533742b27733763b64830a50a8f58566ecfb33faa",
+  "original_inputs_unchanged": 8,
+  "prior_evidence_integrity": {
+    "unique_prior_artifacts_hash_checked": 74,
+    "status": "passed_prior_evidence_content_hashes"
+  },
+  "source_templates": {
+    "result1.xlsx": {
+      "path": "/Users/a1/Desktop/数学建模国赛/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "sheets": [
+        {
+          "name": "温度",
+          "rows": 5,
+          "columns": 6,
+          "nonempty_data_cells": 4,
+          "numeric_data_cells": 3,
+          "formula_cells": 0
+        },
+        {
+          "name": "水分浓度",
+          "rows": 5,
+          "columns": 6,
+          "nonempty_data_cells": 4,
+          "numeric_data_cells": 3,
+          "formula_cells": 0
+        }
+      ],
+      "validation_role": "layout_and_header_contract_only_not_ground_truth"
+    },
+    "result2.xlsx": {
+      "path": "/Users/a1/Desktop/数学建模国赛/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "sheets": [
+        {
+          "name": "温度",
+          "rows": 5,
+          "columns": 6,
+          "nonempty_data_cells": 4,
+          "numeric_data_cells": 3,
+          "formula_cells": 0
+        },
+        {
+          "name": "水分浓度",
+          "rows": 5,
+          "columns": 6,
+          "nonempty_data_cells": 4,
+          "numeric_data_cells": 3,
+          "formula_cells": 0
+        }
+      ],
+      "validation_role": "layout_and_header_contract_only_not_ground_truth"
+    },
+    "result3.xlsx": {
+      "path": "/Users/a1/Desktop/数学建模国赛/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "columns": 6,
+          "nonempty_data_cells": 4,
+          "numeric_data_cells": 3,
+          "formula_cells": 0
+        }
+      ],
+      "validation_role": "layout_and_header_contract_only_not_ground_truth"
+    },
+    "result4.xlsx": {
+      "path": "/Users/a1/Desktop/数学建模国赛/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "columns": 6,
+          "nonempty_data_cells": 4,
+          "numeric_data_cells": 3,
+          "formula_cells": 0
+        }
+      ],
+      "validation_role": "layout_and_header_contract_only_not_ground_truth"
+    }
+  },
+  "template_policy": "headers_and_layout_only; supplied values were not treated as answers",
+  "workbooks": {
+    "result1.xlsx": {
+      "path": "results/final/result1.xlsx",
+      "sha256": "11f29d96fdbbbf982aa5589beecf50126b52a81e279e841bf69ff8d5a30765c6",
+      "sheets": [
+        {
+          "name": "温度",
+          "data_rows": 1800,
+          "numeric_result_cells": 37800,
+          "blank_result_cells": 0,
+          "display_min": 28.0,
+          "display_max": 36.7856
+        },
+        {
+          "name": "水分浓度",
+          "data_rows": 1800,
+          "numeric_result_cells": 37800,
+          "blank_result_cells": 0,
+          "display_min": 1.5102,
+          "display_max": 2.55
+        }
+      ],
+      "numeric_result_cells_checked": 75600,
+      "outside_domain_blank_cells_checked": 0,
+      "formula_cells": 0,
+      "maximum_display_rounding_residual": {
+        "max_abs": 4.999805398142598e-05,
+        "sheet": "温度",
+        "row": 1410,
+        "column": 16
+      },
+      "status": "passed_cellwise_against_unrounded_cache"
+    },
+    "result2.xlsx": {
+      "path": "results/final/result2.xlsx",
+      "sha256": "ead4006426658b090d564129cd705dbed57dcfb728ef4fe3dc1ae667ea6b2687",
+      "sheets": [
+        {
+          "name": "温度",
+          "data_rows": 206907,
+          "numeric_result_cells": 4345047,
+          "blank_result_cells": 0,
+          "display_min": 28.0,
+          "display_max": 50.0399
+        },
+        {
+          "name": "水分浓度",
+          "data_rows": 206907,
+          "numeric_result_cells": 4345047,
+          "blank_result_cells": 0,
+          "display_min": 0.0526,
+          "display_max": 2.55
+        }
+      ],
+      "numeric_result_cells_checked": 8690094,
+      "outside_domain_blank_cells_checked": 0,
+      "formula_cells": 0,
+      "maximum_display_rounding_residual": {
+        "max_abs": 4.999999535160171e-05,
+        "sheet": "水分浓度",
+        "row": 17763,
+        "column": 14
+      },
+      "status": "passed_cellwise_against_unrounded_cache"
+    },
+    "result3.xlsx": {
+      "path": "results/final/result3.xlsx",
+      "sha256": "7f1efee8dc8af9a7a0cb3a5ea503b306b88d13965cf5c8efeb96ec03b57df4aa",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "data_rows": 3449,
+          "numeric_result_cells": 72429,
+          "blank_result_cells": 0,
+          "display_min": 0.0526,
+          "display_max": 2.55
+        }
+      ],
+      "numeric_result_cells_checked": 72429,
+      "outside_domain_blank_cells_checked": 0,
+      "formula_cells": 0,
+      "maximum_display_rounding_residual": {
+        "max_abs": 4.9999737848693826e-05,
+        "sheet": "Sheet1",
+        "row": 2118,
+        "column": 5
+      },
+      "status": "passed_cellwise_against_unrounded_cache"
+    },
+    "result4.xlsx": {
+      "path": "results/final/result4.xlsx",
+      "sha256": "8086731d59ba174376121e8ec103e585766034f40a86e8ad5366faf7f1029326",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "data_rows": 3066,
+          "numeric_result_cells": 44287,
+          "blank_result_cells": 23165,
+          "display_min": 0.0526,
+          "display_max": 2.55
+        }
+      ],
+      "numeric_result_cells_checked": 44287,
+      "outside_domain_blank_cells_checked": 23165,
+      "formula_cells": 0,
+      "maximum_display_rounding_residual": {
+        "max_abs": 4.9999887408586074e-05,
+        "sheet": "Sheet1",
+        "row": 1655,
+        "column": 8
+      },
+      "status": "passed_cellwise_against_unrounded_cache"
+    }
+  },
+  "full_precision_artifacts_sha256": {
+    "q1_full_precision.npz": "bc364faf5e38076e4885ce6ba55c4fc2fa0d214fb1ba9ce4f87abba8a1942a32",
+    "q23_full_precision.npz": "ea923899f9259843a9bc137585f81b5c042a6a907b578c4ec70caff399523548",
+    "q4_full_precision.npz": "25b4d7b32dc4a48f02cd30de8b234cabd29652fafa6accec3a8c8db3177a3530"
+  },
+  "independent_references": [
+    {
+      "label": "Q1_independent_P1_FEM",
+      "reference": "results/cache/q1_independent/q1_fem_n2560_dt0.46875.npz",
+      "reference_sha256": "8bee8f2129f4e048923acf3a78aef64d2524249bbf01c41dca81bda0613b8564",
+      "common_times": 10,
+      "time_start_s": 0.0,
+      "time_end_s": 1800.0,
+      "comparisons": {
+        "temperature": {
+          "finite_points": 210,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 1.8010994615735854e-06,
+          "workbook_display_value_vs_reference_max_abs": 4.977241770731666e-05,
+          "unit": "degC"
+        },
+        "moisture": {
+          "finite_points": 210,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 1.3209420934856553e-06,
+          "workbook_display_value_vs_reference_max_abs": 4.995841470689655e-05,
+          "unit": "kg_water/kg_dry_solid"
+        }
+      },
+      "scope": "sampled_common_times_not_continuous_error_bound",
+      "status": "passed_independent_sample_comparison"
+    },
+    {
+      "label": "Q2_independent_P1_BDF2",
+      "reference": "results/cache/q2_independent/fem_bdf2_n1280_dt0.9375.npz",
+      "reference_sha256": "eb6967c4f3521468cb09d097e58734be1ab998c7e10db9a0339b1d0fd1fec7de",
+      "common_times": 15,
+      "time_start_s": 0.0,
+      "time_end_s": 10800.0,
+      "comparisons": {
+        "temperature": {
+          "finite_points": 315,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 9.160972652466626e-06,
+          "workbook_display_value_vs_reference_max_abs": 5.0848742347398e-05,
+          "unit": "degC"
+        },
+        "moisture": {
+          "finite_points": 315,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 3.2218110317394633e-06,
+          "workbook_display_value_vs_reference_max_abs": 5.0145422229253e-05,
+          "unit": "kg_water/kg_dry_solid"
+        }
+      },
+      "scope": "sampled_common_times_not_continuous_error_bound",
+      "status": "passed_independent_sample_comparison"
+    },
+    {
+      "label": "Q3_independent_P1_BDF2",
+      "reference": "results/cache/q3_independent/q3_fem_n2560_dt3.75_initial0.9375.npz",
+      "reference_sha256": "5b1299ea78e408992905719462ef880f2ee0babd28151faca8e748d95eb1c3ab",
+      "common_times": 108,
+      "time_start_s": 10800.0,
+      "time_end_s": 205200.0,
+      "comparisons": {
+        "temperature": {
+          "finite_points": 2268,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 3.0281105267704334e-05,
+          "workbook_display_value_vs_reference_max_abs": 6.917990104682303e-05,
+          "unit": "degC"
+        },
+        "moisture": {
+          "finite_points": 2268,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 3.308300025040012e-07,
+          "workbook_display_value_vs_reference_max_abs": 5.000649058373163e-05,
+          "unit": "kg_water/kg_dry_solid"
+        }
+      },
+      "scope": "sampled_common_times_not_continuous_error_bound",
+      "status": "passed_independent_sample_comparison"
+    },
+    {
+      "label": "Q4_independent_material_P1_BDF2",
+      "reference": "results/cache/q4_independent/q4_fem_n2560_dt1.875.npz",
+      "reference_sha256": "2057245802168568bc45999bb116d3d7d7d00597e1b89d4f63dcfd3c55851df7",
+      "common_times": 110,
+      "time_start_s": 0.0,
+      "time_end_s": 183600.0,
+      "comparisons": {
+        "temperature": {
+          "finite_points": 1638,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 1.0932346249603597e-05,
+          "workbook_display_value_vs_reference_max_abs": 4.97286739502556e-05,
+          "unit": "degC"
+        },
+        "moisture": {
+          "finite_points": 1638,
+          "nan_mask_identical": true,
+          "primary_unrounded_vs_reference_max_abs": 6.030320506056341e-06,
+          "workbook_display_value_vs_reference_max_abs": 5.004474180103635e-05,
+          "unit": "kg_water/kg_dry_solid"
+        }
+      },
+      "scope": "sampled_common_times_not_continuous_error_bound",
+      "status": "passed_independent_sample_comparison"
+    }
+  ],
+  "analytic_baseline": {
+    "reference": "512_term_Fourier_Bessel_heat_solution",
+    "unrounded_max_abs_C": 1.285251038041224e-06,
+    "workbook_display_max_abs_C": 5.088396736141476e-05,
+    "reference_sha256": "69b350a7daa0d14d34db42c4e0b81a642c6a708914151f60652ba18dd3d2269b",
+    "scope": "all_1800_times_and_21_radii"
+  },
+  "input_holdout": {
+    "report": "reports/input_holdout_validation.json",
+    "report_sha256": "c966e36cc8c6602bab4099feb0c75b075191ea51680e16454677df124f0a7575",
+    "status": "passed_input_integrity_and_interpolation_holdout_checks",
+    "scope": {
+      "what_is_validated": "fidelity of interpolation between measured input knots",
+      "what_is_not_validated": "internal temperature/moisture predictions or post-4h environment extension",
+      "why_no_supervised_k_fold": "the attachments contain drivers, not internal material response labels"
+    },
+    "series": [
+      {
+        "name": "environment_temperature",
+        "unit": "degC",
+        "samples": 241,
+        "time_start_s": 0.0,
+        "time_end_s": 14400.0,
+        "time_strictly_increasing": true,
+        "time_step_s": {
+          "minimum": 60.0,
+          "maximum": 60.0,
+          "uniform": true
+        },
+        "value_min": 28.0,
+        "value_max": 50.246,
+        "finite": true,
+        "leave_one_out": {
+          "linear": {
+            "count": 239,
+            "bias": -0.00035146443514648656,
+            "mae": 0.13797489539748933,
+            "rmse": 0.16538853076554774,
+            "max_abs": 0.38450000000000273,
+            "p95_abs": 0.32429999999999803,
+            "max_abs_fraction_of_observed_range": 0.01728400611345872
+          },
+          "pchip": {
+            "count": 239,
+            "bias": 0.00021556145784965114,
+            "mae": 0.1444550370078312,
+            "rmse": 0.17246845107247089,
+            "max_abs": 0.41410757121439445,
+            "p95_abs": 0.32631489028212923,
+            "max_abs_fraction_of_observed_range": 0.018614922737318816
+          }
+        },
+        "interleaved_every_fifth": {
+          "linear": {
+            "count": 47,
+            "bias": -0.004372340425531552,
+            "mae": 0.13022340425531923,
+            "rmse": 0.16180197050584544,
+            "max_abs": 0.38450000000000273,
+            "p95_abs": 0.3596500000000005,
+            "held_indices": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100,
+              105,
+              110,
+              115,
+              120,
+              125,
+              130,
+              135,
+              140,
+              145,
+              150,
+              155,
+              160,
+              165,
+              170,
+              175,
+              180,
+              185,
+              190,
+              195,
+              200,
+              205,
+              210,
+              215,
+              220,
+              225,
+              230,
+              235
+            ],
+            "max_abs_fraction_of_observed_range": 0.01728400611345872
+          },
+          "pchip": {
+            "count": 47,
+            "bias": -0.002762495361105508,
+            "mae": 0.13997943320267173,
+            "rmse": 0.1741520924136795,
+            "max_abs": 0.41410757121439445,
+            "p95_abs": 0.36427057377064415,
+            "held_indices": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100,
+              105,
+              110,
+              115,
+              120,
+              125,
+              130,
+              135,
+              140,
+              145,
+              150,
+              155,
+              160,
+              165,
+              170,
+              175,
+              180,
+              185,
+              190,
+              195,
+              200,
+              205,
+              210,
+              215,
+              220,
+              225,
+              230,
+              235
+            ],
+            "max_abs_fraction_of_observed_range": 0.018614922737318816
+          }
+        },
+        "simple_baseline": {
+          "count": 47,
+          "bias": -0.1070638297872345,
+          "mae": 0.19161702127659597,
+          "rmse": 0.25035464207501845,
+          "max_abs": 0.7970000000000006,
+          "p95_abs": 0.4606000000000001,
+          "definition": "previous_observation_persistence"
+        },
+        "linear_rmse_improvement_over_persistence_fraction": 0.3537089260068057
+      },
+      {
+        "name": "environment_moisture_input",
+        "unit": "kg/kg_air_basis_as_supplied",
+        "samples": 241,
+        "time_start_s": 0.0,
+        "time_end_s": 14400.0,
+        "time_strictly_increasing": true,
+        "time_step_s": {
+          "minimum": 60.0,
+          "maximum": 60.0,
+          "uniform": true
+        },
+        "value_min": 0.01963,
+        "value_max": 0.05025,
+        "finite": true,
+        "leave_one_out": {
+          "linear": {
+            "count": 239,
+            "bias": -1.0041841004184273e-06,
+            "mae": 0.00013715481171548116,
+            "rmse": 0.0001730262272425992,
+            "max_abs": 0.0004200000000000037,
+            "p95_abs": 0.00034050000000000605,
+            "max_abs_fraction_of_observed_range": 0.01371652514696289
+          },
+          "pchip": {
+            "count": 239,
+            "bias": -7.021025090092295e-07,
+            "mae": 0.00014439956114446203,
+            "rmse": 0.00018403909576717443,
+            "max_abs": 0.00045644268774702734,
+            "p95_abs": 0.00036712815495989196,
+            "max_abs_fraction_of_observed_range": 0.014906684772927085
+          }
+        },
+        "interleaved_every_fifth": {
+          "linear": {
+            "count": 47,
+            "bias": 1.8510638297871732e-05,
+            "mae": 0.00015148936170212776,
+            "rmse": 0.00017953841525754737,
+            "max_abs": 0.00033500000000000196,
+            "p95_abs": 0.00032000000000000084,
+            "held_indices": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100,
+              105,
+              110,
+              115,
+              120,
+              125,
+              130,
+              135,
+              140,
+              145,
+              150,
+              155,
+              160,
+              165,
+              170,
+              175,
+              180,
+              185,
+              190,
+              195,
+              200,
+              205,
+              210,
+              215,
+              220,
+              225,
+              230,
+              235
+            ],
+            "max_abs_fraction_of_observed_range": 0.010940561724363225
+          },
+          "pchip": {
+            "count": 47,
+            "bias": 1.942326745204339e-05,
+            "mae": 0.00015831416076143745,
+            "rmse": 0.0001889706182354348,
+            "max_abs": 0.0004412674714104198,
+            "p95_abs": 0.0003291321553011441,
+            "held_indices": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100,
+              105,
+              110,
+              115,
+              120,
+              125,
+              130,
+              135,
+              140,
+              145,
+              150,
+              155,
+              160,
+              165,
+              170,
+              175,
+              180,
+              185,
+              190,
+              195,
+              200,
+              205,
+              210,
+              215,
+              220,
+              225,
+              230,
+              235
+            ],
+            "max_abs_fraction_of_observed_range": 0.014411086590804041
+          }
+        },
+        "simple_baseline": {
+          "count": 47,
+          "bias": -0.00010765957446808514,
+          "mae": 0.00023531914893617036,
+          "rmse": 0.00028317350519169925,
+          "max_abs": 0.0006500000000000013,
+          "p95_abs": 0.0004769999999999989,
+          "definition": "previous_observation_persistence"
+        },
+        "linear_rmse_improvement_over_persistence_fraction": 0.3659773532272883
+      },
+      {
+        "name": "observed_radius",
+        "unit": "cm",
+        "samples": 145,
+        "time_start_s": 0.0,
+        "time_end_s": 259200.0,
+        "time_strictly_increasing": true,
+        "time_step_s": {
+          "minimum": 1800.0,
+          "maximum": 1800.0,
+          "uniform": true
+        },
+        "value_min": 1.198,
+        "value_max": 2.0,
+        "finite": true,
+        "leave_one_out": {
+          "linear": {
+            "count": 143,
+            "bias": 0.0004440559440559386,
+            "mae": 0.0007097902097902124,
+            "rmse": 0.0028692363936276668,
+            "max_abs": 0.02400000000000002,
+            "p95_abs": 0.0024999999999999467,
+            "max_abs_fraction_of_observed_range": 0.029925187032418976
+          },
+          "pchip": {
+            "count": 143,
+            "bias": 0.00013726778698582378,
+            "mae": 0.0006527050829926913,
+            "rmse": 0.002406654651874978,
+            "max_abs": 0.02024232081911248,
+            "p95_abs": 0.002695818457194735,
+            "max_abs_fraction_of_observed_range": 0.025239801520090373
+          }
+        },
+        "interleaved_every_fifth": {
+          "linear": {
+            "count": 28,
+            "bias": 3.571428571429764e-05,
+            "mae": 0.00028571428571428595,
+            "rmse": 0.0007196229171289003,
+            "max_abs": 0.0029999999999998916,
+            "p95_abs": 0.0014749999999999798,
+            "held_indices": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100,
+              105,
+              110,
+              115,
+              120,
+              125,
+              130,
+              135,
+              140
+            ],
+            "max_abs_fraction_of_observed_range": 0.0037406483790522337
+          },
+          "pchip": {
+            "count": 28,
+            "bias": -0.00017811738080336648,
+            "mae": 0.00040416776141506087,
+            "rmse": 0.000992841044134862,
+            "max_abs": 0.0036130524211401838,
+            "p95_abs": 0.0026593996628905816,
+            "held_indices": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100,
+              105,
+              110,
+              115,
+              120,
+              125,
+              130,
+              135,
+              140
+            ],
+            "max_abs_fraction_of_observed_range": 0.004505052894189755
+          }
+        },
+        "simple_baseline": {
+          "count": 28,
+          "bias": 0.003392857142857158,
+          "mae": 0.003392857142857158,
+          "rmse": 0.008817596044274218,
+          "max_abs": 0.03600000000000003,
+          "p95_abs": 0.020550000000000082,
+          "definition": "previous_observation_persistence"
+        },
+        "linear_rmse_improvement_over_persistence_fraction": 0.9183878561100343
+      }
+    ]
+  },
+  "dimension_audit": {
+    "base_dimensions": [
+      "mass",
+      "length",
+      "time",
+      "temperature"
+    ],
+    "checks": {
+      "heat_storage_equals_conduction": true,
+      "heat_robin_flux": true,
+      "moisture_storage_equals_diffusion": true,
+      "moisture_robin_flux": true,
+      "Bi_heat_dimensionless": true,
+      "Bi_moisture_dimensionless": true,
+      "q4_diffusion_mapping_D_over_R2_is_rate": true,
+      "q4_geometric_rate_Rdot_over_R_is_rate": true
+    },
+    "temperature_arrhenius_uses_kelvin": true,
+    "air_and_material_moisture_are_not_declared_identical": true,
+    "status": "passed_equation_and_boundary_dimensional_checks"
+  },
+  "bounds_and_events": {
+    "checks": {
+      "all_defined_temperatures_finite": true,
+      "all_defined_moistures_positive": true,
+      "fixed_domain_moisture_not_above_initial": true,
+      "q4_moisture_not_above_initial": true,
+      "q3_every_pre_event_output_above_threshold": true,
+      "q3_terminal_global_max_equals_threshold": true,
+      "q4_every_pre_event_accepted_check_above_threshold": true,
+      "q4_terminal_global_max_equals_threshold": true,
+      "q3_global_not_centre_only": true,
+      "q4_global_not_centre_only": true,
+      "q4_radius_positive_and_nonincreasing": true,
+      "q4_event_inside_radius_observation_support": true
+    },
+    "status": "passed_bounds_timeline_and_global_event_checks"
+  },
+  "conservation": {
+    "rows": [
+      {
+        "question": "Q1",
+        "water_relative": 1.0554247018829449e-10,
+        "heat_relative": 4.8267975475110603e-11,
+        "heat_definition": "constant-property sensible heat balance"
+      },
+      {
+        "question": "Q2_0_to_3h",
+        "water_relative": 3.870577061474358e-11,
+        "heat_relative": 3.9198627248099635e-10,
+        "heat_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])"
+      },
+      {
+        "question": "Q3_tail",
+        "water_relative": 6.488291385646032e-10,
+        "heat_relative": 6.808702066402789e-10,
+        "heat_definition": "same corrected effective sensible-heat balance as Q2, applied to the tail"
+      },
+      {
+        "question": "Q4",
+        "water_relative": 2.480431546433358e-10,
+        "heat_relative": 5.438749483787545e-10,
+        "heat_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term"
+      }
+    ],
+    "status": "passed_discrete_conservation_residual_targets",
+    "scope": "semi_empirical_model balance; not full multiphase energy validation"
+  },
+  "numerical_error": {
+    "ledger_status": "completed_unified_evidence_ledger_with_explicit_unquantified_model_errors",
+    "records": 270,
+    "selected": {
+      "Q1": [
+        {
+          "question": "Q1",
+          "category": "numerical_space",
+          "quantity": "temperature",
+          "value": 9.641447462627184e-07,
+          "unit": "degC",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "0-1800 s; 21 radii, every second unless stated",
+          "source": "q1_time_and_sensitivity",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q1",
+          "category": "numerical_time",
+          "quantity": "temperature",
+          "value": 5.660929502937506e-09,
+          "unit": "degC",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "0-1800 s; 21 radii, every second unless stated",
+          "source": "q1_time_and_sensitivity",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q1",
+          "category": "numerical_space",
+          "quantity": "moisture",
+          "value": 9.154213245210485e-07,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "0-1800 s; 21 radii, every second unless stated",
+          "source": "q1_time_and_sensitivity",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q1",
+          "category": "numerical_time",
+          "quantity": "moisture",
+          "value": 1.6078316456002995e-09,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "0-1800 s; 21 radii, every second unless stated",
+          "source": "q1_time_and_sensitivity",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q1",
+          "category": "independent_implementation",
+          "quantity": "temperature",
+          "value": 1.8010994615735854e-06,
+          "unit": "degC",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "10 saved times; 2561-node dense profiles",
+          "source": "q1_nonlinear_independent",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q1",
+          "category": "independent_implementation",
+          "quantity": "moisture",
+          "value": 1.3209420934856553e-06,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "10 saved times; 2561-node dense profiles",
+          "source": "q1_nonlinear_independent",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q1",
+          "category": "independent_analytic",
+          "quantity": "temperature",
+          "value": 1.285251038041224e-06,
+          "unit": "degC",
+          "comparison": "primary vs 512 Fourier-Bessel modes",
+          "scope": "0-1800 s; 21 radii, every second unless stated",
+          "source": "q1_diagnostics",
+          "interpretation": "observed_difference_not_bound"
+        }
+      ],
+      "Q2_front": [
+        {
+          "question": "Q2_front",
+          "category": "numerical_space",
+          "quantity": "temperature",
+          "value": 1.2842348553476768e-06,
+          "unit": "degC",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "0-10800 s; 21 radii, every second unless stated",
+          "source": "q2_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q2_front",
+          "category": "numerical_time",
+          "quantity": "temperature",
+          "value": 1.1930140431104519e-08,
+          "unit": "degC",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "0-10800 s; 21 radii, every second unless stated",
+          "source": "q2_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q2_front",
+          "category": "numerical_space",
+          "quantity": "moisture",
+          "value": 8.019728805486181e-07,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "0-10800 s; 21 radii, every second unless stated",
+          "source": "q2_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q2_front",
+          "category": "numerical_time",
+          "quantity": "moisture",
+          "value": 7.702727344849336e-10,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "0-10800 s; 21 radii, every second unless stated",
+          "source": "q2_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q2_front",
+          "category": "independent_implementation",
+          "quantity": "temperature",
+          "value": 9.160972652466626e-06,
+          "unit": "degC",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "six paper times; 1281-node dense profiles",
+          "source": "q2_independent_verification",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q2_front",
+          "category": "independent_implementation",
+          "quantity": "moisture",
+          "value": 3.2218110317394633e-06,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "six paper times; 1281-node dense profiles",
+          "source": "q2_independent_verification",
+          "interpretation": "observed_difference_not_bound"
+        }
+      ],
+      "Q23_tail": [
+        {
+          "question": "Q23_tail",
+          "category": "numerical_space",
+          "quantity": "temperature",
+          "value": 1.1489154161381521e-07,
+          "unit": "degC",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "10800 s to common pre-event times; 21 radii, every second unless stated",
+          "source": "q3_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q23_tail",
+          "category": "numerical_time",
+          "quantity": "temperature",
+          "value": 1.1904951691121823e-08,
+          "unit": "degC",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "10800 s to common pre-event times; 21 radii, every second unless stated",
+          "source": "q3_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q23_tail",
+          "category": "numerical_space",
+          "quantity": "moisture",
+          "value": 2.601347004471677e-07,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "10800 s to common pre-event times; 21 radii, every second unless stated",
+          "source": "q3_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q23_tail",
+          "category": "numerical_time",
+          "quantity": "moisture",
+          "value": 7.158497128401109e-10,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "10800 s to common pre-event times; 21 radii, every second unless stated",
+          "source": "q3_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q23_tail",
+          "category": "independent_implementation",
+          "quantity": "temperature",
+          "value": 3.0281105267704334e-05,
+          "unit": "degC",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "common saved time profiles; independent 2560-element trajectory",
+          "source": "q3_independent_verification",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q23_tail",
+          "category": "independent_implementation",
+          "quantity": "moisture",
+          "value": 3.308300025040012e-07,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "common saved time profiles; independent 2560-element trajectory",
+          "source": "q3_independent_verification",
+          "interpretation": "observed_difference_not_bound"
+        }
+      ],
+      "Q3": [
+        {
+          "question": "Q3",
+          "category": "numerical_space",
+          "quantity": "critical_time",
+          "value": 0.07595581284840591,
+          "unit": "s",
+          "comparison": "1280 vs 2560",
+          "scope": "global-max threshold event",
+          "source": "q3_error_budget",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q3",
+          "category": "numerical_time",
+          "quantity": "critical_time",
+          "value": 0.0007548579596914351,
+          "unit": "s",
+          "comparison": "max_step 30 vs 15 s",
+          "scope": "global-max threshold event",
+          "source": "q3_error_budget",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q3",
+          "category": "independent_implementation",
+          "quantity": "critical_time",
+          "value": 0.002098824450513348,
+          "unit": "s",
+          "comparison": "fine independent vs primary",
+          "scope": "global-max threshold event",
+          "source": "q3_error_budget",
+          "interpretation": "observed_difference_not_bound"
+        }
+      ],
+      "Q4": [
+        {
+          "question": "Q4",
+          "category": "numerical_space",
+          "quantity": "temperature",
+          "value": 1.8840302260514363e-06,
+          "unit": "degC",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "common 60 s times plus diagnostic 0/1/10 s; valid fixed radii and true surface",
+          "source": "q4_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "numerical_time",
+          "quantity": "temperature",
+          "value": 8.931635875342181e-09,
+          "unit": "degC",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "common 60 s times plus diagnostic 0/1/10 s; valid fixed radii and true surface",
+          "source": "q4_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "numerical_space",
+          "quantity": "moisture",
+          "value": 4.188031590413033e-06,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "1280 vs 2560 cells",
+          "scope": "common 60 s times plus diagnostic 0/1/10 s; valid fixed radii and true surface",
+          "source": "q4_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "numerical_time",
+          "quantity": "moisture",
+          "value": 5.010364900748243e-10,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "halve effective max_step at fixed mesh",
+          "scope": "common 60 s times plus diagnostic 0/1/10 s; valid fixed radii and true surface",
+          "source": "q4_convergence",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "independent_implementation",
+          "quantity": "temperature",
+          "value": 1.0932346249603597e-05,
+          "unit": "degC",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "listed common times/physical radii including early boundary layer",
+          "source": "q4_independent_verification",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "independent_implementation",
+          "quantity": "moisture",
+          "value": 6.030320506056341e-06,
+          "unit": "kg_water_per_kg_dry",
+          "comparison": "primary FVM vs independent nodal FEM/BDF2",
+          "scope": "listed common times/physical radii including early boundary layer",
+          "source": "q4_independent_verification",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "numerical_space",
+          "quantity": "critical_time",
+          "value": 0.057965369895100594,
+          "unit": "s",
+          "comparison": "1280 vs 2560",
+          "scope": "global-max threshold event",
+          "source": "q4_diagnostics",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "numerical_time",
+          "quantity": "critical_time",
+          "value": 0.00046168064000084996,
+          "unit": "s",
+          "comparison": "max_step 30 vs 15 s",
+          "scope": "global-max threshold event",
+          "source": "q4_diagnostics",
+          "interpretation": "observed_difference_not_bound"
+        },
+        {
+          "question": "Q4",
+          "category": "independent_implementation",
+          "quantity": "critical_time",
+          "value": 0.0006692806491628289,
+          "unit": "s",
+          "comparison": "fine independent vs primary",
+          "scope": "global-max threshold event",
+          "source": "q4_diagnostics",
+          "interpretation": "observed_difference_not_bound"
+        }
+      ]
+    },
+    "all_export_last_digits_proven_stable": false,
+    "four_decimals_are_output_format_not_physical_accuracy_claim": true,
+    "confidence_interval": "not_available_without_measurement/error distributions"
+  },
+  "scenario_uncertainty": {
+    "Q3_parameter_plus_baseline": {
+      "cases_plus_baseline": 9,
+      "minimum_event_time_s": 190319.75132334244,
+      "maximum_event_time_s": 227275.88272987213,
+      "span_s": 36956.13140652969,
+      "minimum_event_time_h": 52.866597589817346,
+      "maximum_event_time_h": 63.1321896471867,
+      "baseline_s": 206906.4911824653
+    },
+    "Q3_boundary_extension_plus_baseline": {
+      "cases_plus_baseline": 3,
+      "minimum_event_time_s": 205809.8601360106,
+      "maximum_event_time_s": 206906.4911824653,
+      "span_s": 1096.6310464547132,
+      "minimum_event_time_h": 57.16940559333628,
+      "maximum_event_time_h": 57.47402532846259,
+      "baseline_s": 206906.4911824653
+    },
+    "Q3_mechanism_ablations": [
+      {
+        "label": "q3_freeze_D_temperature",
+        "event_time_s": 464364.77840209607,
+        "event_time_h": 128.99021622280446
+      },
+      {
+        "label": "q3_freeze_thermal_moisture",
+        "event_time_s": 206936.25678172245,
+        "event_time_h": 57.48229355047846
+      }
+    ],
+    "Q3_all_sensitivity_diagnostics": {
+      "cases_plus_baseline": 13,
+      "minimum_event_time_s": 190319.75132334244,
+      "maximum_event_time_s": 464364.77840209607,
+      "span_s": 274045.0270787536,
+      "minimum_event_time_h": 52.866597589817346,
+      "maximum_event_time_h": 128.99021622280446,
+      "baseline_s": 206906.4911824653
+    },
+    "Q4_parameter_plus_baseline": {
+      "cases_plus_baseline": 9,
+      "minimum_event_time_s": 169244.31274816766,
+      "maximum_event_time_s": 201930.68141616246,
+      "span_s": 32686.3686679948,
+      "minimum_event_time_h": 47.01230909671324,
+      "maximum_event_time_h": 56.09185594893402,
+      "baseline_s": 183931.2887197449
+    },
+    "Q4_boundary_extension_plus_baseline": {
+      "cases_plus_baseline": 3,
+      "minimum_event_time_s": 182967.20590405507,
+      "maximum_event_time_s": 183931.2887197449,
+      "span_s": 964.0828156898206,
+      "minimum_event_time_h": 50.82422386223752,
+      "maximum_event_time_h": 51.09202464437358,
+      "baseline_s": 183931.2887197449
+    },
+    "Q4_radius_interpolation": [
+      {
+        "label": "q4_pchip",
+        "event_time_s": 183918.6829859515,
+        "event_time_h": 51.0885230516532,
+        "delta_from_linear_s": -12.605733793374384
+      }
+    ],
+    "Q4_all_sensitivity_diagnostics": {
+      "cases_plus_baseline": 12,
+      "minimum_event_time_s": 169244.31274816766,
+      "maximum_event_time_s": 201930.68141616246,
+      "span_s": 32686.3686679948,
+      "minimum_event_time_h": 47.01230909671324,
+      "maximum_event_time_h": 56.09185594893402,
+      "baseline_s": 183931.2887197449
+    },
+    "Q4_factorial_counterfactuals": [
+      {
+        "letter": "A",
+        "group": "q23",
+        "geometry": "fixed",
+        "event_time_s": 206906.49115041466,
+        "event_h": 57.47402531955963,
+        "event_radius_cm": 2.0
+      },
+      {
+        "letter": "B",
+        "group": "q23",
+        "geometry": "linear",
+        "event_time_s": 90878.26184802098,
+        "event_h": 25.24396162445027,
+        "event_radius_cm": 1.203
+      },
+      {
+        "letter": "C",
+        "group": "q4",
+        "geometry": "fixed",
+        "event_time_s": 467454.32217903674,
+        "event_h": 129.8484228275102,
+        "event_radius_cm": 2.0
+      },
+      {
+        "letter": "D",
+        "group": "q4",
+        "geometry": "linear",
+        "event_time_s": 183931.2887197449,
+        "event_h": 51.09202464437358,
+        "event_radius_cm": 1.2
+      }
+    ],
+    "interpretation": "scenario envelope only; parameters have no probability distributions, so this is not a confidence interval"
+  },
+  "extreme_and_counterexample_tests": {
+    "checks": {
+      "invalid_timeline_variants_rejected": true,
+      "constant_and_zero_flow_baselines": true,
+      "q3_interior_hump_detected_by_global_max": true,
+      "q4_radius_extrapolation_rejected": true,
+      "q4_fixed_radius_degeneracy": true,
+      "q4_pure_shrink_no_flux_water_invariant": true,
+      "q4_manufactured_solution_converges": true,
+      "endface_assumption_quantified_not_silently_ignored": true
+    },
+    "status": "passed_baseline_extreme_and_counterexample_tests"
+  },
+  "critical_results": {
+    "Q3": {
+      "critical_time_s": 206906.4911824653,
+      "critical_time_h": 57.47402532846259,
+      "first_strict_integer_second": 206907.0,
+      "terminal_row_is_equality_not_strict": true
+    },
+    "Q4": {
+      "critical_time_s": 183931.2887197449,
+      "critical_time_h": 51.09202464437358,
+      "first_strict_integer_second": 183932.0,
+      "critical_radius_cm": 1.2,
+      "terminal_row_is_equality_not_strict": true
+    }
+  },
+  "limitations": [
+    "no_internal_material_measurements_for_experimental_residual_or_supervised_cross_validation",
+    "C_eq=beta*air_moisture_is_a_boundary_closure_not_physical_definition_equivalence",
+    "post_4h_environment_extension_has_no_future_observations_for_holdout_validation",
+    "one_dimensional_radial_main_model_does_not_represent_end_local_fields",
+    "parameter_distributions_and_measurement_noise_model_not_supplied_so_no_statistical_confidence_interval",
+    "four_decimal_export_format_is_not_four_decimal_physical_accuracy"
+  ],
+  "next_stage": "figure_generation_from_unrounded_artifacts_after_freezing_this_validation_report",
+  "artifacts_sha256": {
+    "tables/final_result_validation_summary.csv": "979c4ef46c35f006272c20e2443b4388f36315ccb0d89c15037d323ccfea7b8c",
+    "reports/final_result_validation.md": "00ead4d81d9523450ecae926614a9b1d410b4bff2d0ccaa53ccd95213464d7ed"
+  }
+}

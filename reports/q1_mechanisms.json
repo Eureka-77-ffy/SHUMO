@@ -1,0 +1,68 @@
+{
+  "scope": "Q1 model-conditional mechanism diagnostics; not experimental causality",
+  "time_s": 1800,
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+  },
+  "cache_sha256": "dac3a20d942793e307be2c85fd9ec4c809477b21ac5172864c71855a19c534d2",
+  "script_sha256": "198a51406643b0160e00949ea8974e183253d6d0729d78fa9cc9d3d21e517dee",
+  "effective_air_to_material_boundary_mapping": "C_eq = beta * Y; beta = 1",
+  "scales": {
+    "alpha_m2_s": 1.6885553470919323e-07,
+    "D_initial_m2_s": 4.937655094173937e-09,
+    "alpha_over_D_initial": 34.1975151136883,
+    "radial_heat_scale_s": 2368.888888888889,
+    "radial_water_scale_s": 81010.11358042607,
+    "Fo_heat_1800": 0.7598499061913695,
+    "Fo_water_initial_D_1800": 0.022219447923782717,
+    "accumulated_local_Fo_water_centre": 0.02221944625880882,
+    "accumulated_local_Fo_water_surface": 0.01914118864353691,
+    "accumulated_Fo_1s_vs_2s_quadrature_max_difference": 2.0721072527957185e-08,
+    "accumulated_Fo_is_diagnostic_not_constant_coefficient_solution": true
+  },
+  "temperature": {
+    "centre_C": 33.575343540663425,
+    "surface_C": 36.78556071418121,
+    "mean_C": 35.16791275870973,
+    "air_C": 41.513,
+    "air_minus_centre_C": 7.937656459336573,
+    "surface_minus_centre_C": 3.2102171735177834,
+    "surface_outward_heat_flux_W_m2": -118.18598214546974
+  },
+  "moisture": {
+    "centre_dry_basis": 2.549992400144181,
+    "surface_dry_basis": 1.510234208557036,
+    "mean_dry_basis": 2.2935572888242657,
+    "centre_drop_from_initial": 7.599855818885004e-06,
+    "loss_per_dry_mass_kg_kg": 0.25644271117573414,
+    "fraction_of_initial_water_removed": 0.1005657690885232,
+    "surface_normalized_outward_flux_m_s": 1.1817313668456287e-06,
+    "instantaneous_mean_rate_dry_basis_per_s": -0.00011817313668456287,
+    "surface_D_over_initial_D": 0.7863974440555379,
+    "shell_loss_contributions": [
+      {
+        "inner_radius_cm": 1.0,
+        "outer_radius_cm": 2.0,
+        "initial_dry_mass_fraction": 0.7500000000000001,
+        "loss_per_total_dry_mass_kg_kg": 0.2557203102623076,
+        "fraction_of_total_water_loss": 0.9971829929963131,
+        "quadrature": "piecewise_constant_cell_average_with_exact_annular_overlap"
+      },
+      {
+        "inner_radius_cm": 1.5,
+        "outer_radius_cm": 2.0,
+        "initial_dry_mass_fraction": 0.4375000000000001,
+        "loss_per_total_dry_mass_kg_kg": 0.23377196104548725,
+        "fraction_of_total_water_loss": 0.9115952641964109,
+        "quadrature": "piecewise_constant_cell_average_with_exact_annular_overlap"
+      }
+    ]
+  }
+}

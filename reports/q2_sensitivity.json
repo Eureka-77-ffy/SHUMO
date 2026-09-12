@@ -1,0 +1,331 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f"
+  },
+  "script_sha256": "530f1a43e2f2baeaa39e370cb3c9392bad57a39759dbc88299bdd8feac2426e9",
+  "interpretation": "scenario contrasts, not confidence intervals or experimental causality",
+  "cases": [
+    {
+      "label": "q2_h_multiplier_0.9",
+      "options": {
+        "h_multiplier": 0.9
+      },
+      "temperature_centre_3h": 49.79870347327713,
+      "temperature_surface_3h": 49.92660126117246,
+      "moisture_centre_3h": 1.7707222764321877,
+      "moisture_surface_3h": 1.0088839656681718,
+      "moisture_mean_3h": 1.3847451812925446,
+      "statistics": {
+        "accepted_steps": 14159,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.023132746058495e-10,
+        "nfev": 28678,
+        "njev": 180,
+        "nlu": 3711,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.0088844221130087,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 1.301914132056936e-10,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 5.1055456159095534e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.029880791902542114,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 4.072989876154654e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 3.637978807091713e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 16.584094917
+      }
+    },
+    {
+      "label": "q2_h_multiplier_1.1",
+      "options": {
+        "h_multiplier": 1.1
+      },
+      "temperature_centre_3h": 49.883576532547345,
+      "temperature_surface_3h": 49.99356896930077,
+      "moisture_centre_3h": 1.7625580239615468,
+      "moisture_surface_3h": 1.007400381355593,
+      "moisture_mean_3h": 1.3806996870421657,
+      "statistics": {
+        "accepted_steps": 14488,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.023132746058495e-10,
+        "nfev": 29336,
+        "njev": 180,
+        "nlu": 3748,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.00740083626901,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 7.99478261370723e-11,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 3.135208868120482e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.03572632372379303,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 4.869782411183464e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 17.088361625
+      }
+    },
+    {
+      "label": "q2_hm_multiplier_0.9",
+      "options": {
+        "hm_multiplier": 0.9
+      },
+      "temperature_centre_3h": 49.843575369335376,
+      "temperature_surface_3h": 49.96153889156632,
+      "moisture_centre_3h": 1.8096291981059291,
+      "moisture_surface_3h": 1.0877811316179673,
+      "moisture_mean_3h": 1.4437632579920088,
+      "statistics": {
+        "accepted_steps": 14297,
+        "accepted_max_step_s": 2.0000000000009095,
+        "accepted_min_step_s": 2.1325694184759743e-10,
+        "nfev": 28954,
+        "njev": 180,
+        "nlu": 3725,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.087781561503704,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 8.991718480899635e-11,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 3.52616411015672e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.023453615605831146,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 3.196914567503351e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 17.305664417000003
+      }
+    },
+    {
+      "label": "q2_hm_multiplier_1.1",
+      "options": {
+        "hm_multiplier": 1.1
+      },
+      "temperature_centre_3h": 49.85476194812372,
+      "temperature_surface_3h": 49.97079072813317,
+      "moisture_centre_3h": 1.727165643818598,
+      "moisture_surface_3h": 0.93713935077638,
+      "moisture_mean_3h": 1.3280245021503676,
+      "statistics": {
+        "accepted_steps": 14370,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 1.9289811545787823e-10,
+        "nfev": 29104,
+        "njev": 181,
+        "nlu": 3737,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 0.937139830661626,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 1.0586953536062538e-10,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 4.1517464847304074e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.03145007789134979,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 4.286896052605795e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 19.340117083000003
+      }
+    },
+    {
+      "label": "q2_D_multiplier_0.9",
+      "options": {
+        "D_multiplier": 0.9
+      },
+      "temperature_centre_3h": 49.84638143362536,
+      "temperature_surface_3h": 49.96463289357876,
+      "moisture_centre_3h": 1.8255463667082543,
+      "moisture_surface_3h": 0.992878314988126,
+      "moisture_mean_3h": 1.4040768381410913,
+      "statistics": {
+        "accepted_steps": 14347,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.1325688773195448e-10,
+        "nfev": 29058,
+        "njev": 181,
+        "nlu": 3734,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 0.9928788165802476,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 1.0200240652125103e-10,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 4.0000943733823935e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.02129044383764267,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 2.902057030228187e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 18.582500542000005
+      }
+    },
+    {
+      "label": "q2_D_multiplier_1.1",
+      "options": {
+        "D_multiplier": 1.1
+      },
+      "temperature_centre_3h": 49.85221359626407,
+      "temperature_surface_3h": 49.967976866644676,
+      "moisture_centre_3h": 1.715082484853389,
+      "moisture_surface_3h": 1.0205254358792968,
+      "moisture_mean_3h": 1.3637990199629515,
+      "statistics": {
+        "accepted_steps": 14328,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 1.9289815972316222e-10,
+        "nfev": 29016,
+        "njev": 180,
+        "nlu": 3732,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.0205258530970631,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 9.179945692494584e-11,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 3.599978702939053e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.023744091391563416,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 3.2365087301485166e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 18.324296250000003
+      }
+    },
+    {
+      "label": "q2_beta_multiplier_0.9",
+      "options": {
+        "beta_multiplier": 0.9
+      },
+      "temperature_centre_3h": 49.84965636095164,
+      "temperature_surface_3h": 49.966558522727304,
+      "moisture_centre_3h": 1.7649959800031676,
+      "moisture_surface_3h": 1.0050806423921137,
+      "moisture_mean_3h": 1.3804877198376508,
+      "statistics": {
+        "accepted_steps": 14339,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.0223484535675848e-10,
+        "nfev": 29038,
+        "njev": 180,
+        "nlu": 3730,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.0050810994934105,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 9.901457431737981e-11,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 3.8829244830345024e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.026891745626926422,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 3.665559067103547e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 3.637978807091713e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 18.87799650000001
+      }
+    },
+    {
+      "label": "q2_beta_multiplier_1.1",
+      "options": {
+        "beta_multiplier": 1.1
+      },
+      "temperature_centre_3h": 49.84933446232865,
+      "temperature_surface_3h": 49.96626727006617,
+      "moisture_centre_3h": 1.7673595520397178,
+      "moisture_surface_3h": 1.0111641073567514,
+      "moisture_mean_3h": 1.3845671764260892,
+      "statistics": {
+        "accepted_steps": 14338,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.0239179517335717e-10,
+        "nfev": 29036,
+        "njev": 180,
+        "nlu": 3735,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.0111645613958753,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 9.02431462890263e-11,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 3.538946913295149e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.037865594029426575,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 5.16138198878577e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 19.588114415999996
+      }
+    },
+    {
+      "label": "q2_freeze_D_temperature",
+      "options": {
+        "freeze_D_temperature": true
+      },
+      "temperature_centre_3h": 49.83056681265859,
+      "temperature_surface_3h": 49.956492301235386,
+      "moisture_centre_3h": 2.193334530097651,
+      "moisture_surface_3h": 0.816942706033637,
+      "moisture_mean_3h": 1.5271591192022869,
+      "statistics": {
+        "accepted_steps": 14426,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.023132746058495e-10,
+        "nfev": 29212,
+        "njev": 180,
+        "nlu": 3753,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 0.8169436715033015,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 1.0327227961681729e-10,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 4.0498933183065603e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.03998354822397232,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 5.450076010707264e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 5.4569682106375694e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 17.24329395799998
+      }
+    },
+    {
+      "label": "q2_freeze_thermal_moisture",
+      "options": {
+        "freeze_thermal_moisture": true
+      },
+      "temperature_centre_3h": 49.73513895509272,
+      "temperature_surface_3h": 49.87693436665063,
+      "moisture_centre_3h": 1.771014999874378,
+      "moisture_surface_3h": 1.0080177844582814,
+      "moisture_mean_3h": 1.384423296517356,
+      "statistics": {
+        "accepted_steps": 13953,
+        "accepted_max_step_s": 2.0,
+        "accepted_min_step_s": 2.023132746058495e-10,
+        "nfev": 28266,
+        "njev": 180,
+        "nlu": 3657,
+        "minimum_accepted_temperature_C": 27.999999999999996,
+        "minimum_accepted_moisture": 1.0080182415023704,
+        "balance_quadrature_order": 8,
+        "water_balance_max_abs_dry_basis": 1.1513345832270261e-10,
+        "water_balance_normalizer": 2.55,
+        "water_balance_relative": 4.5150375812824554e-11,
+        "heat_corrected_balance_max_abs_J_m3": 0.053732484579086304,
+        "heat_balance_normalizer_J_m3": 73363285.47605632,
+        "heat_corrected_balance_relative": 7.324165518271814e-10,
+        "heat_semidiscrete_balance_max_abs_W_m3": 3.637978807091713e-12,
+        "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+        "elapsed_s": 15.358384875000013
+      }
+    }
+  ],
+  "complete": true
+}

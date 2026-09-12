@@ -1,0 +1,105 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb",
+    "src/moving/__init__.py": "02b9392873b91cc313fa19d1047f9082104a77a21608450ede6c8c139bb17712",
+    "src/moving/integration.py": "48fd59417077b05ad9890bb6f94d6011cb0839c0d066376cfa761e6c52ab8198",
+    "src/moving/model.py": "7a32ad11fc0520f92877874e5f17e13226684a04d11ffe84d4ab1eaad2a25e7d",
+    "scripts/question4.py": "a07f76c257afee6d18bf63b2ffc1135c489627946b433059216692eb87ed6b75"
+  },
+  "script_sha256": "2343ab14063b55ba8c534229d01c340f607d00fdf6b132584c6f50fa9085bc82",
+  "complete": true,
+  "interpretation": "controlled_model_scenarios_not_experimental_causal_identification",
+  "A": "fixed radius + appendix3",
+  "B": "observed shrinkage + appendix3",
+  "C": "fixed radius + appendix4",
+  "D": "observed shrinkage + appendix4",
+  "geometry_support": "Moving scenarios B/D use observed R through 72 h with no extrapolation. Fixed scenarios define R=R0 for their entire counterfactual horizon.",
+  "cases": [
+    {
+      "letter": "A",
+      "label": "factorial_A",
+      "group": "q23",
+      "geometry": "fixed",
+      "event_time_s": 206906.49115041466,
+      "event_h": 57.47402531955963,
+      "event_radius_cm": 2.0,
+      "time_horizon_is_counterfactual_if_fixed_radius": true,
+      "at_72h_max_moisture": null
+    },
+    {
+      "letter": "B",
+      "label": "factorial_B",
+      "group": "q23",
+      "geometry": "linear",
+      "event_time_s": 90878.26184802098,
+      "event_h": 25.24396162445027,
+      "event_radius_cm": 1.203,
+      "time_horizon_is_counterfactual_if_fixed_radius": false,
+      "at_72h_max_moisture": null
+    },
+    {
+      "letter": "C",
+      "label": "factorial_C",
+      "group": "q4",
+      "geometry": "fixed",
+      "event_time_s": 467454.32217903674,
+      "event_h": 129.8484228275102,
+      "event_radius_cm": 2.0,
+      "time_horizon_is_counterfactual_if_fixed_radius": true,
+      "at_72h_max_moisture": 0.22468559089634738
+    },
+    {
+      "letter": "D",
+      "label": "q4_final",
+      "group": "q4",
+      "geometry": "linear",
+      "event_time_s": 183931.2887197449,
+      "event_h": 51.09202464437358,
+      "event_radius_cm": 1.2,
+      "time_horizon_is_counterfactual_if_fixed_radius": false,
+      "at_72h_max_moisture": null
+    }
+  ],
+  "refinements": [
+    {
+      "letter": "B",
+      "fine_label": "factorial_B_n2560",
+      "event_delta_s": -0.02490759223292116
+    },
+    {
+      "letter": "C",
+      "fine_label": "factorial_C_n2560",
+      "event_delta_s": -0.16617197648156434
+    }
+  ],
+  "A_fresh_fixed_recovery_vs_validated_Q23": {
+    "event_delta_s": -3.2050651498138905e-05,
+    "field_max_differences": {
+      "temperature": 9.741782491801132e-09,
+      "moisture": 6.742837399542623e-10
+    }
+  },
+  "decomposition": {
+    "geometry_at_appendix3_s": -116028.22930239368,
+    "properties_at_fixed_radius_s": 260547.83102862208,
+    "interaction_s": -167494.8041568982,
+    "total_D_minus_A_s": -22975.20243066977,
+    "geometry_at_appendix4_s": -283523.03345929185,
+    "properties_at_shrinking_radius_s": 93053.02687172391,
+    "decomposition_residual_s": -2.9103830456733704e-11
+  }
+}

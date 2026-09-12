@@ -1,0 +1,32 @@
+{
+  "assumptions_being_tested": [
+    "rho(C) is exact wet bulk mass density",
+    "constant length",
+    "dry solid conserved",
+    "C>=0"
+  ],
+  "initial_wet_density_kg_m3": 989.5,
+  "initial_dry_density_kg_m3": 278.7323943661972,
+  "maximum_dry_density_if_rho_exact_kg_m3": 760,
+  "necessary_minimum_radius_cm": 1.2112029565383968,
+  "observed_final_radius_cm": 1.198,
+  "required_final_dry_density_kg_m3": 776.8439730273806,
+  "first_sample_violating_necessary_bound_s": 70200,
+  "first_sample_radius_cm": 1.211,
+  "implied_uniform_C_final_if_all_assumptions_forced": -0.02452372545854617,
+  "maximum_final_dry_mass_over_initial_if_rho_exact": 0.9783174310257706,
+  "interpretation": "incompatibility of simultaneous strict assumptions, not evidence that input data are wrong",
+  "adopted_closure": {
+    "thermal_capacity": "b_eff(C)=rho_empirical(C)*cp(C)",
+    "empirical_density_is_not_transport_dry_density": true,
+    "transport_dry_density": "s(t)/s0=(R0/R(t))^2; s0 cancels in normalized model",
+    "relative_water_flux": "J_w=-s(t)*D(C,T)*grad(C)",
+    "surface_water_flux": "J_w.n=s(t)*h_m*(C_s-C_eq)",
+    "reference_dry_mass_measure": "2*xi*dxi",
+    "latent_heat_included": false,
+    "moisture_enthalpy_transport_included": false,
+    "radiation_included": false,
+    "mechanical_work_included": false,
+    "interpretation": "semi_empirical_heat_and_dry_mass_transport; not_full_mixture_mass_energy_closure"
+  }
+}

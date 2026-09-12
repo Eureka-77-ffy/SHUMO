@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "/Users/a1/Desktop/数学建模国赛/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "/Users/a1/Downloads/deep-research-report (1).md",
+      "bytes": 40929,
+      "sha256": "1b9bc78c09a31a03d93e29d914c050ecf19e4f245db5c6bd940777561de135d8"
+    }
+  ],
+  "config_sha256": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+  "audit_script_sha256": "30c4405d6a79de8c76865cc49b4d02ec5e7bb7f03485aa15fc4c5620654b15f9",
+  "sources_unchanged_after_run": true
+}

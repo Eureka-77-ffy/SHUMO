@@ -1,0 +1,19 @@
+{
+  "status": "passed_final_validation_bundle_readback",
+  "script_sha256": "6334746166bea051db083c329dbf7a7e4215c878aeeeb9601b4746211fb747db",
+  "original_inputs_unchanged": 8,
+  "numeric_workbook_cells_reconciled": 8882410,
+  "outside_domain_blank_cells_reconciled": 23165,
+  "summary_csv_rows_reconciled": 36,
+  "verified_artifacts_sha256": {
+    "reports/final_result_validation.json": "0cb675db61ab6d97c4efe27b4c592c1d957f67a58f183705481408585afe7b04",
+    "reports/final_result_validation.md": "00ead4d81d9523450ecae926614a9b1d410b4bff2d0ccaa53ccd95213464d7ed",
+    "tables/final_result_validation_summary.csv": "979c4ef46c35f006272c20e2443b4388f36315ccb0d89c15037d323ccfea7b8c",
+    "reports/input_holdout_validation.json": "c966e36cc8c6602bab4099feb0c75b075191ea51680e16454677df124f0a7575",
+    "results/final/result1.xlsx": "11f29d96fdbbbf982aa5589beecf50126b52a81e279e841bf69ff8d5a30765c6",
+    "results/final/result2.xlsx": "ead4006426658b090d564129cd705dbed57dcfb728ef4fe3dc1ae667ea6b2687",
+    "results/final/result3.xlsx": "7f1efee8dc8af9a7a0cb3a5ea503b306b88d13965cf5c8efeb96ec03b57df4aa",
+    "results/final/result4.xlsx": "8086731d59ba174376121e8ec103e585766034f40a86e8ad5366faf7f1029326"
+  },
+  "scope": "bundle consistency and evidence readback; not new experimental validation"
+}

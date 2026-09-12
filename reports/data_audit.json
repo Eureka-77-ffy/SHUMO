@@ -1,0 +1,253 @@
+{
+  "scope": "stage0_no_pde_solution",
+  "pdf_pages": 4,
+  "workbooks": {
+    "附件1.xlsx": {
+      "Sheet1": {
+        "rows_including_header": 242,
+        "columns": 3,
+        "header": [
+          "时间",
+          "温度",
+          "水分浓度"
+        ],
+        "nonempty_cells": 726,
+        "formula_cells": 0
+      }
+    },
+    "附件2.xlsx": {
+      "Sheet1": {
+        "rows_including_header": 146,
+        "columns": 2,
+        "header": [
+          "时间",
+          "半径"
+        ],
+        "nonempty_cells": 292,
+        "formula_cells": 0
+      }
+    },
+    "result1.xlsx": {
+      "温度": {
+        "rows_including_header": 5,
+        "columns": 6,
+        "header": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "nonempty_cells": 10,
+        "formula_cells": 0
+      },
+      "水分浓度": {
+        "rows_including_header": 5,
+        "columns": 6,
+        "header": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "nonempty_cells": 10,
+        "formula_cells": 0
+      }
+    },
+    "result2.xlsx": {
+      "温度": {
+        "rows_including_header": 5,
+        "columns": 6,
+        "header": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "nonempty_cells": 10,
+        "formula_cells": 0
+      },
+      "水分浓度": {
+        "rows_including_header": 5,
+        "columns": 6,
+        "header": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "nonempty_cells": 10,
+        "formula_cells": 0
+      }
+    },
+    "result3.xlsx": {
+      "Sheet1": {
+        "rows_including_header": 5,
+        "columns": 6,
+        "header": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "nonempty_cells": 10,
+        "formula_cells": 0
+      }
+    },
+    "result4.xlsx": {
+      "Sheet1": {
+        "rows_including_header": 5,
+        "columns": 6,
+        "header": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          "药材表面"
+        ],
+        "nonempty_cells": 10,
+        "formula_cells": 0
+      }
+    }
+  },
+  "attachment1": {
+    "records": 241,
+    "time_interval_s": 60,
+    "time_end_s": 14400,
+    "temperature_range_C": [
+      28.0,
+      50.246
+    ],
+    "air_moisture_range": [
+      0.01963,
+      0.05025
+    ],
+    "missing": 0,
+    "duplicate_times": 0
+  },
+  "attachment2": {
+    "records": 145,
+    "time_interval_s": 1800,
+    "time_end_s": 259200,
+    "radius_range_cm": [
+      1.198,
+      2.0
+    ],
+    "missing": 0,
+    "duplicate_times": 0,
+    "monotone_nonincreasing": true
+  },
+  "environment_extension": {
+    "main_3_4h": {
+      "window_s": [
+        10800,
+        14400
+      ],
+      "count": 61,
+      "T_mean_C": 49.998934426229496,
+      "Y_mean": 0.049987540983606554,
+      "T_std_C": 0.15435336826607313,
+      "Y_std": 0.00015012945233702923
+    },
+    "alternative_2_5_4h": {
+      "window_s": [
+        9000,
+        14400
+      ],
+      "count": 91,
+      "T_mean_C": 50.004945054945054,
+      "Y_mean": 0.04999373626373625,
+      "T_std_C": 0.15486972034852484,
+      "Y_std": 0.00015431316176059613
+    },
+    "last_observation": {
+      "T_C": 50.165,
+      "Y": 0.04986
+    }
+  },
+  "environment_rise_diagnostics": {
+    "temperature": {
+      "0.5": {
+        "threshold": 38.99946721311475,
+        "first_observed_time_s": 1380,
+        "meaning": "first crossing in sampled noisy data, not fitted time constant"
+      },
+      "0.9": {
+        "threshold": 47.799040983606545,
+        "first_observed_time_s": 3780,
+        "meaning": "first crossing in sampled noisy data, not fitted time constant"
+      },
+      "0.95": {
+        "threshold": 48.89898770491802,
+        "first_observed_time_s": 4740,
+        "meaning": "first crossing in sampled noisy data, not fitted time constant"
+      }
+    },
+    "air_moisture": {
+      "0.5": {
+        "threshold": 0.03480877049180328,
+        "first_observed_time_s": 2100,
+        "meaning": "first crossing in sampled noisy data, not fitted time constant"
+      },
+      "0.9": {
+        "threshold": 0.0469517868852459,
+        "first_observed_time_s": 5100,
+        "meaning": "first crossing in sampled noisy data, not fitted time constant"
+      },
+      "0.95": {
+        "threshold": 0.04846966393442623,
+        "first_observed_time_s": 6180,
+        "meaning": "first crossing in sampled noisy data, not fitted time constant"
+      }
+    }
+  },
+  "initial_shrinkage_interval": {
+    "t_start_s": 0,
+    "t_end_s": 1800,
+    "R_mid_m": 0.019365,
+    "R_dot_m_s": -7.055555555555556e-07,
+    "tau_sh_h": 7.624015748031496
+  },
+  "density_consistency": {
+    "assumptions_being_tested": [
+      "rho(C) is exact wet bulk mass density",
+      "constant length",
+      "dry solid conserved",
+      "C>=0"
+    ],
+    "initial_wet_density_kg_m3": 989.5,
+    "initial_dry_density_kg_m3": 278.7323943661972,
+    "maximum_dry_density_if_rho_exact_kg_m3": 760,
+    "necessary_minimum_radius_cm": 1.2112029565383968,
+    "observed_final_radius_cm": 1.198,
+    "required_final_dry_density_kg_m3": 776.8439730273806,
+    "first_sample_violating_necessary_bound_s": 70200,
+    "first_sample_radius_cm": 1.211,
+    "implied_uniform_C_final_if_all_assumptions_forced": -0.02452372545854617,
+    "maximum_final_dry_mass_over_initial_if_rho_exact": 0.9783174310257706,
+    "interpretation": "incompatibility of simultaneous strict assumptions, not evidence that input data are wrong",
+    "adopted_closure": {
+      "thermal_capacity": "b_eff(C)=rho_empirical(C)*cp(C)",
+      "empirical_density_is_not_transport_dry_density": true,
+      "transport_dry_density": "s(t)/s0=(R0/R(t))^2; s0 cancels in normalized model",
+      "relative_water_flux": "J_w=-s(t)*D(C,T)*grad(C)",
+      "surface_water_flux": "J_w.n=s(t)*h_m*(C_s-C_eq)",
+      "reference_dry_mass_measure": "2*xi*dxi",
+      "latent_heat_included": false,
+      "moisture_enthalpy_transport_included": false,
+      "radiation_included": false,
+      "mechanical_work_included": false,
+      "interpretation": "semi_empirical_heat_and_dry_mass_transport; not_full_mixture_mass_energy_closure"
+    }
+  }
+}

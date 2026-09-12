@@ -1,0 +1,117 @@
+{
+  "status": "passed_algebra_and_input_checks_only",
+  "property_checks": [
+    {
+      "group": "q1",
+      "C": 2.55,
+      "T_C": 28,
+      "passed": true
+    },
+    {
+      "group": "q23",
+      "C": 2.55,
+      "T_C": 28,
+      "passed": true
+    },
+    {
+      "group": "q4",
+      "C": 2.55,
+      "T_C": 28,
+      "passed": true
+    },
+    {
+      "group": "q1",
+      "C": 0.15,
+      "T_C": 50,
+      "passed": true
+    },
+    {
+      "group": "q23",
+      "C": 0.15,
+      "T_C": 50,
+      "passed": true
+    },
+    {
+      "group": "q4",
+      "C": 0.15,
+      "T_C": 50,
+      "passed": true
+    },
+    {
+      "group": "q1",
+      "C": 0.05,
+      "T_C": 50,
+      "passed": true
+    },
+    {
+      "group": "q23",
+      "C": 0.05,
+      "T_C": 50,
+      "passed": true
+    },
+    {
+      "group": "q4",
+      "C": 0.05,
+      "T_C": 50,
+      "passed": true
+    },
+    {
+      "group": "q1",
+      "C": 1.0,
+      "T_C": 40,
+      "passed": true
+    },
+    {
+      "group": "q23",
+      "C": 1.0,
+      "T_C": 40,
+      "passed": true
+    },
+    {
+      "group": "q4",
+      "C": 1.0,
+      "T_C": 40,
+      "passed": true
+    }
+  ],
+  "symbolic_checks": {
+    "material_chain_rule_analytic_profile": true,
+    "dry_solid_continuity": true,
+    "general_relative_velocity": true,
+    "radial_operator_mapping": true,
+    "axis_limit_2a_frr": true,
+    "dry_mass_constant_under_shrinkage": true,
+    "nonuniform_material_water_mass_constant_no_flux": true,
+    "strict_density_ratio_decreasing": true,
+    "arrhenius_log_derivative": true
+  },
+  "config_contract": "passed",
+  "invalid_timeline_configs": [
+    {
+      "problem": "q2",
+      "field": "initialization",
+      "invalid_value": "q1_end",
+      "rejected": true
+    },
+    {
+      "problem": "q2",
+      "field": "properties",
+      "invalid_value": "q1",
+      "rejected": true
+    },
+    {
+      "problem": "q3",
+      "field": "time_origin_s",
+      "invalid_value": 10800,
+      "rejected": true
+    },
+    {
+      "problem": "q4",
+      "field": "initialization",
+      "invalid_value": "q3_end",
+      "rejected": true
+    }
+  ],
+  "pde_solver_tests": "not_run_solver_not_implemented",
+  "physical_validation": "not_available_no_internal_measurements"
+}

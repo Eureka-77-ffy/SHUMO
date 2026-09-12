@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "model_version": "stage0-effective-transport-v1",
+  "status": "formulation_frozen_pde_not_yet_verified",
+  "source_directory": "/Users/a1/Desktop/数学建模国赛",
+  "research_report": "/Users/a1/Downloads/deep-research-report (1).md",
+  "units": {
+    "internal_time": "s",
+    "internal_length": "m",
+    "state_temperature": "degC",
+    "arrhenius_temperature": "K",
+    "moisture": "kg_water/kg_dry_solid",
+    "air_input": "kg/kg; dry_air_basis_is_assumed_not_specified_by_prompt"
+  },
+  "geometry": {
+    "reference_radius_m": 0.02,
+    "length_m": 0.25,
+    "axial_assumption": "radially_symmetric_axially_uniform_effective_model",
+    "end_face_transfer_in_main_model": false,
+    "q4_length_changes": false,
+    "q4_material_motion": "affine_radial",
+    "q4_mesh_motion": "follows_material",
+    "q4_radius_interpolation": "linear",
+    "q4_radius_sensitivity": "pchip_no_extrapolation",
+    "radius_observation_end_s": 259200,
+    "radius_extrapolation_default": "error",
+    "radius_extension_conditional_scenario": "hold_last_after_explicit_scenario_selection"
+  },
+  "initial": {"time_s": 0.0, "temperature_C": 28.0, "moisture_dry_basis": 2.55},
+  "boundary": {
+    "heat_transfer_W_m2_K": 25.0,
+    "normalized_mass_transfer_m_s": 8e-7,
+    "input_interpolation": "linear",
+    "environment_data_end_s": 14400,
+    "extension_main": "mean_window_inclusive",
+    "mean_window_s": [10800, 14400],
+    "extension_sensitivity": ["last_observation", "mean_9000_14400_inclusive"],
+    "equivalent_moisture_map": "C_eq=beta*Y",
+    "beta": 1.0,
+    "beta_sensitivity": [0.9, 1.0, 1.1],
+    "transition_policy": "use_observations_through_14400_then_piecewise_constant_segment",
+    "coefficient_provenance_q23_q4": "inherited_from_appendix2_as_explicit_assumption"
+  },
+  "property_sets": {
+    "q1": {
+      "rho_kg_m3": {"offset": 820.0, "slope_C": 0.0},
+      "cp_J_kg_K": {"offset": 2600.0, "fraction_C_over_1_plus_C": 0.0},
+      "k_W_m_K": {"offset": 0.36, "fraction_C_over_1_plus_C": 0.0},
+      "D_m2_s": {"prefactor": 7e-9, "moisture_exponent": 0.89, "thermal_exponent_K": 0.0}
+    },
+    "q23": {
+      "rho_kg_m3": {"offset": 650.0, "slope_C": 128.0},
+      "cp_J_kg_K": {"offset": 1450.0, "fraction_C_over_1_plus_C": 2736.0},
+      "k_W_m_K": {"offset": 0.21, "fraction_C_over_1_plus_C": 0.38},
+      "D_m2_s": {"prefactor": 0.0024, "moisture_exponent": 0.45, "thermal_exponent_K": 3850.0}
+    },
+    "q4": {
+      "rho_kg_m3": {"offset": 760.0, "slope_C": 90.0},
+      "cp_J_kg_K": {"offset": 1850.0, "fraction_C_over_1_plus_C": 2150.0},
+      "k_W_m_K": {"offset": 0.12, "fraction_C_over_1_plus_C": 0.20},
+      "D_m2_s": {"prefactor": 0.00042, "moisture_exponent": 0.30, "thermal_exponent_K": 3850.0}
+    }
+  },
+  "closure": {
+    "thermal_capacity": "b_eff(C)=rho_empirical(C)*cp(C)",
+    "empirical_density_is_not_transport_dry_density": true,
+    "transport_dry_density": "s(t)/s0=(R0/R(t))^2; s0 cancels in normalized model",
+    "relative_water_flux": "J_w=-s(t)*D(C,T)*grad(C)",
+    "surface_water_flux": "J_w.n=s(t)*h_m*(C_s-C_eq)",
+    "reference_dry_mass_measure": "2*xi*dxi",
+    "latent_heat_included": false,
+    "moisture_enthalpy_transport_included": false,
+    "radiation_included": false,
+    "mechanical_work_included": false,
+    "interpretation": "semi_empirical_heat_and_dry_mass_transport; not_full_mixture_mass_energy_closure"
+  },
+  "problems": {
+    "q1": {"properties": "q1", "radius": "fixed", "initialization": "fresh", "end_s": 1800},
+    "q2": {"properties": "q23", "radius": "fixed", "initialization": "fresh", "end": "q3_event", "paper_end_s": 10800},
+    "q3": {"properties": "q23", "radius": "fixed", "initialization": "q2_full_precision_same_config_or_fresh", "time_origin_s": 0, "end": "global_moisture_event"},
+    "q4": {"properties": "q4", "radius": "observed_shrinkage", "initialization": "fresh", "end": "global_moisture_event_or_radius_data_end"}
+  },
+  "events": {
+    "moisture_threshold": 0.15,
+    "function": "global_reconstructed_max_C-minus-threshold",
+    "direction": -1,
+    "terminal": true,
+    "return": "critical_time_with_post_crossing_check",
+    "search_includes": ["all_cells", "axis", "true_surface", "interior_extrema_of_reconstruction"]
+  },
+  "numerics_proposed_not_validated": {
+    "radial_control_volumes": 160,
+    "grid_comparison": [80, 160, 320],
+    "next_grid_if_needed": 640,
+    "integrator": "BDF",
+    "integrator_crosscheck": "Radau",
+    "rtol": 1e-7,
+    "atol_temperature_C": 1e-8,
+    "atol_moisture": 1e-10,
+    "rtol_comparison": [1e-6, 1e-7, 1e-8],
+    "max_step_s_initial_trial": 60,
+    "binding_step_cap_comparison": [60, 30, 15],
+    "breakpoint_policy": "ensure_time_error_check_at_environment_and_radius_knots",
+    "negative_state_policy": "diagnose_no_silent_clipping",
+    "internal_flux": "distance_weighted_harmonic_baseline",
+    "surface_flux": "half_cell_resistance_plus_Robin_nonlinear_consistency",
+    "independent_reference": "weak_form_FEM_independent_assembly_and_backward_Euler"
+  },
+  "outputs": {
+    "radius_step_cm": 0.1,
+    "q1_step_s": 1,
+    "q2_step_s": 1,
+    "q2_export_end": "full",
+    "q2_alternative": "3h",
+    "q3_step_s": 60,
+    "q4_step_s": 60,
+    "start_after_zero": true,
+    "append_exact_event": true,
+    "q4_outside_domain": "blank",
+    "q4_surface_column": "药材表面",
+    "digits": 4,
+    "keep_unrounded_internal_state": true
+  },
+  "diagnostics": {
+    "reference_temperature_delta_K": 22.0,
+    "quasi_isothermal_temperature_tolerance_C": 0.1,
+    "quasi_isothermal_hold_s": 1800,
+    "quasi_isothermal_acceptance": "temperature_criterion_is_only_a_screen; compare_D_and_event_error",
+    "sensitivity_multipliers": [0.9, 1.0, 1.1],
+    "numerical_absolute_target_for_four_decimal_claim": 5e-5,
+    "event_target_h_for_four_decimal_claim": 5e-5,
+    "normalized_balance_target": 1e-6,
+    "targets_are_not_proven_error_bounds": true
+  }
+}

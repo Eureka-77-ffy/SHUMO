@@ -1,0 +1,50 @@
+{
+  "status": "passed_Q23_full_workbooks_and_Q3_numerical_event_acceptance",
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb"
+  },
+  "script_sha256": "df7ab15bd55942863ef4dec43fb0aa9470e1fb635e6a95e9c2d5d4a05cc29c52",
+  "numerical_cells_read_back": {
+    "result2.xlsx": 8690094,
+    "result3.xlsx": 72429
+  },
+  "q2_data_rows_per_sheet": 206907,
+  "q3_data_rows": 3449,
+  "original_sources_unchanged": 8,
+  "all_previous_Q1_Q2_audited_artifacts_unchanged": true,
+  "critical_time_s": 206906.4911824653,
+  "critical_time_h": 57.47402532846259,
+  "remaining_scope": [
+    "Q4 moving material domain and verification",
+    "geometry/end-face and boundary closure validity",
+    "full paper and project audit"
+  ],
+  "artifacts_sha256": {
+    "results/final/result2.xlsx": "ead4006426658b090d564129cd705dbed57dcfb728ef4fe3dc1ae667ea6b2687",
+    "results/final/result3.xlsx": "7f1efee8dc8af9a7a0cb3a5ea503b306b88d13965cf5c8efeb96ec03b57df4aa",
+    "results/final/q23_full_precision.npz": "ea923899f9259843a9bc137585f81b5c042a6a907b578c4ec70caff399523548",
+    "config/q23_final.json": "946e1b7db7eab3b3284ec0244b5608037193bcecdfe797007be99df3bdff4d30",
+    "reports/q3_mechanisms.json": "13b5ce0b5edef7ed640b988c79915d9947a1a86f6353d199f804fb5618de0707",
+    "tables/q3_tables.md": "39b55eb2a42f4cd7820cfc181e79e7af32e937fa3ba504bbe26617c4929992eb",
+    "tables/q3_tables.tex": "f1a7f61723293879328b6ec773aa25899d699c76a321f1ccb8e1015919c1ce12",
+    "tables/q3_moisture.csv": "52cf0189683904463af0f19d4e77387268f3036039e7735d87756b4508701bfd",
+    "reports/q3_convergence.json": "91059da17908d59e3514288f09413ba854d743ccfb878374ba1eb099bc29680c",
+    "reports/q3_independent_verification.json": "a52a4296648e895f3c7f40b6316d91caf8ce98c067a820cf38148cd92f8a98b7",
+    "reports/q3_event_checks.json": "39d7b2c2ba65e0e14844c05720fa37b3753ef4e6fe87f4377dbc17a6f2c216a9",
+    "reports/q3_sensitivity.json": "794ccc6ecfe7cd00f95cf3835912fe021eda7754de9aed4c251222f37d80aa25"
+  }
+}

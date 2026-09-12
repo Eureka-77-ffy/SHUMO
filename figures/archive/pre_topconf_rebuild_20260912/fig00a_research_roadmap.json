@@ -1,0 +1,30 @@
+{
+  "title": "观测驱动的热—湿—形变统一建模框架",
+  "canvas": [
+    1500,
+    810
+  ],
+  "palette": "B 靛蓝鎏金",
+  "layers": [
+    "证据输入",
+    "统一内核",
+    "四问递进",
+    "可信证据",
+    "题定结论"
+  ],
+  "state_semantics": {
+    "independent": [
+      "Q1",
+      "Q2",
+      "Q4"
+    ],
+    "continued": "Q2 → Q3"
+  },
+  "key_outputs": {
+    "Q3_h": 57.474,
+    "Q4_h": 51.092,
+    "Q4_R_cm": 1.2
+  },
+  "editable": true,
+  "embedded_raster": false
+}

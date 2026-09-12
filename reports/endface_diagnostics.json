@@ -1,0 +1,360 @@
+{
+  "status": "passed_conditional_endface_resolution_and_reconstruction_diagnostics",
+  "complete": true,
+  "fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb",
+    "src/moving/__init__.py": "02b9392873b91cc313fa19d1047f9082104a77a21608450ede6c8c139bb17712",
+    "src/moving/integration.py": "48fd59417077b05ad9890bb6f94d6011cb0839c0d066376cfa761e6c52ab8198",
+    "src/moving/model.py": "7a32ad11fc0520f92877874e5f17e13226684a04d11ffe84d4ab1eaad2a25e7d",
+    "scripts/question4.py": "a07f76c257afee6d18bf63b2ffc1135c489627946b433059216692eb87ed6b75",
+    "validation/endface_model.py": "bec9911806e2e799dd94a367ab8c5eee5010d146ecc8faac785e16135764fd53",
+    "validation/endface_run.py": "6957cbd92edc2afab7e7bffbc8d970d71abe710999111018321d009fb5ccd403"
+  },
+  "script_sha256": "fc6680e0354266e5211ab0f0aa32d301543895e446e013c3609c20539c26e1c2",
+  "evidence_sha256": {
+    "reports/endface_audit.json": "68a58b748f3418b5301be43a3a26d7dacf1e3ee2eb0f0482267dc4c9cf86f0e7"
+  },
+  "primary_reconstruction_helper_sha256": "e5f9ea825432634d51ff980d7c48f4b841d7639d1a37a4e0f7b3e8f3ec64efd0",
+  "paired_refinements": [
+    {
+      "group": "q23",
+      "kind": "both_space_axes",
+      "coarse_label": "q23_r64_z32_e1_tol1e-08_dt120",
+      "fine_label": "q23_r128_z64_e1_tol1e-08_dt120",
+      "coarse_paired_effect_s": -8.170529756258475,
+      "fine_paired_effect_s": -7.630123860464664,
+      "change_in_paired_effect_s": 0.5404058957938105,
+      "change_in_absolute_2D_time_s": -31.841705720464233
+    },
+    {
+      "group": "q23",
+      "kind": "radial",
+      "coarse_label": "q23_r64_z64_e1_tol1e-08_dt120",
+      "fine_label": "q23_r128_z64_e1_tol1e-08_dt120",
+      "coarse_paired_effect_s": -7.637302022281801,
+      "fine_paired_effect_s": -7.630123860464664,
+      "change_in_paired_effect_s": 0.007178161817137152,
+      "change_in_absolute_2D_time_s": -32.37493345444091
+    },
+    {
+      "group": "q23",
+      "kind": "axial",
+      "coarse_label": "q23_r128_z64_e1_tol1e-08_dt120",
+      "fine_label": "q23_r128_z128_e1_tol1e-08_dt120",
+      "coarse_paired_effect_s": -7.630123860464664,
+      "fine_paired_effect_s": -7.489676187309669,
+      "change_in_paired_effect_s": 0.14044767315499485,
+      "change_in_absolute_2D_time_s": 0.14044767315499485
+    },
+    {
+      "group": "q23",
+      "kind": "time_and_tolerance",
+      "coarse_label": "q23_r64_z64_e1_tol1e-08_dt120",
+      "fine_label": "q23_r64_z64_e1_tol1e-09_dt60",
+      "coarse_paired_effect_s": -7.637302022281801,
+      "fine_paired_effect_s": -7.656976294849301,
+      "change_in_paired_effect_s": -0.01967427256749943,
+      "change_in_absolute_2D_time_s": -0.013470352481817827
+    },
+    {
+      "group": "q4",
+      "kind": "radial",
+      "coarse_label": "q4_r64_z64_e1_tol1e-08_dt120",
+      "fine_label": "q4_r128_z64_e1_tol1e-08_dt120",
+      "coarse_paired_effect_s": -0.019539151981007308,
+      "fine_paired_effect_s": -0.01866854159743525,
+      "change_in_paired_effect_s": 0.0008706103835720569,
+      "change_in_absolute_2D_time_s": -23.424831425014418
+    },
+    {
+      "group": "q4",
+      "kind": "axial",
+      "coarse_label": "q4_r128_z64_e1_tol1e-08_dt120",
+      "fine_label": "q4_r128_z128_e1_tol1e-08_dt120",
+      "coarse_paired_effect_s": -0.01866854159743525,
+      "fine_paired_effect_s": -0.018224297178676352,
+      "change_in_paired_effect_s": 0.000444244418758899,
+      "change_in_absolute_2D_time_s": 0.000444244418758899
+    },
+    {
+      "group": "q4",
+      "kind": "time_and_tolerance",
+      "coarse_label": "q4_r64_z64_e1_tol1e-08_dt120",
+      "fine_label": "q4_r64_z64_e1_tol1e-10_dt30",
+      "coarse_paired_effect_s": -0.019539151981007308,
+      "fine_paired_effect_s": -0.028440186200896278,
+      "change_in_paired_effect_s": -0.00890103421988897,
+      "change_in_absolute_2D_time_s": 0.001650622027227655
+    },
+    {
+      "group": "q4",
+      "kind": "time_and_tolerance",
+      "coarse_label": "q4_r128_z64_e1_tol1e-08_dt120",
+      "fine_label": "q4_r128_z64_e1_tol1e-10_dt30",
+      "coarse_paired_effect_s": -0.01866854159743525,
+      "fine_paired_effect_s": -0.02841161916148849,
+      "change_in_paired_effect_s": -0.009743077564053237,
+      "change_in_absolute_2D_time_s": 0.001684592745732516
+    },
+    {
+      "group": "q4",
+      "kind": "radial_at_tight_time",
+      "coarse_label": "q4_r64_z64_e1_tol1e-10_dt30",
+      "fine_label": "q4_r128_z64_e1_tol1e-10_dt30",
+      "coarse_paired_effect_s": -0.028440186200896278,
+      "fine_paired_effect_s": -0.02841161916148849,
+      "change_in_paired_effect_s": 2.8567039407789707e-05,
+      "change_in_absolute_2D_time_s": -23.424797454295913
+    }
+  ],
+  "insulated_axial_uniformity": [
+    {
+      "label": "q1_r128_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 1.4210854715202004e-14
+    },
+    {
+      "label": "q1_r32_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.1316282072803006e-14
+    },
+    {
+      "label": "q1_r64_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q23_r128_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q23_r32_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q23_r64_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q23_r64_z3_e0_tol1e-09_dt60",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q4_r128_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q4_r128_z3_e0_tol1e-10_dt30",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q4_r32_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 4.973799150320701e-14
+    },
+    {
+      "label": "q4_r64_z3_e0_tol1e-08_dt120",
+      "axial_state_max_variation": 2.842170943040401e-14
+    },
+    {
+      "label": "q4_r64_z3_e0_tol1e-10_dt30",
+      "axial_state_max_variation": 3.552713678800501e-14
+    }
+  ],
+  "reconstruction": {
+    "Q2_front": {
+      "profile_count": 181,
+      "fields": {
+        "temperature": {
+          "max_abs": 1.6304770156239101e-06,
+          "time_s": 2580.0,
+          "radius_m": 0.003
+        },
+        "moisture": {
+          "max_abs": 7.819986600487994e-07,
+          "time_s": 60.0,
+          "radius_m": 0.019
+        }
+      },
+      "scope": "saved internal profiles and 21 output radii; not every exported second",
+      "primary_cache_sha256": "2ba412d752dbe023ea4969f4a232a2dd2d0c3d72e0bda4510b5c3c195a8cdf59"
+    },
+    "Q23_tail": {
+      "profile_count": 168,
+      "fields": {
+        "temperature": {
+          "max_abs": 5.7346809967384615e-08,
+          "time_s": 10920.0,
+          "radius_m": 0.003
+        },
+        "moisture": {
+          "max_abs": 3.9329660395104327e-07,
+          "time_s": 10800.0,
+          "radius_m": 0.003
+        }
+      },
+      "scope": "saved internal profiles and 21 output radii; not every exported second",
+      "primary_cache_sha256": "778f34d201b8fd70b7d943922e4cfc363f3a566d2abf06b4d4bacb9699f9657a"
+    }
+  },
+  "local_scales": [
+    {
+      "group": "q1",
+      "state": "initial",
+      "temperature_C": 28.0,
+      "moisture": 2.55,
+      "R_m": 0.02,
+      "alpha_m2_s": 1.6885553470919323e-07,
+      "D_m2_s": 4.937655094173937e-09,
+      "radial_heat_scale_h": 0.6580246913580248,
+      "axial_heat_scale_h": 25.704089506172842,
+      "radial_water_scale_h": 22.50280932789613,
+      "axial_water_scale_h": 879.0159893709425,
+      "axial_to_radial_ratio": 39.0625,
+      "diagnostic_time_s": 1800.0,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.017433873995086342,
+      "frozen_coefficient_sqrt_D_t_m": 0.0029812378585938235,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    },
+    {
+      "group": "q23",
+      "state": "initial",
+      "temperature_C": 28.0,
+      "moisture": 2.55,
+      "R_m": 0.02,
+      "alpha_m2_s": 1.448281705704542e-07,
+      "D_m2_s": 5.641680373025668e-09,
+      "radial_heat_scale_h": 0.7671926716567835,
+      "axial_heat_scale_h": 29.968463736593108,
+      "radial_water_scale_h": 19.694683811291764,
+      "axial_water_scale_h": 769.3235863785845,
+      "axial_to_radial_ratio": 39.0625,
+      "diagnostic_time_s": 10800.0,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.03954926348443047,
+      "frozen_coefficient_sqrt_D_t_m": 0.007805776580755897,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    },
+    {
+      "group": "q23",
+      "state": "event_centre",
+      "temperature_C": 49.99893442622952,
+      "moisture": 0.15,
+      "R_m": 0.02,
+      "alpha_m2_s": 2.1466624526400237e-07,
+      "D_m2_s": 8.00089381768921e-10,
+      "radial_heat_scale_h": 0.5175993597617718,
+      "axial_heat_scale_h": 20.218724990694213,
+      "radial_water_scale_h": 138.87337295422554,
+      "axial_water_scale_h": 5424.741131024435,
+      "axial_to_radial_ratio": 39.0625,
+      "diagnostic_time_s": 206906.4911824653,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.21075065737237747,
+      "frozen_coefficient_sqrt_D_t_m": 0.012866378146710728,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    },
+    {
+      "group": "q23",
+      "state": "event_surface",
+      "temperature_C": 49.9989344262295,
+      "moisture": 0.05264694390693769,
+      "R_m": 0.02,
+      "alpha_m2_s": 2.197456158322783e-07,
+      "D_m2_s": 3.1180841472821627e-12,
+      "radial_heat_scale_h": 0.5056351667826543,
+      "axial_heat_scale_h": 19.751373702447435,
+      "radial_water_scale_h": 35634.41711730572,
+      "axial_water_scale_h": 1391969.4186447547,
+      "axial_to_radial_ratio": 39.0625,
+      "diagnostic_time_s": 206906.4911824653,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.21322944056716628,
+      "frozen_coefficient_sqrt_D_t_m": 0.0008032134524059104,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    },
+    {
+      "group": "q4",
+      "state": "initial",
+      "temperature_C": 28.0,
+      "moisture": 2.55,
+      "R_m": 0.02,
+      "alpha_m2_s": 7.850060489915901e-08,
+      "D_m2_s": 1.0471122989493634e-09,
+      "radial_heat_scale_h": 1.4154172602089268,
+      "axial_heat_scale_h": 55.28973672691121,
+      "radial_water_scale_h": 106.1119339564593,
+      "axial_water_scale_h": 4144.997420174192,
+      "axial_to_radial_ratio": 39.0625,
+      "diagnostic_time_s": 10800.0,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.029117117524077092,
+      "frozen_coefficient_sqrt_D_t_m": 0.0033628578365213603,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    },
+    {
+      "group": "q4",
+      "state": "event_centre",
+      "temperature_C": 49.99893442622951,
+      "moisture": 0.15,
+      "R_m": 0.012,
+      "alpha_m2_s": 8.865084495336598e-08,
+      "D_m2_s": 3.806019748309607e-10,
+      "radial_heat_scale_h": 0.45120833333333327,
+      "axial_heat_scale_h": 48.95923755787037,
+      "radial_water_scale_h": 105.09666960547294,
+      "axial_water_scale_h": 11403.718490177183,
+      "axial_to_radial_ratio": 108.50694444444443,
+      "diagnostic_time_s": 183931.2887197449,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.1276936339774497,
+      "frozen_coefficient_sqrt_D_t_m": 0.008366875863782043,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    },
+    {
+      "group": "q4",
+      "state": "event_surface",
+      "temperature_C": 49.99893442622951,
+      "moisture": 0.052607499229419874,
+      "R_m": 0.012,
+      "alpha_m2_s": 8.684136572931112e-08,
+      "D_m2_s": 9.38530451458277e-12,
+      "radial_heat_scale_h": 0.4606099830889579,
+      "axial_heat_scale_h": 49.97938184559005,
+      "radial_water_scale_h": 4261.9821166003185,
+      "axial_water_scale_h": 462454.6567491665,
+      "axial_to_radial_ratio": 108.50694444444443,
+      "diagnostic_time_s": 183931.2887197449,
+      "frozen_coefficient_sqrt_alpha_t_m": 0.12638371854307373,
+      "frozen_coefficient_sqrt_D_t_m": 0.0013138687736583318,
+      "note": "local coefficient screen; neither cumulative propagation length nor drying time prediction"
+    }
+  ],
+  "matched_grid_resolution": [
+    {
+      "group": "q23",
+      "label": "q23_r128_z128_e1_tol1e-08_dt120",
+      "fine_1D_time_s": 206906.4911824653,
+      "insulated_coarse_minus_fine_1D_s": 10.195861525600776,
+      "wrong_unmatched_subtraction_s": 2.7061853382911067,
+      "correct_matched_grid_effect_s": -7.489676187309669,
+      "do_not_replace_final_1D_time_with_this_coarse_2D_time": true
+    },
+    {
+      "group": "q4",
+      "label": "q4_r128_z64_e1_tol1e-10_dt30",
+      "fine_1D_time_s": 183931.2887197449,
+      "insulated_coarse_minus_fine_1D_s": 7.639034782740055,
+      "wrong_unmatched_subtraction_s": 7.610623163578566,
+      "correct_matched_grid_effect_s": -0.02841161916148849,
+      "do_not_replace_final_1D_time_with_this_coarse_2D_time": true
+    }
+  ],
+  "endface_error_bound": null,
+  "all_four_decimal_digits_justified_by_geometry": false
+}

@@ -1,0 +1,871 @@
+{
+  "status": "passed_complete_file_and_visual_qa",
+  "backend": "Python 3.9 / matplotlib 3.9.4",
+  "figure_width_mm": 182.88,
+  "raster_dpi": 600,
+  "svg_text_editable": true,
+  "font_policy": "Arial for Latin; Songti SC as the installed SimSun-compatible Chinese font",
+  "heatmap_integrity": "No smoothing or invented values; display-only temporal sampling is declared in the script; Q4 physical-domain exterior is masked white.",
+  "input_manifest_items_verified": 8,
+  "source_artifacts": {
+    "results/final/q1_full_precision.npz": "bc364faf5e38076e4885ce6ba55c4fc2fa0d214fb1ba9ce4f87abba8a1942a32",
+    "results/final/q23_full_precision.npz": "ea923899f9259843a9bc137585f81b5c042a6a907b578c4ec70caff399523548",
+    "results/final/q4_full_precision.npz": "25b4d7b32dc4a48f02cd30de8b234cabd29652fafa6accec3a8c8db3177a3530",
+    "reports/final_result_validation.json": "0cb675db61ab6d97c4efe27b4c592c1d957f67a58f183705481408585afe7b04"
+  },
+  "figures": {
+    "fig01_inputs_scales": {
+      "files": {
+        "svg": {
+          "bytes": 64673,
+          "sha256": "af8c24f61b88841d4db46a14be5b380aca91848256cfffb269b81ba57b97e52c"
+        },
+        "pdf": {
+          "bytes": 24842,
+          "sha256": "1b639cca91d9865c6de93017d81aeb8f4b755058d9bfa83cfcbf4df6f8241e12"
+        },
+        "png": {
+          "bytes": 381214,
+          "sha256": "12392c41e52e7a51e5f7a1d439849bb6f99849f5031351986b00ca1ea16ff062"
+        },
+        "tiff": {
+          "bytes": 785444,
+          "sha256": "6278cb89b849dfbe7a87949cb92b869ddaaea8f4c0f40268265591483db4ec39"
+        }
+      },
+      "contract": {
+        "caption": "环境驱动与特征尺度",
+        "section": "数据分析与尺度分析",
+        "core_conclusion": "边界输入先趋于平台，而内部水分扩散与收缩持续更久，因此必须保留时变边界并区分热、质与几何尺度。",
+        "archetype": "quantitative grid",
+        "panel_map": {
+          "a": "实测环境温度与环境含湿量",
+          "b": "实测半径轨迹及Q4临界时刻",
+          "c": "三套物性的初态径向热、质扩散尺度"
+        },
+        "reviewer_risk": "特征尺度仅用于量级判断，不解释为预测干燥时间。",
+        "source_data": [
+          "original_appendix_1",
+          "original_appendix_2",
+          "reports/scales_snapshot.csv"
+        ]
+      }
+    },
+    "fig02_q1_fields": {
+      "files": {
+        "svg": {
+          "bytes": 55285,
+          "sha256": "e7689e470c0908265815f45a0a89d54e9aa7eead7fac5d99f8a8bd4b3b44b4b8"
+        },
+        "pdf": {
+          "bytes": 25266,
+          "sha256": "5d4aa6f850deacf003bef6a37f02e1e2e6127126b070f24bce812d2442089e4f"
+        },
+        "png": {
+          "bytes": 464270,
+          "sha256": "282661440a3755fab1ed96440abe9dc41df07b18a4b84bac754f62f7b1d5dfa0"
+        },
+        "tiff": {
+          "bytes": 5888310,
+          "sha256": "93d2263b9cf7c787553c8fa48bcb8da46e20710404292a4a711ec9194d8fec74"
+        }
+      },
+      "contract": {
+        "caption": "问题一温湿场演化",
+        "section": "问题一",
+        "core_conclusion": "前30分钟热影响已进入内部，而显著失水仍集中在表层。",
+        "archetype": "quantitative grid",
+        "panel_map": {
+          "a": "温度时空场",
+          "b": "干基含水率时空场",
+          "c": "典型温度径向剖面",
+          "d": "典型含水率径向剖面"
+        },
+        "reviewer_risk": "热图与剖面来自同一未舍入解，但分别回答全局传播和局部梯度问题。",
+        "source_data": [
+          "results/final/q1_full_precision.npz"
+        ]
+      }
+    },
+    "fig03_q2_coupling": {
+      "files": {
+        "svg": {
+          "bytes": 63288,
+          "sha256": "77dab982d33c9a4c633adaf97983bd4a9f28d1ea2611a2485edd79dbe9961779"
+        },
+        "pdf": {
+          "bytes": 32193,
+          "sha256": "60e3a26756d71afaebc3fb6fa1d7745f5a451e4d0dba2fed2fc1dbd11dc62523"
+        },
+        "png": {
+          "bytes": 518372,
+          "sha256": "bd14acdb450ff728d346056979e88426b03b18c8acf4adb2d0b9ba927e509c34"
+        },
+        "tiff": {
+          "bytes": 9036070,
+          "sha256": "288319546475ea03520212001b6be25c55231fae147db0fdca3377e851eeb5d6"
+        }
+      },
+      "contract": {
+        "caption": "问题二耦合响应",
+        "section": "问题二",
+        "core_conclusion": "3小时内温度趋近环境平台，但水分梯度仍显著，温升促进与表层低含水抑制共同控制局部扩散率。",
+        "archetype": "quantitative grid",
+        "panel_map": {
+          "a": "温度时空场",
+          "b": "干基含水率时空场",
+          "c": "中心、表面与环境温度响应",
+          "d": "中心与表面局部扩散率"
+        },
+        "reviewer_risk": "扩散率是经验模型的局部诊断量，不作实验因果解释。",
+        "source_data": [
+          "results/final/q23_full_precision.npz",
+          "config/model_config.json"
+        ]
+      }
+    },
+    "fig04_q3_endpoint": {
+      "files": {
+        "svg": {
+          "bytes": 55168,
+          "sha256": "e1bcf1754807e3a82938b769de3d7f275391381c0e472802c4fb180ab6c9c4a7"
+        },
+        "pdf": {
+          "bytes": 32577,
+          "sha256": "8c480028a196b2e0f9979a9aae01fd81d25b9c5c937a0e360ee997ede771d1e8"
+        },
+        "png": {
+          "bytes": 612390,
+          "sha256": "e8500c4d84df712e635ec7e5a6f74207a6371e8c38e61dc0184d36c55cfb6421"
+        },
+        "tiff": {
+          "bytes": 3745320,
+          "sha256": "ff0992e58829e0b73018bde42ea78addc6a56c664f3e1c6fca5074d223778181"
+        }
+      },
+      "contract": {
+        "caption": "问题三全域干燥终点",
+        "section": "问题三",
+        "core_conclusion": "后期干燥由全域最大含水率的缓慢下降控制，临界阈值在57.4740小时首次到达。",
+        "archetype": "asymmetric mixed-modality figure",
+        "panel_map": {
+          "a": "全时域水分场",
+          "b": "全域最大值、体积平均值与表面值",
+          "c": "典型径向剖面",
+          "d": "临界点邻域及严格达标整数秒"
+        },
+        "reviewer_risk": "临界时刻对应等号，严格小于阈值从其后的时刻开始。",
+        "source_data": [
+          "results/final/q23_full_precision.npz",
+          "reports/final_result_validation.json"
+        ]
+      }
+    },
+    "fig05_q4_shrinkage": {
+      "files": {
+        "svg": {
+          "bytes": 70293,
+          "sha256": "8f5a33de53d5cf4156696b8f2e90f9421d4f786c800460a01dbe72f6aece413e"
+        },
+        "pdf": {
+          "bytes": 46552,
+          "sha256": "877ce1e3cad358fd9bb57a1bbad5e4fdd3273e71bee0b1e2a33da15dcf17b46d"
+        },
+        "png": {
+          "bytes": 592308,
+          "sha256": "f22ae60dba5c9b45aeded89bf0792859cc9aba371b76e66e26c515aec5ec7b23"
+        },
+        "tiff": {
+          "bytes": 4598644,
+          "sha256": "05ce265121b84ff97acd10490c7e52f3a6ba0fe32e170c0a8af9e4ac0d819cbc"
+        }
+      },
+      "contract": {
+        "caption": "问题四收缩域效应",
+        "section": "问题四",
+        "core_conclusion": "收缩同时缩短扩散路径并提高单位体积交换尺度；材料坐标与物理坐标给出一致场演化，且物性与几何作用不能混为一谈。",
+        "archetype": "asymmetric mixed-modality figure",
+        "panel_map": {
+          "a": "观测半径与几何倍率",
+          "b": "材料坐标中的水分场",
+          "c": "物理坐标中的水分场与域外遮罩",
+          "d": "物性和几何的四组受控对照"
+        },
+        "reviewer_risk": "物理域外保持空白；四组对照是模型情景，不是实验因果识别。",
+        "source_data": [
+          "results/final/q4_full_precision.npz",
+          "tables/q4_factorial.csv",
+          "original_appendix_2"
+        ]
+      }
+    },
+    "fig06_numerical_validation": {
+      "files": {
+        "svg": {
+          "bytes": 89278,
+          "sha256": "b4fd44324b5af175e2b8f46c2da8192c3b94461c98e376c62ae16e2a54d4db06"
+        },
+        "pdf": {
+          "bytes": 34344,
+          "sha256": "1094a0900cbbf5db0da22422d57f423df9dba08de39747b0cab74425a0425b85"
+        },
+        "png": {
+          "bytes": 691849,
+          "sha256": "31faebe30a5c200836a78ac9ddaef90703c5b3b3bd8c52b01976c3f6b7cd10f1"
+        },
+        "tiff": {
+          "bytes": 1522476,
+          "sha256": "f23d5461c1a71aaec683b9068f2e26269b19b5ba232a66380e7b0a2d22c385c0"
+        }
+      },
+      "contract": {
+        "caption": "数值收敛与独立验证",
+        "section": "模型检验",
+        "core_conclusion": "空间、时间和独立实现差异均收敛到远小于主要情景差异的水平，离散守恒残差满足预设阈值。",
+        "archetype": "quantitative grid",
+        "panel_map": {
+          "a": "Q2温度空间收敛",
+          "b": "Q2水分空间收敛",
+          "c": "Q3/Q4临界时间空间收敛",
+          "d": "四问独立实现的场值差异",
+          "e": "四问归一化守恒残差"
+        },
+        "reviewer_risk": "所有差异均为观测到的数值差，而非严格误差上界或物理精度证明。",
+        "source_data": [
+          "reports/q2_convergence.json",
+          "reports/q3_convergence.json",
+          "reports/q4_convergence.json",
+          "reports/final_result_validation.json"
+        ]
+      }
+    },
+    "fig07_sensitivity_risk": {
+      "files": {
+        "svg": {
+          "bytes": 61049,
+          "sha256": "9455fe35a8652412b807b223fe623b53ab51e0b6b81d1303bfbd8f40b6f672d7"
+        },
+        "pdf": {
+          "bytes": 34294,
+          "sha256": "6d29277666b2cbace8c7b52b81efcc4d35605169d7b3f1f65ef068bfbfc416dc"
+        },
+        "png": {
+          "bytes": 423495,
+          "sha256": "669f3fffb3d4ad67547119f76d2fadce393c91cc9e969f8b92291f27db3284c4"
+        },
+        "tiff": {
+          "bytes": 1247606,
+          "sha256": "b0ca15e45ebbca183c3cb603cf5fe4bcf703b5779b90a679db40e641966606a0"
+        }
+      },
+      "contract": {
+        "caption": "终点灵敏度与风险层级",
+        "section": "灵敏度分析",
+        "core_conclusion": "Q3和Q4终点均对扩散率尺度最敏感、对换热系数近乎不敏感；边界和结构性情景差异显著大于纯数值误差。",
+        "archetype": "quantitative grid",
+        "panel_map": {
+          "a": "Q3正负10%单因素情景",
+          "b": "Q4正负10%单因素情景",
+          "c": "Q3和Q4的有符号无量纲局部灵敏度系数",
+          "d": "数值、边界、端面、参数及结构情景的影响量级"
+        },
+        "reviewer_risk": "单因素局部扰动与情景包络均未赋予概率分布，不应解释为全局敏感性或置信区间。",
+        "source_data": [
+          "reports/q3_sensitivity.json",
+          "reports/q4_sensitivity.json",
+          "reports/endface_diagnostics.json",
+          "reports/final_result_validation.json"
+        ]
+      }
+    }
+  },
+  "contact_sheet": {
+    "path": "figures/contact_sheet.png",
+    "sha256": "bd604ba5adbf29d00f522fcb787f070593f216423ff0cf6d76d43739ef72a450"
+  },
+  "script_sha256": "19452115a2fdffd1660369c6fdf8460e38bea8bd9a6ceaad280120fa62d349ae",
+  "qa": {
+    "backend_policy": "Quantitative figures were generated only with Python/matplotlib; the roadmap uses editable draw.io and the physical schematic uses TikZ/XeLaTeX.",
+    "manual_visual_review": "Eleven full-size PNG figures and the complete contact sheet were inspected for labels, overlap, masks, scales and panel hierarchy.",
+    "statistics_contract": "Deterministic PDE solutions; no replicates or statistical confidence intervals. Sensitivity panels are controlled scenario contrasts.",
+    "input_holdout_scope": "Input-knot interpolation only; not an experimental validation of internal fields or the post-4h boundary extension.",
+    "endface_scope": "Conditional exposed-versus-insulated geometry contrast; not a calibrated physical error bound.",
+    "roadmap_layout_check": "FAIL 0 / WARN 0 under the strict draw.io preflight.",
+    "roadmap_self_score": {
+      "text_readability": 9,
+      "arrow_accuracy": 10,
+      "color_consistency": 9,
+      "layout_consistency": 9,
+      "style_fit": 9,
+      "total": 46
+    },
+    "figure_checks": {
+      "fig00a_research_roadmap": {
+        "svg_text_nodes": 1,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 199,
+        "raster": {
+          "png": {
+            "pixels": [
+              5440,
+              925
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGB"
+          },
+          "tiff": {
+            "pixels": [
+              5440,
+              925
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGB"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 387426,
+            "sha256": "8be9517b8d1552841af3814a36267c490eefbad5158eaf0e074578fd39e3fbb2"
+          },
+          "pdf": {
+            "bytes": 87894,
+            "sha256": "04307a2145db5883c738a10ec5251e16a614847840ed4a22c6181a5bd1736b43"
+          },
+          "png": {
+            "bytes": 562696,
+            "sha256": "4b5a24cae327c7ead7ff88d91dd46cfddb24edafd96860d562a1fa009b457d33"
+          },
+          "tiff": {
+            "bytes": 768206,
+            "sha256": "388780ffb0d5dcb98e3c911e6c75d5aea1375a0bb1285cb7337531b938bcbf9f"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig00b_model_geometry": {
+        "svg_text_nodes": null,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 265,
+        "raster": {
+          "png": {
+            "pixels": [
+              5000,
+              1926
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              5000,
+              1926
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "pdf": {
+            "bytes": 39061,
+            "sha256": "3c5252b0fad3647c31418457cac51b276d8e7bfbdb291dbf41367774737ea78f"
+          },
+          "png": {
+            "bytes": 553411,
+            "sha256": "14bbd207f4bb374d67b32c2945f8eb101997574e7d73150c0c3dd4f5e5b6832d"
+          },
+          "tiff": {
+            "bytes": 1269398,
+            "sha256": "47dbe28ddac51181d3eb9e6ad6627a374c6aec94e8d786d948a1dafbe821c8ae"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig01_inputs_scales": {
+        "svg_text_nodes": 60,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 282,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              1539
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              1539
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 64673,
+            "sha256": "af8c24f61b88841d4db46a14be5b380aca91848256cfffb269b81ba57b97e52c"
+          },
+          "pdf": {
+            "bytes": 24842,
+            "sha256": "1b639cca91d9865c6de93017d81aeb8f4b755058d9bfa83cfcbf4df6f8241e12"
+          },
+          "png": {
+            "bytes": 381214,
+            "sha256": "12392c41e52e7a51e5f7a1d439849bb6f99849f5031351986b00ca1ea16ff062"
+          },
+          "tiff": {
+            "bytes": 785444,
+            "sha256": "6278cb89b849dfbe7a87949cb92b869ddaaea8f4c0f40268265591483db4ec39"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig02_q1_fields": {
+        "svg_text_nodes": 101,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 496,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              3249
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              3249
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 55285,
+            "sha256": "e7689e470c0908265815f45a0a89d54e9aa7eead7fac5d99f8a8bd4b3b44b4b8"
+          },
+          "pdf": {
+            "bytes": 25266,
+            "sha256": "5d4aa6f850deacf003bef6a37f02e1e2e6127126b070f24bce812d2442089e4f"
+          },
+          "png": {
+            "bytes": 464270,
+            "sha256": "282661440a3755fab1ed96440abe9dc41df07b18a4b84bac754f62f7b1d5dfa0"
+          },
+          "tiff": {
+            "bytes": 5888310,
+            "sha256": "93d2263b9cf7c787553c8fa48bcb8da46e20710404292a4a711ec9194d8fec74"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig03_q2_coupling": {
+        "svg_text_nodes": 97,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 472,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              3249
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              3249
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 63288,
+            "sha256": "77dab982d33c9a4c633adaf97983bd4a9f28d1ea2611a2485edd79dbe9961779"
+          },
+          "pdf": {
+            "bytes": 32193,
+            "sha256": "60e3a26756d71afaebc3fb6fa1d7745f5a451e4d0dba2fed2fc1dbd11dc62523"
+          },
+          "png": {
+            "bytes": 518372,
+            "sha256": "bd14acdb450ff728d346056979e88426b03b18c8acf4adb2d0b9ba927e509c34"
+          },
+          "tiff": {
+            "bytes": 9036070,
+            "sha256": "288319546475ea03520212001b6be25c55231fae147db0fdca3377e851eeb5d6"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig04_q3_endpoint": {
+        "svg_text_nodes": 90,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 472,
+        "raster": {
+          "png": {
+            "pixels": [
+              4387,
+              3429
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4387,
+              3429
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 55168,
+            "sha256": "e1bcf1754807e3a82938b769de3d7f275391381c0e472802c4fb180ab6c9c4a7"
+          },
+          "pdf": {
+            "bytes": 32577,
+            "sha256": "8c480028a196b2e0f9979a9aae01fd81d25b9c5c937a0e360ee997ede771d1e8"
+          },
+          "png": {
+            "bytes": 612390,
+            "sha256": "e8500c4d84df712e635ec7e5a6f74207a6371e8c38e61dc0184d36c55cfb6421"
+          },
+          "tiff": {
+            "bytes": 3745320,
+            "sha256": "ff0992e58829e0b73018bde42ea78addc6a56c664f3e1c6fca5074d223778181"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig05_q4_shrinkage": {
+        "svg_text_nodes": 106,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 487,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              3489
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              3489
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 70293,
+            "sha256": "8f5a33de53d5cf4156696b8f2e90f9421d4f786c800460a01dbe72f6aece413e"
+          },
+          "pdf": {
+            "bytes": 46552,
+            "sha256": "877ce1e3cad358fd9bb57a1bbad5e4fdd3273e71bee0b1e2a33da15dcf17b46d"
+          },
+          "png": {
+            "bytes": 592308,
+            "sha256": "f22ae60dba5c9b45aeded89bf0792859cc9aba371b76e66e26c515aec5ec7b23"
+          },
+          "tiff": {
+            "bytes": 4598644,
+            "sha256": "05ce265121b84ff97acd10490c7e52f3a6ba0fe32e170c0a8af9e4ac0d819cbc"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig06_numerical_validation": {
+        "svg_text_nodes": 106,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 565,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              3369
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              3369
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 89278,
+            "sha256": "b4fd44324b5af175e2b8f46c2da8192c3b94461c98e376c62ae16e2a54d4db06"
+          },
+          "pdf": {
+            "bytes": 34344,
+            "sha256": "1094a0900cbbf5db0da22422d57f423df9dba08de39747b0cab74425a0425b85"
+          },
+          "png": {
+            "bytes": 691849,
+            "sha256": "31faebe30a5c200836a78ac9ddaef90703c5b3b3bd8c52b01976c3f6b7cd10f1"
+          },
+          "tiff": {
+            "bytes": 1522476,
+            "sha256": "f23d5461c1a71aaec683b9068f2e26269b19b5ba232a66380e7b0a2d22c385c0"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "fig07_sensitivity_risk": {
+        "svg_text_nodes": 69,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 400,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              3819
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              3819
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 61049,
+            "sha256": "9455fe35a8652412b807b223fe623b53ab51e0b6b81d1303bfbd8f40b6f672d7"
+          },
+          "pdf": {
+            "bytes": 34294,
+            "sha256": "6d29277666b2cbace8c7b52b81efcc4d35605169d7b3f1f65ef068bfbfc416dc"
+          },
+          "png": {
+            "bytes": 423495,
+            "sha256": "669f3fffb3d4ad67547119f76d2fadce393c91cc9e969f8b92291f27db3284c4"
+          },
+          "tiff": {
+            "bytes": 1247606,
+            "sha256": "b0ca15e45ebbca183c3cb603cf5fe4bcf703b5779b90a679db40e641966606a0"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "figS01_input_holdout": {
+        "svg_text_nodes": 114,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 663,
+        "raster": {
+          "png": {
+            "pixels": [
+              4236,
+              3138
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4236,
+              3138
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 164049,
+            "sha256": "010041dd37b6eb95694f616ebae751e8577ba241eee7357a46b2f43aa0e7de06"
+          },
+          "pdf": {
+            "bytes": 43507,
+            "sha256": "7e1998264c46860eee32f23a17dd96da6f0b08272be26c095b84a40f09f49a86"
+          },
+          "png": {
+            "bytes": 1101874,
+            "sha256": "bddb272bcdd6c79de8e2eac68de7e9bac0b06a09ac90397e9af5f545fbccce39"
+          },
+          "tiff": {
+            "bytes": 1828836,
+            "sha256": "2003f44ae4be4399a3cf3281eda7dfb151a25b5c8674cce6373b2e4c9333d5f4"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      },
+      "figS02_endface_assessment": {
+        "svg_text_nodes": 101,
+        "pdf_pages": 1,
+        "pdf_extracted_characters": 546,
+        "raster": {
+          "png": {
+            "pixels": [
+              4389,
+              3399
+            ],
+            "dpi": [
+              599.9988,
+              599.9988
+            ],
+            "mode": "RGBA"
+          },
+          "tiff": {
+            "pixels": [
+              4389,
+              3399
+            ],
+            "dpi": [
+              600.0,
+              600.0
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "files": {
+          "svg": {
+            "bytes": 96029,
+            "sha256": "2aaa63c47825e7957315d1ed8fbb82a1763719f1f39f3c8de80f71a31140c178"
+          },
+          "pdf": {
+            "bytes": 46120,
+            "sha256": "329394c21959631d6c1839949ba83adfbf0200b56f0fde7a0f2edb07eaee63ee"
+          },
+          "png": {
+            "bytes": 586776,
+            "sha256": "a6c9bea4671327a5da0ed8417478921ccbdcedfa2ae243824e0120cc380f1782"
+          },
+          "tiff": {
+            "bytes": 1901716,
+            "sha256": "458a0a20a83bd264f28098517fa17da2ea0a2d05eb59199624cac24413bebd29"
+          }
+        },
+        "status": "passed_export_and_editable_text_checks"
+      }
+    },
+    "q4_domain_mask": {
+      "finite_fixed_radius_cells": 41282,
+      "outside_domain_cells_in_full_precision_cache": 23167,
+      "outside_domain_cells_in_submission_workbook": 23165,
+      "count_difference_reason": "The full-precision cache retains diagnostic 1 s and 10 s rows that are not exported to the template workbook.",
+      "true_surface_finite": true
+    },
+    "submission_workbooks": {
+      "result1.xlsx": {
+        "accepted_source": "results/final/result1.xlsx",
+        "new_submission_copy": "results/submission/result1.xlsx",
+        "sha256": "11f29d96fdbbbf982aa5589beecf50126b52a81e279e841bf69ff8d5a30765c6",
+        "template_fields_and_values_preserved": true,
+        "numeric_result_cells_previously_checked": 75600,
+        "outside_domain_blank_cells_previously_checked": 0
+      },
+      "result2.xlsx": {
+        "accepted_source": "results/final/result2.xlsx",
+        "new_submission_copy": "results/submission/result2.xlsx",
+        "sha256": "ead4006426658b090d564129cd705dbed57dcfb728ef4fe3dc1ae667ea6b2687",
+        "template_fields_and_values_preserved": true,
+        "numeric_result_cells_previously_checked": 8690094,
+        "outside_domain_blank_cells_previously_checked": 0
+      },
+      "result3.xlsx": {
+        "accepted_source": "results/final/result3.xlsx",
+        "new_submission_copy": "results/submission/result3.xlsx",
+        "sha256": "7f1efee8dc8af9a7a0cb3a5ea503b306b88d13965cf5c8efeb96ec03b57df4aa",
+        "template_fields_and_values_preserved": true,
+        "numeric_result_cells_previously_checked": 72429,
+        "outside_domain_blank_cells_previously_checked": 0
+      },
+      "result4.xlsx": {
+        "accepted_source": "results/final/result4.xlsx",
+        "new_submission_copy": "results/submission/result4.xlsx",
+        "sha256": "8086731d59ba174376121e8ec103e585766034f40a86e8ad5366faf7f1029326",
+        "template_fields_and_values_preserved": true,
+        "numeric_result_cells_previously_checked": 44287,
+        "outside_domain_blank_cells_previously_checked": 23165
+      }
+    },
+    "original_input_items_unchanged": 8
+  }
+}

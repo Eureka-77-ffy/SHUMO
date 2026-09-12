@@ -1,0 +1,53 @@
+{
+  "status": "palette_candidates_for_user_selection",
+  "backend": "Python/matplotlib",
+  "official_figures_overwritten": false,
+  "comparison_board": "figures/style_previews/palette_comparison.png",
+  "candidates": [
+    {
+      "id": "a_ocean_coral",
+      "title": "A  深海珊瑚｜现代期刊",
+      "description": "冷暖对照清楚，热湿语义最直观；推荐作为全文基准。",
+      "files": [
+        "figures/style_previews/a_ocean_coral/fig03_q2_coupling.svg",
+        "figures/style_previews/a_ocean_coral/fig03_q2_coupling.pdf",
+        "figures/style_previews/a_ocean_coral/fig03_q2_coupling.png",
+        "figures/style_previews/a_ocean_coral/fig03_q2_coupling.tiff",
+        "figures/style_previews/a_ocean_coral/fig07_sensitivity_risk.svg",
+        "figures/style_previews/a_ocean_coral/fig07_sensitivity_risk.pdf",
+        "figures/style_previews/a_ocean_coral/fig07_sensitivity_risk.png",
+        "figures/style_previews/a_ocean_coral/fig07_sensitivity_risk.tiff"
+      ]
+    },
+    {
+      "id": "b_indigo_gold",
+      "title": "B  靛蓝鎏金｜竞赛醒目",
+      "description": "靛蓝稳重、金橙抓重点，打印对比最强，视觉更有冲击力。",
+      "files": [
+        "figures/style_previews/b_indigo_gold/fig03_q2_coupling.svg",
+        "figures/style_previews/b_indigo_gold/fig03_q2_coupling.pdf",
+        "figures/style_previews/b_indigo_gold/fig03_q2_coupling.png",
+        "figures/style_previews/b_indigo_gold/fig03_q2_coupling.tiff",
+        "figures/style_previews/b_indigo_gold/fig07_sensitivity_risk.svg",
+        "figures/style_previews/b_indigo_gold/fig07_sensitivity_risk.pdf",
+        "figures/style_previews/b_indigo_gold/fig07_sensitivity_risk.png",
+        "figures/style_previews/b_indigo_gold/fig07_sensitivity_risk.tiff"
+      ]
+    },
+    {
+      "id": "c_ink_crimson",
+      "title": "C  青黛绛红｜中式克制",
+      "description": "青黛与绛红低饱和统一，论文气质最沉稳，长文阅读最舒适。",
+      "files": [
+        "figures/style_previews/c_ink_crimson/fig03_q2_coupling.svg",
+        "figures/style_previews/c_ink_crimson/fig03_q2_coupling.pdf",
+        "figures/style_previews/c_ink_crimson/fig03_q2_coupling.png",
+        "figures/style_previews/c_ink_crimson/fig03_q2_coupling.tiff",
+        "figures/style_previews/c_ink_crimson/fig07_sensitivity_risk.svg",
+        "figures/style_previews/c_ink_crimson/fig07_sensitivity_risk.pdf",
+        "figures/style_previews/c_ink_crimson/fig07_sensitivity_risk.png",
+        "figures/style_previews/c_ink_crimson/fig07_sensitivity_risk.tiff"
+      ]
+    }
+  ]
+}

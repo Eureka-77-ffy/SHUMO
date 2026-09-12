@@ -1,0 +1,13 @@
+{
+  "all_appendix_property_sets_positive_at_initial": true,
+  "jacobian_g1.0_harmonic_relative_error": 8.420537082232545e-11,
+  "jacobian_g1.0_kirchhoff_relative_error": 4.8223284170978864e-11,
+  "jacobian_g2.0_harmonic_relative_error": 1.306933828992188e-10,
+  "jacobian_g2.0_kirchhoff_relative_error": 5.57604723169092e-11,
+  "constant_state_and_zero_boundary_flow": true,
+  "quadratic_axis_limit_and_axis_reconstruction": true,
+  "no_transport_reference_profile_unchanged_for_three_radii": true,
+  "true_surface_robin_max_flux_residual": 1.3044307387716225e-19,
+  "constant_D_water_Bessel_max_error": 1.9186899826717507e-05,
+  "constant_D_water_independent_balance": 5.023642613011248e-11
+}

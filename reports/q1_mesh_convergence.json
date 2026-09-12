@@ -1,0 +1,161 @@
+{
+  "bessel_256_512_max_abs": 1.5648552675884275e-08,
+  "mesh_series": [
+    {
+      "label": "g1_n80",
+      "grading": 1.0,
+      "n": 80,
+      "heat_bessel_max_abs": 0.00013141160524909878,
+      "heat_balance": 2.0528814204112678e-09,
+      "water_balance": 1.4342991794258353e-09
+    },
+    {
+      "label": "g1_n160",
+      "grading": 1.0,
+      "n": 160,
+      "heat_bessel_max_abs": 3.2856398554770294e-05,
+      "heat_balance": 3.514239566015931e-09,
+      "water_balance": 6.076394942766683e-10,
+      "temperature_grid_delta_max": 9.855520669432849e-05,
+      "temperature_grid_delta_location": {
+        "time_s": 300,
+        "radius_cm": 2.0
+      },
+      "temperature_rounding_differences": 8673,
+      "moisture_grid_delta_max": 0.018706283916744226,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 12102
+    },
+    {
+      "label": "g1_n320",
+      "grading": 1.0,
+      "n": 320,
+      "heat_bessel_max_abs": 8.215786639453881e-06,
+      "heat_balance": 3.305260953823108e-09,
+      "water_balance": 3.122715974690493e-10,
+      "temperature_grid_delta_max": 2.4640611915316413e-05,
+      "temperature_grid_delta_location": {
+        "time_s": 300,
+        "radius_cm": 2.0
+      },
+      "temperature_rounding_differences": 2162,
+      "moisture_grid_delta_max": 0.0053911779385313885,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 4198
+    },
+    {
+      "label": "g1_n640",
+      "grading": 1.0,
+      "n": 640,
+      "heat_bessel_max_abs": 2.0550787560580375e-06,
+      "heat_balance": 2.4310464752375083e-09,
+      "water_balance": 2.840937207704286e-10,
+      "temperature_grid_delta_max": 6.160707883395844e-06,
+      "temperature_grid_delta_location": {
+        "time_s": 300,
+        "radius_cm": 2.0
+      },
+      "temperature_rounding_differences": 550,
+      "moisture_grid_delta_max": 0.0012138368242475828,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 1262
+    },
+    {
+      "label": "g2_n80",
+      "grading": 2.0,
+      "n": 80,
+      "heat_bessel_max_abs": 0.00032965460822254045,
+      "heat_balance": 1.088431567097814e-09,
+      "water_balance": 9.46932254830557e-11
+    },
+    {
+      "label": "g2_n160",
+      "grading": 2.0,
+      "n": 160,
+      "heat_bessel_max_abs": 8.176338339183076e-05,
+      "heat_balance": 1.2907817037444147e-09,
+      "water_balance": 9.34353427961554e-11,
+      "temperature_grid_delta_max": 0.0002530842005725731,
+      "temperature_grid_delta_location": {
+        "time_s": 1800,
+        "radius_cm": 0.1
+      },
+      "temperature_rounding_differences": 14758,
+      "moisture_grid_delta_max": 0.00023342918515689703,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 5357
+    },
+    {
+      "label": "g2_n320",
+      "grading": 2.0,
+      "n": 320,
+      "heat_bessel_max_abs": 2.051264479518977e-05,
+      "heat_balance": 1.4767973510743104e-09,
+      "water_balance": 9.18887188561257e-11,
+      "temperature_grid_delta_max": 6.125073859664099e-05,
+      "temperature_grid_delta_location": {
+        "time_s": 1800,
+        "radius_cm": 0.0
+      },
+      "temperature_rounding_differences": 4259,
+      "moisture_grid_delta_max": 5.8529117900718575e-05,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 1475
+    },
+    {
+      "label": "g2_n640",
+      "grading": 2.0,
+      "n": 640,
+      "heat_bessel_max_abs": 5.137079661210464e-06,
+      "heat_balance": 8.709921672789278e-10,
+      "water_balance": 9.056633221149468e-11,
+      "temperature_grid_delta_max": 1.5375565133979308e-05,
+      "temperature_grid_delta_location": {
+        "time_s": 1800,
+        "radius_cm": 0.0
+      },
+      "temperature_rounding_differences": 1107,
+      "moisture_grid_delta_max": 1.464316098775953e-05,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 336
+    },
+    {
+      "label": "g2_n1280",
+      "grading": 2.0,
+      "n": 1280,
+      "heat_bessel_max_abs": 1.2853457675987556e-06,
+      "heat_balance": 8.168328236024536e-10,
+      "water_balance": 3.5135133691355236e-10,
+      "temperature_grid_delta_max": 3.8517338936117085e-06,
+      "temperature_grid_delta_location": {
+        "time_s": 1800,
+        "radius_cm": 0.0
+      },
+      "temperature_rounding_differences": 267,
+      "moisture_grid_delta_max": 3.661358656703584e-06,
+      "moisture_grid_delta_location": {
+        "time_s": 1,
+        "radius_cm": 2.0
+      },
+      "moisture_rounding_differences": 79
+    }
+  ]
+}

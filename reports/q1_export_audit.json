@@ -1,0 +1,49 @@
+{
+  "status": "passed_Q1_local_acceptance_and_output_audit",
+  "numerical_cells_read_back": 75600,
+  "sheet_count": 2,
+  "data_rows_per_sheet": 1800,
+  "radius_samples_per_sheet": 21,
+  "original_sources_unchanged": 8,
+  "remaining_scope": [
+    "independent nonlinear weak-form spatial solver in stage5",
+    "Q23 coupled solver",
+    "Q4 moving material solver and tests",
+    "full model/geometry validation"
+  ],
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+  },
+  "script_sha256": {
+    "validation/__init__.py": "5ba862b2753572c7e2164e13d6d09f4f7ed817851d9cd47cabd4291299ec22ee",
+    "validation/bessel_q1.py": "39999f776598b77b3843ec4d5b985a5fbfc2c7cd6ec61da779ac3e1a7c905c12",
+    "validation/kernel_checks.py": "295fd6a7c61a9f48ef15e27a8f92ee55cdefd360c189267bc6a2bca14db63a71",
+    "validation/q1_convergence.py": "242e16083bb806d601836d1c8fb6c47560b93f4977bbe6f62c79a529d4360748",
+    "validation/q1_time_and_sensitivity.py": "cd648b44fd8ad9a068d973c99ce4afc98d13ceff1ac72e9c7fcb74ddba44e871",
+    "scripts/question1.py": "521979625c8b400e582e59baf9421e8b1741532cf1147ddf9ebcbb640108fff9",
+    "scripts/export_question1.py": "90b19f80c6c89fe8884704200be78b500575d282c572add2d4ac21cb93bb6af6"
+  },
+  "artifacts_sha256": {
+    "results/final/result1.xlsx": "11f29d96fdbbbf982aa5589beecf50126b52a81e279e841bf69ff8d5a30765c6",
+    "results/final/q1_full_precision.npz": "bc364faf5e38076e4885ce6ba55c4fc2fa0d214fb1ba9ce4f87abba8a1942a32",
+    "config/q1_final.json": "78206a0ad0611e5777fa8b217ba027f53b2e8e601b88508f3fe0ef3fdd75e1b9",
+    "tables/q1_tables.md": "56afe4c32329d1a73d054fa23b9cff6598401dcb8ccb8629684ad393466248df",
+    "tables/q1_tables.tex": "9e9d0f4ec72d4a09bb2a54448c53df45add5257b6766de6c64f80c819086e049",
+    "tables/q1_temperature.csv": "946275c120df6b349262af56a76293f711de009bdc070e1e45e870a90bf5bd2d",
+    "tables/q1_moisture.csv": "7a58e1be93a9a76dca9e9b2a1a813cfd8339793a51abe2ca6e240582793c301c",
+    "reports/q1_diagnostics.json": "dde56786fcf7cc59f55e3892d07f500492b2461e5613e01f1ef4ac54c5b14db7",
+    "reports/kernel_checks.json": "3af3fb8855f4a73968a8834c7fc8c91efe04060ea3c284ba49beb1a780c3e0e8",
+    "reports/q1_mesh_convergence.json": "f6e19460871ce1ec04da9ce8b79e85809dd5746f5ee1d9fb6ccea11938f52641",
+    "reports/q1_time_and_sensitivity.json": "d70fac643864c18ea6b52fe5cc8c01b8933f6ac0f236ba465814756b03f58a1a",
+    "results/cache/q1/q1_final.npz": "dac3a20d942793e307be2c85fd9ec4c809477b21ac5172864c71855a19c534d2",
+    "results/cache/q1/q1_final.json": "3c584ff4349376ddf01ad5002c945b4fbde705ecf97821d631cf95e72d5be30f",
+    "results/cache/q1/bessel_reference.npz": "69b350a7daa0d14d34db42c4e0b81a642c6a708914151f60652ba18dd3d2269b"
+  }
+}

@@ -1,0 +1,5 @@
+﻿scenario,properties,geometry,critical_time_h
+A,q23,fixed,57.474025319560
+B,q23,linear,25.243961624450
+C,q4,fixed,129.848422827510
+D,q4,linear,51.092024644374

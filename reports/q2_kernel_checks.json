@@ -1,0 +1,103 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f"
+  },
+  "script_sha256": "3e1133943b4efc52c7ef992948d53ba1c58bf29b389f2fe27c67d5ab38c6f454",
+  "jacobian": [
+    {
+      "group": "q1",
+      "grading": 1.0,
+      "options": {},
+      "relative_error": 3.2072930921384653e-10
+    },
+    {
+      "group": "q1",
+      "grading": 2.0,
+      "options": {},
+      "relative_error": 3.285590141287284e-10
+    },
+    {
+      "group": "q23",
+      "grading": 1.0,
+      "options": {},
+      "relative_error": 3.161019161896413e-10
+    },
+    {
+      "group": "q23",
+      "grading": 2.0,
+      "options": {},
+      "relative_error": 3.164652429837615e-10
+    },
+    {
+      "group": "q23",
+      "grading": 1.0,
+      "options": {
+        "freeze_D_temperature": true
+      },
+      "relative_error": 3.161019161896413e-10
+    },
+    {
+      "group": "q23",
+      "grading": 2.0,
+      "options": {
+        "freeze_D_temperature": true
+      },
+      "relative_error": 3.193817419880118e-10
+    },
+    {
+      "group": "q23",
+      "grading": 1.0,
+      "options": {
+        "freeze_thermal_moisture": true
+      },
+      "relative_error": 3.1998896271761936e-10
+    },
+    {
+      "group": "q23",
+      "grading": 2.0,
+      "options": {
+        "freeze_thermal_moisture": true
+      },
+      "relative_error": 3.274930819072977e-10
+    }
+  ],
+  "boundary_heat_residual_W_m2": 1.798130710994883e-08,
+  "boundary_water_residual_m_s": 7.352245982167327e-18,
+  "constant_insulated_state_and_nonphysical_rejection": true,
+  "q1_degenerate_comparison": {
+    "temperature": 6.750276781986031e-09,
+    "moisture": 3.10136316628018e-09
+  },
+  "q1_degenerate_statistics": {
+    "accepted_steps": 2556,
+    "accepted_max_step_s": 3.682906987279239,
+    "accepted_min_step_s": 9.719676167362945e-09,
+    "nfev": 5199,
+    "njev": 32,
+    "nlu": 619,
+    "minimum_accepted_temperature_C": 27.999999999999996,
+    "minimum_accepted_moisture": 1.5102579878400448,
+    "balance_quadrature_order": 8,
+    "water_balance_max_abs_dry_basis": 5.164688121617189e-11,
+    "water_balance_normalizer": 2.55,
+    "water_balance_relative": 2.0253678908302705e-11,
+    "heat_corrected_balance_max_abs_J_m3": 0.007276339456439018,
+    "heat_balance_normalizer_J_m3": 46904000.0,
+    "heat_corrected_balance_relative": 1.5513259970234987e-10,
+    "heat_semidiscrete_balance_max_abs_W_m3": 3.637978807091713e-12,
+    "heat_balance_definition": "mean[b(C)*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot])",
+    "elapsed_s": 1.193414667
+  },
+  "status": "passed_coupled_kernel_checks_not_full_Q23_validation"
+}

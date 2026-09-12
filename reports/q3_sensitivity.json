@@ -1,0 +1,668 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb"
+  },
+  "script_sha256": "aa4b9507f60fd53cbe7c6664ab486cb776b000c7d9251a2e75207d6be9138ba0",
+  "complete": true,
+  "cases": [
+    {
+      "label": "q3_h_multiplier_0.9",
+      "parent": "q2_h_multiplier_0.9",
+      "perturbation": {
+        "h_multiplier": 0.9
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 206937.9527789543,
+      "moisture_mean_at_event": 0.12430773353351593,
+      "moisture_surface_at_event": 0.05264694390684938,
+      "statistics": {
+        "accepted_steps": 12651,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.5825207810848951e-10,
+        "nfev": 25636,
+        "nlu": 3501,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265110703315226,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.7680594766034119e-09,
+        "water_balance_relative": 6.933566574915341e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.06838594004511833,
+        "heat_corrected_balance_relative": 9.321548183312693e-10,
+        "event_found": true,
+        "event_time_s": 206937.9527789543,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206916.70751862653,
+          206937.9527789543
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206936.9527789543,
+          206937.9527789543,
+          206938.0,
+          206938.9527789543
+        ],
+        "post_event_g": [
+          2.912780414643379e-07,
+          0.0,
+          -1.3754384325936897e-08,
+          -2.9127497208625286e-07
+        ],
+        "event_slope_per_s": -2.912765067752954e-07,
+        "first_checked_integer_second": 206938.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 17.177621625
+      }
+    },
+    {
+      "label": "q3_h_multiplier_1.1",
+      "parent": "q2_h_multiplier_1.1",
+      "perturbation": {
+        "h_multiplier": 1.1
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 206880.85596444397,
+      "moisture_mean_at_event": 0.12430773353347374,
+      "moisture_surface_at_event": 0.0526469439068374,
+      "statistics": {
+        "accepted_steps": 12784,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.4370016288012266e-10,
+        "nfev": 25902,
+        "nlu": 3521,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265110703314026,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.3200500692533979e-09,
+        "water_balance_relative": 5.176666938248619e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.04877409711480141,
+        "heat_corrected_balance_relative": 6.648297823401036e-10,
+        "event_found": true,
+        "event_time_s": 206880.85596444397,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206856.7437722097,
+          206880.85596444397
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206879.85596444397,
+          206880.85596444397,
+          206881.0,
+          206881.85596444397
+        ],
+        "post_event_g": [
+          2.9127804151984904e-07,
+          0.0,
+          -4.1954144353040235e-08,
+          -2.912749750283439e-07
+        ],
+        "event_slope_per_s": -2.9127650827409646e-07,
+        "first_checked_integer_second": 206881.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 17.683166250000003
+      }
+    },
+    {
+      "label": "q3_hm_multiplier_0.9",
+      "parent": "q2_hm_multiplier_0.9",
+      "perturbation": {
+        "hm_multiplier": 0.9
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 209555.51978062958,
+      "moisture_mean_at_event": 0.12431123983532381,
+      "moisture_surface_at_event": 0.05294260457107915,
+      "statistics": {
+        "accepted_steps": 12825,
+        "accepted_max_step_s": 30.000000000014552,
+        "accepted_min_step_s": 1.546140993013978e-10,
+        "nfev": 25988,
+        "nlu": 3548,
+        "njev": 169,
+        "minimum_accepted_moisture": 0.05294657395012585,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.214232492330325e-09,
+        "water_balance_relative": 4.761696048354216e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.041022565215826035,
+        "heat_corrected_balance_relative": 5.591702300357667e-10,
+        "event_found": true,
+        "event_time_s": 209555.51978062958,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          209553.88544706945,
+          209555.51978062958
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          209554.51978062958,
+          209555.51978062958,
+          209556.0,
+          209556.51978062958
+        ],
+        "post_event_g": [
+          2.9125865988466337e-07,
+          0.0,
+          -1.3986675492794198e-07,
+          -2.9125555781051027e-07
+        ],
+        "event_slope_per_s": -2.912571088475868e-07,
+        "first_checked_integer_second": 209556.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 18.375444166999998
+      }
+    },
+    {
+      "label": "q3_hm_multiplier_1.1",
+      "parent": "q2_hm_multiplier_1.1",
+      "perturbation": {
+        "hm_multiplier": 1.1
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 204828.1253369164,
+      "moisture_mean_at_event": 0.12430500453436079,
+      "moisture_surface_at_event": 0.052405080018573844,
+      "statistics": {
+        "accepted_steps": 12657,
+        "accepted_max_step_s": 30.000000000014552,
+        "accepted_min_step_s": 1.4733814168721437e-10,
+        "nfev": 25646,
+        "nlu": 3494,
+        "njev": 166,
+        "minimum_accepted_moisture": 0.05240941040684896,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.8939863011269154e-09,
+        "water_balance_relative": 7.427397259321238e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.059928055852651596,
+        "heat_corrected_balance_relative": 8.168671218004597e-10,
+        "event_found": true,
+        "event_time_s": 204828.1253369164,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          204813.6640484872,
+          204828.1253369164
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          204827.1253369164,
+          204828.1253369164,
+          204829.0,
+          204829.1253369164
+        ],
+        "post_event_g": [
+          2.91292681753319e-07,
+          0.0,
+          -2.547803606700594e-07,
+          -2.912896147344579e-07
+        ],
+        "event_slope_per_s": -2.9129114824388846e-07,
+        "first_checked_integer_second": 204829.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 18.331812459000005
+      }
+    },
+    {
+      "label": "q3_D_multiplier_0.9",
+      "parent": "q2_D_multiplier_0.9",
+      "perturbation": {
+        "D_multiplier": 0.9
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 227275.88272987213,
+      "moisture_mean_at_event": 0.12430473835211855,
+      "moisture_surface_at_event": 0.05238089542353652,
+      "statistics": {
+        "accepted_steps": 13539,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.4915713109076023e-10,
+        "nfev": 27436,
+        "nlu": 3769,
+        "njev": 179,
+        "minimum_accepted_moisture": 0.052385242990101284,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 2.0864872052328565e-09,
+        "water_balance_relative": 8.182302765619045e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.06893516331911087,
+        "heat_corrected_balance_relative": 9.396411689006122e-10,
+        "event_found": true,
+        "event_time_s": 227275.88272987213,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          227259.6924381613,
+          227275.88272987213
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          227274.88272987213,
+          227275.88272987213,
+          227276.0,
+          227276.88272987213
+        ],
+        "post_event_g": [
+          2.6216455842331676e-07,
+          0.0,
+          -3.074392282420568e-08,
+          -2.621620443510331e-07
+        ],
+        "event_slope_per_s": -2.621633013871749e-07,
+        "first_checked_integer_second": 227276.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 16.823716874999988
+      }
+    },
+    {
+      "label": "q3_D_multiplier_1.1",
+      "parent": "q2_D_multiplier_1.1",
+      "perturbation": {
+        "D_multiplier": 1.1
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 190319.75132334244,
+      "moisture_mean_at_event": 0.12431088052114855,
+      "moisture_surface_at_event": 0.05291303583711031,
+      "statistics": {
+        "accepted_steps": 12078,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.509761204943061e-10,
+        "nfev": 24472,
+        "nlu": 3315,
+        "njev": 158,
+        "minimum_accepted_moisture": 0.05291702408270455,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.410986660843605e-09,
+        "water_balance_relative": 5.533281022916098e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.04682813957333565,
+        "heat_corrected_balance_relative": 6.383048314898467e-10,
+        "event_found": true,
+        "event_time_s": 190319.75132334244,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          190318.17154390848,
+          190319.75132334244
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          190318.75132334244,
+          190319.75132334244,
+          190320.0,
+          190320.75132334244
+        ],
+        "post_event_g": [
+          3.203868901291429e-07,
+          0.0,
+          -7.96720599494094e-08,
+          -3.203830938325325e-07
+        ],
+        "event_slope_per_s": -3.203849919808377e-07,
+        "first_checked_integer_second": 190320.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 15.274992999999995
+      }
+    },
+    {
+      "label": "q3_beta_multiplier_0.9",
+      "parent": "q2_beta_multiplier_0.9",
+      "perturbation": {
+        "beta_multiplier": 0.9
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 206539.55886293002,
+      "moisture_mean_at_event": 0.12427348297866364,
+      "moisture_surface_at_event": 0.04764993459130743,
+      "statistics": {
+        "accepted_steps": 12721,
+        "accepted_max_step_s": 30.000000000014552,
+        "accepted_min_step_s": 1.509761204943061e-10,
+        "nfev": 25776,
+        "nlu": 3516,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.047660136949064666,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.410228600562391e-09,
+        "water_balance_relative": 5.530308237499573e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.06270527094602585,
+        "heat_corrected_balance_relative": 8.547227750110927e-10,
+        "event_found": true,
+        "event_time_s": 206539.55886293002,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04498878688524591
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206526.95095884602,
+          206539.55886293002
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206538.55886293002,
+          206539.55886293002,
+          206540.0,
+          206540.55886293002
+        ],
+        "post_event_g": [
+          2.9139535018263274e-07,
+          0.0,
+          -1.2854429676245616e-07,
+          -2.9139225490859566e-07
+        ],
+        "event_slope_per_s": -2.913938025456142e-07,
+        "first_checked_integer_second": 206540.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 16.198498541999996
+      }
+    },
+    {
+      "label": "q3_beta_multiplier_1.1",
+      "parent": "q2_beta_multiplier_1.1",
+      "perturbation": {
+        "beta_multiplier": 1.1
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 207341.5810002266,
+      "moisture_mean_at_event": 0.12437810277972794,
+      "moisture_surface_at_event": 0.0576415212150407,
+      "statistics": {
+        "accepted_steps": 12748,
+        "accepted_max_step_s": 30.00000000000182,
+        "accepted_min_step_s": 1.509761204943061e-10,
+        "nfev": 25832,
+        "nlu": 3527,
+        "njev": 168,
+        "minimum_accepted_moisture": 0.05764350353112738,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.7587427070253625e-09,
+        "water_balance_relative": 6.897030223628873e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.053171638399362564,
+        "heat_corrected_balance_relative": 7.247717717974376e-10,
+        "event_found": true,
+        "event_time_s": 207341.5810002266,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.05498629508196722
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          207334.27318074956,
+          207341.5810002266
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          207340.5810002266,
+          207341.5810002266,
+          207342.0,
+          207342.5810002266
+        ],
+        "post_event_g": [
+          2.910313837145573e-07,
+          0.0,
+          -1.2194094142770062e-07,
+          -2.910281959866978e-07
+        ],
+        "event_slope_per_s": -2.9102978985062755e-07,
+        "first_checked_integer_second": 207342.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 16.350341625
+      }
+    },
+    {
+      "label": "q3_freeze_D_temperature",
+      "parent": "q2_freeze_D_temperature",
+      "perturbation": {
+        "freeze_D_temperature": true
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 464364.77840209607,
+      "moisture_mean_at_event": 0.12429225613134406,
+      "moisture_surface_at_event": 0.05110114751474902,
+      "statistics": {
+        "accepted_steps": 22919,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.4370016288012266e-10,
+        "nfev": 46458,
+        "nlu": 6604,
+        "njev": 310,
+        "minimum_accepted_moisture": 0.05110653736447892,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 2.9765119258229333e-09,
+        "water_balance_relative": 1.1672595787540916e-09,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.07553784549236298,
+        "heat_corrected_balance_relative": 1.0296409846177945e-09,
+        "event_found": true,
+        "event_time_s": 464364.77840209607,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          464351.84721734317,
+          464364.77840209607
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          464363.77840209607,
+          464364.77840209607,
+          464365.0,
+          464365.77840209607
+        ],
+        "post_event_g": [
+          1.220249603306467e-07,
+          0.0,
+          -2.7040391564758792e-08,
+          -1.220244156829864e-07
+        ],
+        "event_slope_per_s": -1.2202468800681654e-07,
+        "first_checked_integer_second": 464365.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 28.271393000000018
+      }
+    },
+    {
+      "label": "q3_freeze_thermal_moisture",
+      "parent": "q2_freeze_thermal_moisture",
+      "perturbation": {
+        "freeze_thermal_moisture": true
+      },
+      "boundary_scenario": "main",
+      "event_time_s": 206936.25678172245,
+      "moisture_mean_at_event": 0.12430773353338101,
+      "moisture_surface_at_event": 0.052646943906814854,
+      "statistics": {
+        "accepted_steps": 12483,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 2.2009771782904863e-10,
+        "nfev": 25320,
+        "nlu": 3466,
+        "njev": 171,
+        "minimum_accepted_moisture": 0.0526511070331177,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 2.854106728733541e-09,
+        "water_balance_relative": 1.11925754067982e-09,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.027571650221943855,
+        "heat_corrected_balance_relative": 3.758235477464058e-10,
+        "event_found": true,
+        "event_time_s": 206936.25678172245,
+        "boundary_extension": "main",
+        "boundary_platform_T_Ceq": [
+          49.99893442622951,
+          0.04998754098360656
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206916.70858327075,
+          206936.25678172245
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206935.25678172245,
+          206936.25678172245,
+          206937.0,
+          206937.25678172245
+        ],
+        "post_event_g": [
+          2.9127804151984904e-07,
+          0.0,
+          -2.1648083353698055e-07,
+          -2.912747626149237e-07
+        ],
+        "event_slope_per_s": -2.9127640206738636e-07,
+        "first_checked_integer_second": 206937.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 15.071130249999982
+      }
+    },
+    {
+      "label": "q3_last_observation",
+      "parent": "q2_final",
+      "perturbation": {},
+      "boundary_scenario": "last_observation",
+      "event_time_s": 205809.8601360106,
+      "moisture_mean_at_event": 0.12430667316181523,
+      "moisture_surface_at_event": 0.05253580361329213,
+      "statistics": {
+        "accepted_steps": 12582,
+        "accepted_max_step_s": 30.000000000003638,
+        "accepted_min_step_s": 8.210845408029854e-07,
+        "nfev": 25498,
+        "nlu": 3483,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.052540042792764564,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.3544378951735325e-09,
+        "water_balance_relative": 5.311521157543266e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.049395374953746796,
+        "heat_corrected_balance_relative": 6.73298294006585e-10,
+        "event_found": true,
+        "event_time_s": 205809.8601360106,
+        "boundary_extension": "last_observation",
+        "boundary_platform_T_Ceq": [
+          50.165,
+          0.04986
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          205806.83273944777,
+          205809.8601360106
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          205808.8601360106,
+          205809.8601360106,
+          205810.0,
+          205810.8601360106
+        ],
+        "post_event_g": [
+          2.930692799829604e-07,
+          0.0,
+          -4.0989602545504766e-08,
+          -2.9306616988744594e-07
+        ],
+        "event_slope_per_s": -2.9306772493520317e-07,
+        "first_checked_integer_second": 205810.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 16.73357204199999
+      }
+    },
+    {
+      "label": "q3_mean_9000_14400",
+      "parent": "q2_final",
+      "perturbation": {},
+      "boundary_scenario": "mean_9000_14400",
+      "event_time_s": 206867.4340253687,
+      "moisture_mean_at_event": 0.12430780144074977,
+      "moisture_surface_at_event": 0.052653725494257286,
+      "statistics": {
+        "accepted_steps": 12727,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.5279510989785194e-10,
+        "nfev": 25788,
+        "nlu": 3520,
+        "njev": 167,
+        "minimum_accepted_moisture": 0.05265788403705907,
+        "global_max_temporal_increase_at_checked_points": 0.0,
+        "water_balance_tail_max_abs": 1.6571755079297645e-09,
+        "water_balance_relative": 6.498727482077509e-10,
+        "heat_corrected_balance_tail_max_abs_J_m3": 0.0553467720746994,
+        "heat_corrected_balance_relative": 7.544205758446165e-10,
+        "event_found": true,
+        "event_time_s": 206867.4340253687,
+        "boundary_extension": "mean_9000_14400",
+        "boundary_platform_T_Ceq": [
+          50.004945054945075,
+          0.04999373626373627
+        ],
+        "event_search": "max(all_cells,even_axis,true_surface), PCHIP bounded by nodes",
+        "event_bracket_s": [
+          206856.73091006753,
+          206867.4340253687
+        ],
+        "balance_quadrature_order": 8,
+        "post_event_times_s": [
+          206866.4340253687,
+          206867.4340253687,
+          206868.0,
+          206868.4340253687
+        ],
+        "post_event_g": [
+          2.9134234799665926e-07,
+          0.0,
+          -1.648908644624747e-07,
+          -2.913392107006807e-07
+        ],
+        "event_slope_per_s": -2.9134077934867e-07,
+        "first_checked_integer_second": 206868.0,
+        "strict_inequality_holds_at_critical_time": false,
+        "elapsed_s": 17.268610292000005
+      }
+    }
+  ],
+  "interpretation": "controlled_scenarios_not_statistical_confidence_intervals"
+}

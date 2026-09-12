@@ -1,0 +1,24 @@
+{
+  "status": "Q1_local_milestone_accepted_full_project_validation_pending",
+  "model_config": "config/model_config.json",
+  "cache": "results/cache/q1/q1_final.npz",
+  "parameters": {
+    "n": 1280,
+    "grading": 2.0,
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "max_step_s": 1.0,
+    "method": "BDF",
+    "internal_flux": "harmonic",
+    "perturbation": {}
+  },
+  "time_s": [
+    0,
+    1800
+  ],
+  "property_set": "q1",
+  "initialization": "fresh",
+  "format_digits": 4,
+  "all_export_last_digits_proven_stable": false,
+  "model_config_sha256": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+}

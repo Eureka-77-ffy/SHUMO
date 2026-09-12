@@ -1,0 +1,123 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb"
+  },
+  "script_sha256": "1bd8c7287bef3cc9c66ffaf8c813d5a7159bef8936ca7a9912f9ffb8ff2f645d",
+  "critical_time_s": 206906.4911824653,
+  "critical_time_h": 57.47402532846259,
+  "event_conditioning": {
+    "slope_per_s": -2.912764898027609e-07,
+    "comparison_time_s": 206880.0,
+    "local_maximum_C_grid_difference": 2.2125936638417443e-08,
+    "linearized_time_difference_s": 0.07596197226010282,
+    "five_e_minus5_C_translates_to_s": 171.65820706593146,
+    "assumptions": "stable maximizer and nonzero downward crossing slope"
+  },
+  "numerical_differences_s": {
+    "primary_1280_2560": 0.07595581284840591,
+    "primary_step30_step15": 0.0007548579596914351,
+    "BDF_Radau": 0.0002198855800088495,
+    "independent_fine_minus_primary": 0.002098824450513348,
+    "independent_step7p5_step3p75": 0.004856319894315675
+  },
+  "asymptotic_estimates": {
+    "primary_observed_orders": [
+      2.0024926537596675,
+      2.003230718066803
+    ],
+    "primary_1280_spatial_error_scale_s_if_second_order": 0.10127441713120788,
+    "not_a_rigorous_error_bound": true,
+    "independent_small_difference_can_include_cancelling_discretization_errors": true
+  },
+  "hours_rounding_comparison": {
+    "primary1280": 57.474,
+    "primary2560": 57.474,
+    "step15": 57.474,
+    "independent2560_step3p75": 57.474
+  },
+  "model_scenarios": [
+    {
+      "label": "q3_h_multiplier_0.9",
+      "event_delta_s": 31.46159648898174,
+      "relative_delta": 0.00015205707809928803
+    },
+    {
+      "label": "q3_h_multiplier_1.1",
+      "event_delta_s": -25.635218021343462,
+      "relative_delta": -0.0001238976016404436
+    },
+    {
+      "label": "q3_hm_multiplier_0.9",
+      "event_delta_s": 2649.0285981642664,
+      "relative_delta": 0.012803023158070692
+    },
+    {
+      "label": "q3_hm_multiplier_1.1",
+      "event_delta_s": -2078.3658455489203,
+      "relative_delta": -0.01004495235345737
+    },
+    {
+      "label": "q3_D_multiplier_0.9",
+      "event_delta_s": 20369.39154740682,
+      "relative_delta": 0.09844732966566805
+    },
+    {
+      "label": "q3_D_multiplier_1.1",
+      "event_delta_s": -16586.73985912287,
+      "relative_delta": -0.08016539144968371
+    },
+    {
+      "label": "q3_beta_multiplier_0.9",
+      "event_delta_s": -366.93231953529175,
+      "relative_delta": -0.0017734210146732599
+    },
+    {
+      "label": "q3_beta_multiplier_1.1",
+      "event_delta_s": 435.08981776129804,
+      "relative_delta": 0.002102833097573642
+    },
+    {
+      "label": "q3_freeze_D_temperature",
+      "event_delta_s": 257458.28721963076,
+      "relative_delta": 1.2443219434453856
+    },
+    {
+      "label": "q3_freeze_thermal_moisture",
+      "event_delta_s": 29.765599257138092,
+      "relative_delta": 0.00014386015193146307
+    },
+    {
+      "label": "q3_last_observation",
+      "event_delta_s": -1096.6310464547132,
+      "relative_delta": -0.005300128769220813
+    },
+    {
+      "label": "q3_mean_9000_14400",
+      "event_delta_s": -39.05715709659853,
+      "relative_delta": -0.0001887671907894184
+    }
+  ],
+  "unquantified_model_errors": [
+    "air-to-material sorption closure beyond beta scenarios",
+    "neglected end faces",
+    "latent heat and complete mixture energy balance",
+    "empirical property uncertainty beyond multiplier scenarios"
+  ],
+  "confidence_interval": null,
+  "do_not_combine_as_root_sum_squares": true,
+  "all_export_last_digits_stable": false
+}

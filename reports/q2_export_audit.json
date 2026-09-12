@@ -1,0 +1,44 @@
+{
+  "status": "passed_Q2_first3h_export_and_local_numerical_acceptance",
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f"
+  },
+  "numerical_cells_read_back": 453600,
+  "original_sources_unchanged": 8,
+  "full_process_workbook_pending_Q3": true,
+  "independent_comparison_is_sampled_not_continuous_error_bound": true,
+  "script_sha256": {
+    "validation/q2_convergence.py": "97806e8446de3796e7082db8233925daaa5e4781d89d44c438cfcc1f8ef857a6",
+    "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+    "validation/q2_independent_verification.py": "c4bf92fefcbccc53c0a1dc59b08823504f3755377ab19f3f62c4acba6625fd94",
+    "validation/q2_kernel_checks.py": "3e1133943b4efc52c7ef992948d53ba1c58bf29b389f2fe27c67d5ab38c6f454",
+    "validation/q2_sensitivity.py": "530f1a43e2f2baeaa39e370cb3c9392bad57a39759dbc88299bdd8feac2426e9",
+    "scripts/export_question2.py": "a09d652eaaabc59a16b2e00e4c4b959f29f88f0e33207fa3a3ac288d5bf6e7e4",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f"
+  },
+  "artifacts_sha256": {
+    "results/alternatives/result2_first3h.xlsx": "7203a3bf7ab0ac5eb19147870c9399d304f0192e21e120964dba2c9eda08d5cd",
+    "results/alternatives/q2_first3h_full_precision.npz": "2ba412d752dbe023ea4969f4a232a2dd2d0c3d72e0bda4510b5c3c195a8cdf59",
+    "config/q2_first3h.json": "7d67d3b93e09434da67104d2688b8d0c3ee19fd7878fa5e83cc85cbbbe4080f2",
+    "reports/q2_mechanisms.json": "309491a24d9b7513c35ab5cd5361acbe55844bdd3e9060e8891d439840201f7c",
+    "reports/q2_convergence.json": "fee4f5050e40de9282b474263b32ea3d1145d8e1640f81f2bb7958d5f067d741",
+    "reports/q2_sensitivity.json": "2bd391e6b6cc324023752f6e0e196b78e0e0b166e0f410af54891e86b6e52cb6",
+    "reports/q2_kernel_checks.json": "48341422ca1ff78c859246605e5cc73300d53c6d704b2ad11776292627dda94d",
+    "reports/q2_independent_verification.json": "d20a5318a6c479e5d58c4d661c616977649ce9d6d35ed786c1856857b344def7",
+    "tables/q2_tables.md": "4eebeee8e7613cf0a8c4f2ef396c2c27c1fc65727fbf253f031072e1784fa918",
+    "tables/q2_tables.tex": "f5204d7c2765a38bed8395770938303a43bc9c7abd35ab7b1580cdd8975bc276",
+    "tables/q2_temperature.csv": "e247657e9af11c68ae18b677cd076ccfc27127afd512e3c3d35616c36ec44d46",
+    "tables/q2_moisture.csv": "f21635f7fbe87b1f5e7951311dd8bea05122c74913717692e4f76cd2c3efc6c4"
+  }
+}

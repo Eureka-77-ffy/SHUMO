@@ -1,0 +1,549 @@
+{
+  "source_fingerprint": {
+    "src/__init__.py": "4a828c3d2871aff555d90f7d7a838b5085e252693a53768cbe2a633e0d033c91",
+    "src/boundary.py": "f41ac76dc478837d078ca7e9d73a6293e62435db8f77eed6f7e7214f43c2329b",
+    "src/data_io.py": "cfb97b62fd8037d3fc9f9c533299c2ed5375f8828635463dafedf3cdd418f932",
+    "src/fvm.py": "7b075c96369ed4c5ea3b5b56530d12ed0397f139394e3f4caf4b24c152349fd5",
+    "src/properties.py": "944ceab764ba4e6503265239af52c8909f85407a054665fd6f33836214bcf1fb",
+    "src/reconstruction.py": "96ca9c828948aba0791a13db99a567c56843a366c86e424198ef3457f5c190d4",
+    "src/solver.py": "d24a0cc6df3b63249a628a4c165105ea7d2cd7ba2e3f7b70dac7e85b2ed5adbe",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11",
+    "src/coupled/__init__.py": "a059c8f57a90e7dc481c728d579bb27cd0efd044d8c6e4ebccb81e96f32333f9",
+    "src/coupled/integrate.py": "75661b91c61269493c1e5d46885f6a22e8d017bbfc1ed8fa8aa179a6e00b38b1",
+    "src/coupled/model.py": "3adb4f22474b811037c58f6d24a762baf173fd4d6fc779e41e3e103eda8ccc2a",
+    "scripts/question2.py": "f601f79503f9337386529b1f7a567551e996e544d99f47dbdbb4d873e06e153f",
+    "src/events/__init__.py": "305dfdcef0403e084f9c3110b4f791e9b8a7b0de9eee81537f40e1827a2e8036",
+    "src/events/integration.py": "57aa9630c497793861cdc5c2635084666b313b713a63c21c861e8f59cc359d63",
+    "scripts/question3.py": "7af700dd01bc71a6cb65dfb5ada5d7d5d44eab4acab59e8e693719d29daedddb",
+    "src/moving/__init__.py": "02b9392873b91cc313fa19d1047f9082104a77a21608450ede6c8c139bb17712",
+    "src/moving/integration.py": "48fd59417077b05ad9890bb6f94d6011cb0839c0d066376cfa761e6c52ab8198",
+    "src/moving/model.py": "7a32ad11fc0520f92877874e5f17e13226684a04d11ffe84d4ab1eaad2a25e7d",
+    "scripts/question4.py": "a07f76c257afee6d18bf63b2ffc1135c489627946b433059216692eb87ed6b75"
+  },
+  "script_sha256": "6d32c9c48261e121dc80dcc031375549d20ad783fbf4bf81bab2cc734a20de9e",
+  "complete": true,
+  "cases": [
+    {
+      "label": "q4_h_multiplier_0.9",
+      "options": {
+        "perturbation": {
+          "h_multiplier": 0.9
+        }
+      },
+      "event_time_s": 183960.1858619095,
+      "surface_moisture_at_event": 0.052607499231584115,
+      "mean_moisture_at_event": 0.11840453640322239,
+      "statistics": {
+        "nfev": 54226,
+        "njev": 335,
+        "nlu": 6995,
+        "accepted_steps": 26778,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.4915713109076023e-10,
+        "minimum_accepted_moisture": 0.0526083170333621,
+        "water_balance_max_abs": 6.844009803330664e-10,
+        "water_balance_relative": 2.683925413070849e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.044116370379924774,
+        "heat_corrected_balance_relative": 5.970388622167345e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183960.1858619095,
+        "end_time_s": 183960.1858619095,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          183959.1858619095,
+          183960.1858619095,
+          183961.0,
+          183961.1858619095
+        ],
+        "post_event_g": [
+          5.134886067736932e-07,
+          0.0,
+          -4.1804432240888367e-07,
+          -5.13480642200248e-07
+        ],
+        "event_slope_per_s": -5.134846244869706e-07,
+        "first_strict_integer_second": 183961.0,
+        "elapsed_s": 47.344160583000004
+      }
+    },
+    {
+      "label": "q4_h_multiplier_1.1",
+      "options": {
+        "perturbation": {
+          "h_multiplier": 1.1
+        }
+      },
+      "event_time_s": 183907.84816183432,
+      "surface_moisture_at_event": 0.052607499227660226,
+      "mean_moisture_at_event": 0.11840453638169762,
+      "statistics": {
+        "nfev": 55188,
+        "njev": 335,
+        "nlu": 7063,
+        "accepted_steps": 27259,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.3460521586239338e-10,
+        "minimum_accepted_moisture": 0.05260831702943732,
+        "water_balance_max_abs": 5.418354653841106e-10,
+        "water_balance_relative": 2.1248449622906302e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.051656126976013184,
+        "heat_corrected_balance_relative": 6.990764428416394e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183907.84816183432,
+        "end_time_s": 183907.84816183432,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.7763568394002505e-15,
+        "post_event_time_s": [
+          183906.84816183432,
+          183907.84816183432,
+          183908.0,
+          183908.84816183432
+        ],
+        "post_event_g": [
+          5.134886078839163e-07,
+          -2.7755575615628914e-17,
+          -7.79664773298272e-08,
+          -5.134816095930805e-07
+        ],
+        "event_slope_per_s": -5.134851087384984e-07,
+        "first_strict_integer_second": 183908.0,
+        "elapsed_s": 52.210851
+      }
+    },
+    {
+      "label": "q4_hm_multiplier_0.9",
+      "options": {
+        "perturbation": {
+          "hm_multiplier": 0.9
+        }
+      },
+      "event_time_s": 184979.44260755985,
+      "surface_moisture_at_event": 0.05289897882663644,
+      "mean_moisture_at_event": 0.11842010897081,
+      "statistics": {
+        "nfev": 54614,
+        "njev": 335,
+        "nlu": 6996,
+        "accepted_steps": 26972,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.4370016288012266e-10,
+        "minimum_accepted_moisture": 0.052899771433974625,
+        "water_balance_max_abs": 6.694138576790465e-10,
+        "water_balance_relative": 2.6251523830550845e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.0417252779006958,
+        "heat_corrected_balance_relative": 5.646795561142661e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 184979.44260755985,
+        "end_time_s": 184979.44260755985,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.14999999999999997,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.7763568394002505e-15,
+        "post_event_time_s": [
+          184978.44260755985,
+          184979.44260755985,
+          184980.0,
+          184980.44260755985
+        ],
+        "post_event_g": [
+          5.133436035420491e-07,
+          -2.7755575615628914e-17,
+          -2.861301701129193e-07,
+          -5.133361515030632e-07
+        ],
+        "event_slope_per_s": -5.133398775225562e-07,
+        "first_strict_integer_second": 184980.0,
+        "elapsed_s": 68.518249875
+      }
+    },
+    {
+      "label": "q4_hm_multiplier_1.1",
+      "options": {
+        "perturbation": {
+          "hm_multiplier": 1.1
+        }
+      },
+      "event_time_s": 183136.21599631332,
+      "surface_moisture_at_event": 0.052369099250607176,
+      "mean_moisture_at_event": 0.11839219245551283,
+      "statistics": {
+        "nfev": 54778,
+        "njev": 335,
+        "nlu": 7026,
+        "accepted_steps": 27053,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.4006218407303095e-10,
+        "minimum_accepted_moisture": 0.05236993848094922,
+        "water_balance_max_abs": 5.666809244075921e-10,
+        "water_balance_relative": 2.222278134931734e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.05067030340433121,
+        "heat_corrected_balance_relative": 6.857350238056964e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183136.21599631332,
+        "end_time_s": 183136.21599631332,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.7763568394002505e-15,
+        "post_event_time_s": [
+          183135.21599631332,
+          183136.21599631332,
+          183137.0,
+          183137.21599631332
+        ],
+        "post_event_g": [
+          5.136014896711671e-07,
+          2.7755575615628914e-17,
+          -4.026600689266413e-07,
+          -5.135940783496107e-07
+        ],
+        "event_slope_per_s": -5.135977840103889e-07,
+        "first_strict_integer_second": 183137.0,
+        "elapsed_s": 67.110739083
+      }
+    },
+    {
+      "label": "q4_D_multiplier_0.9",
+      "options": {
+        "perturbation": {
+          "D_multiplier": 0.9
+        }
+      },
+      "event_time_s": 201930.68141616246,
+      "surface_moisture_at_event": 0.05234526343907561,
+      "mean_moisture_at_event": 0.11839097993378317,
+      "statistics": {
+        "nfev": 56264,
+        "njev": 346,
+        "nlu": 7241,
+        "accepted_steps": 27785,
+        "accepted_max_step_s": 30.000000000014552,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.05234610485409239,
+        "water_balance_max_abs": 5.605538255792908e-10,
+        "water_balance_relative": 2.1982502963893757e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.0511079877614975,
+        "heat_corrected_balance_relative": 6.916583254817458e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 201930.68141616246,
+        "end_time_s": 201930.68141616246,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.14999999999999997,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          201929.68141616246,
+          201930.68141616246,
+          201931.0,
+          201931.68141616246
+        ],
+        "post_event_g": [
+          4.6225085542639377e-07,
+          -2.7755575615628914e-17,
+          -1.4726412489451945e-07,
+          -4.6224481145551444e-07
+        ],
+        "event_slope_per_s": -4.622478334409541e-07,
+        "first_strict_integer_second": 201931.0,
+        "elapsed_s": 68.91909604199998
+      }
+    },
+    {
+      "label": "q4_D_multiplier_1.1",
+      "options": {
+        "perturbation": {
+          "D_multiplier": 1.1
+        }
+      },
+      "event_time_s": 169244.31274816766,
+      "surface_moisture_at_event": 0.052869824190166934,
+      "mean_moisture_at_event": 0.1184185211766573,
+      "statistics": {
+        "nfev": 53526,
+        "njev": 327,
+        "nlu": 6853,
+        "accepted_steps": 26436,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.052870619268881994,
+        "water_balance_max_abs": 4.834275202370009e-10,
+        "water_balance_relative": 1.8957941970078466e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.06202042102813721,
+        "heat_corrected_balance_relative": 8.393392585554091e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 169244.31274816766,
+        "end_time_s": 169244.31274816766,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.7763568394002505e-15,
+        "post_event_time_s": [
+          169243.31274816766,
+          169244.31274816766,
+          169245.0,
+          169245.31274816766
+        ],
+        "post_event_g": [
+          5.646949846893623e-07,
+          2.7755575615628914e-17,
+          -3.880824095414681e-07,
+          -5.646861093722144e-07
+        ],
+        "event_slope_per_s": -5.646905470307884e-07,
+        "first_strict_integer_second": 169245.0,
+        "elapsed_s": 55.464932540999996
+      }
+    },
+    {
+      "label": "q4_beta_multiplier_0.9",
+      "options": {
+        "perturbation": {
+          "beta_multiplier": 0.9
+        }
+      },
+      "event_time_s": 183561.54575821687,
+      "surface_moisture_at_event": 0.04761817359488354,
+      "mean_moisture_at_event": 0.1182296069221643,
+      "statistics": {
+        "nfev": 54724,
+        "njev": 334,
+        "nlu": 7012,
+        "accepted_steps": 27028,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.04761966528413655,
+        "water_balance_max_abs": 6.058895607452541e-10,
+        "water_balance_relative": 2.3760374931186436e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.05487709492444992,
+        "heat_corrected_balance_relative": 7.426666798128641e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183561.54575821687,
+        "end_time_s": 183561.54575821687,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 2.220446049250313e-15,
+        "post_event_time_s": [
+          183560.54575821687,
+          183561.54575821687,
+          183562.0,
+          183562.54575821687
+        ],
+        "post_event_g": [
+          5.145505247161619e-07,
+          0.0,
+          -2.3372749394234837e-07,
+          -5.145430930497685e-07
+        ],
+        "event_slope_per_s": -5.145468088829652e-07,
+        "first_strict_integer_second": 183562.0,
+        "elapsed_s": 45.735753875
+      }
+    },
+    {
+      "label": "q4_beta_multiplier_1.1",
+      "options": {
+        "perturbation": {
+          "beta_multiplier": 1.1
+        }
+      },
+      "event_time_s": 184403.947392117,
+      "surface_moisture_at_event": 0.05759013764734212,
+      "mean_moisture_at_event": 0.11868045476093578,
+      "statistics": {
+        "nfev": 54690,
+        "njev": 335,
+        "nlu": 7007,
+        "accepted_steps": 27010,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.05759063390138647,
+        "water_balance_max_abs": 5.559277482802827e-10,
+        "water_balance_relative": 2.1801088167854224e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.05872960388660431,
+        "heat_corrected_balance_relative": 7.948037334198647e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 184403.947392117,
+        "end_time_s": 184403.947392117,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.14999999999999997,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          184402.947392117,
+          184403.947392117,
+          184404.0,
+          184404.947392117
+        ],
+        "post_event_g": [
+          5.117344806793156e-07,
+          -2.7755575615628914e-17,
+          -2.6921082474373748e-08,
+          -5.117271499599507e-07
+        ],
+        "event_slope_per_s": -5.117308153196332e-07,
+        "first_strict_integer_second": 184404.0,
+        "elapsed_s": 38.796760167
+      }
+    },
+    {
+      "label": "q4_pchip",
+      "options": {
+        "geometry": "pchip"
+      },
+      "event_time_s": 183918.6829859515,
+      "surface_moisture_at_event": 0.052607499228939585,
+      "mean_moisture_at_event": 0.11840453638870235,
+      "statistics": {
+        "nfev": 53446,
+        "njev": 335,
+        "nlu": 6884,
+        "accepted_steps": 26388,
+        "accepted_max_step_s": 30.000000000014552,
+        "accepted_min_step_s": 1.418811734765768e-10,
+        "minimum_accepted_moisture": 0.05260831703071697,
+        "water_balance_max_abs": 3.409639237617057e-10,
+        "water_balance_relative": 1.337113426516493e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.055345319211483,
+        "heat_corrected_balance_relative": 7.490032866820385e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183918.6829859515,
+        "end_time_s": 183918.6829859515,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          183917.6829859515,
+          183918.6829859515,
+          183919.0,
+          183919.6829859515
+        ],
+        "post_event_g": [
+          5.134886075786049e-07,
+          0.0,
+          -1.627814940896588e-07,
+          -5.134815724006092e-07
+        ],
+        "event_slope_per_s": -5.134850899896071e-07,
+        "first_strict_integer_second": 183919.0,
+        "elapsed_s": 39.15121075000002
+      }
+    },
+    {
+      "label": "q4_last_observation",
+      "options": {
+        "scenario": "last_observation"
+      },
+      "event_time_s": 182967.20590405507,
+      "surface_moisture_at_event": 0.052496374799314946,
+      "mean_moisture_at_event": 0.11839975379976428,
+      "statistics": {
+        "nfev": 54390,
+        "njev": 334,
+        "nlu": 6993,
+        "accepted_steps": 26861,
+        "accepted_max_step_s": 30.0,
+        "accepted_min_step_s": 4.656813534369605e-10,
+        "minimum_accepted_moisture": 0.0524972026373379,
+        "water_balance_max_abs": 5.680527159768189e-10,
+        "water_balance_relative": 2.2276577097130156e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.05671261250972748,
+        "heat_corrected_balance_relative": 7.675072394793865e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 182967.20590405507,
+        "end_time_s": 182967.20590405507,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.14999999999999997,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          182966.20590405507,
+          182967.20590405507,
+          182968.0,
+          182968.20590405507
+        ],
+        "post_event_g": [
+          5.166677463641633e-07,
+          -2.7755575615628914e-17,
+          -4.1027816705119236e-07,
+          -5.166601950989946e-07
+        ],
+        "event_slope_per_s": -5.16663970731579e-07,
+        "first_strict_integer_second": 182968.0,
+        "elapsed_s": 39.26532212500001
+      }
+    },
+    {
+      "label": "q4_mean_9000_14400",
+      "options": {
+        "scenario": "mean_9000_14400"
+      },
+      "event_time_s": 183897.13792801663,
+      "surface_moisture_at_event": 0.05261426034820513,
+      "mean_moisture_at_event": 0.11840484153283634,
+      "statistics": {
+        "nfev": 54728,
+        "njev": 335,
+        "nlu": 7037,
+        "accepted_steps": 27029,
+        "accepted_max_step_s": 30.000000000007276,
+        "accepted_min_step_s": 1.4370016288012266e-10,
+        "minimum_accepted_moisture": 0.05261507754633176,
+        "water_balance_max_abs": 5.844893458117895e-10,
+        "water_balance_relative": 2.2921150816148607e-10,
+        "heat_corrected_balance_max_abs_J_m3": 0.04284626990556717,
+        "heat_corrected_balance_relative": 5.79850246390432e-10,
+        "heat_balance_definition": "normalized mean[b*(T-T0)] + integral(2*qT/R - mean[bprime*(T-T0)*Cdot]); no duplicate geometry term",
+        "event_found": true,
+        "event_time_s": 183897.13792801663,
+        "end_time_s": 183897.13792801663,
+        "radius_end_m": 0.012,
+        "global_max_at_end": 0.15000000000000002,
+        "domain_supported_through_s": 259200.0,
+        "radius_extension": "error",
+        "global_max_increase_at_checks": 1.3322676295501878e-15,
+        "post_event_time_s": [
+          183896.13792801663,
+          183897.13792801663,
+          183898.0,
+          183898.13792801663
+        ],
+        "post_event_g": [
+          5.13600427881622e-07,
+          0.0,
+          -4.427542934226647e-07,
+          -5.135929325439381e-07
+        ],
+        "event_slope_per_s": -5.1359668021278e-07,
+        "first_strict_integer_second": 183898.0,
+        "elapsed_s": 39.251667
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "status": "passed_Q1_original_nonlinear_independent_sample_verification",
+  "fingerprint": {
+    "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+    "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+    "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+  },
+  "primary_cache_sha256": "dac3a20d942793e307be2c85fd9ec4c809477b21ac5172864c71855a19c534d2",
+  "time_s": [
+    0.0,
+    1.0,
+    10.0,
+    100.0,
+    300.0,
+    600.0,
+    900.0,
+    1200.0,
+    1500.0,
+    1800.0
+  ],
+  "cases": [
+    {
+      "label": "q1_fem_n320_dt1.875",
+      "elements": 320,
+      "max_step_s": 1.875,
+      "steps": 5477,
+      "fingerprint": {
+        "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+        "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+        "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+      },
+      "cache_sha256": "d8e603bbcd910b91fad10bc486e1b7c15d45c90151ec316cfac8ab2409b2f41a",
+      "group": "q1",
+      "initialization": "fresh",
+      "sampled_max_differences": {
+        "temperature": 0.00012576072869308064,
+        "moisture": 9.844378975998325e-06
+      }
+    },
+    {
+      "label": "q1_fem_n640_dt1.875",
+      "elements": 640,
+      "max_step_s": 1.875,
+      "steps": 5477,
+      "fingerprint": {
+        "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+        "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+        "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+      },
+      "cache_sha256": "fe75f2e5359bf0edf357da39890570fcac5445b1e42f4ccc4f063bcbe52ab748",
+      "group": "q1",
+      "initialization": "fresh",
+      "sampled_max_differences": {
+        "temperature": 3.617433780078727e-05,
+        "moisture": 2.8405570100531463e-06
+      }
+    },
+    {
+      "label": "q1_fem_n1280_dt1.875",
+      "elements": 1280,
+      "max_step_s": 1.875,
+      "steps": 5477,
+      "fingerprint": {
+        "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+        "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+        "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+      },
+      "cache_sha256": "8f34ec47359772bc14f345c8fd2a08c75c41f16cd60751b0f61397f5ad3df9a3",
+      "group": "q1",
+      "initialization": "fresh",
+      "sampled_max_differences": {
+        "temperature": 1.143042707241193e-05,
+        "moisture": 1.6185406059854301e-06
+      }
+    },
+    {
+      "label": "q1_fem_n1280_dt0.9375",
+      "elements": 1280,
+      "max_step_s": 0.9375,
+      "steps": 10924,
+      "fingerprint": {
+        "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+        "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+        "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+      },
+      "cache_sha256": "2fb77adf4558da4be243e0abad83d5f6a113edc782cd39ebe7749043996940c1",
+      "group": "q1",
+      "initialization": "fresh",
+      "sampled_max_differences": {
+        "temperature": 9.413890079912335e-06,
+        "moisture": 1.624861604820893e-06
+      }
+    },
+    {
+      "label": "q1_fem_n1280_dt0.46875",
+      "elements": 1280,
+      "max_step_s": 0.46875,
+      "steps": 21818,
+      "fingerprint": {
+        "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+        "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+        "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+      },
+      "cache_sha256": "d648fef99a9653d41541c7787a07ac588ee356017d8c3b782b50da40b906aff1",
+      "group": "q1",
+      "initialization": "fresh",
+      "sampled_max_differences": {
+        "temperature": 8.632790024165615e-06,
+        "moisture": 1.6264563056367365e-06
+      }
+    },
+    {
+      "label": "q1_fem_n2560_dt0.46875",
+      "elements": 2560,
+      "max_step_s": 0.46875,
+      "steps": 21818,
+      "fingerprint": {
+        "validation/q1_nonlinear_independent.py": "6f74f60fff7ea072700549e3be423ca8d3f2316fe31ce26c5da554c2a0acebc5",
+        "validation/q2_independent_fem.py": "5c4e9ff4c7721dc166264e026f56a1a0c392305fd7acd8a9af6b8aebfd4f4dc8",
+        "config/model_config.json": "8507d8f1c7161fa0855698696bacd8abb7713baaa4f71cf53dba559d213a9d11"
+      },
+      "cache_sha256": "8bee8f2129f4e048923acf3a78aef64d2524249bbf01c41dca81bda0613b8564",
+      "group": "q1",
+      "initialization": "fresh",
+      "sampled_max_differences": {
+        "temperature": 1.8010994615735854e-06,
+        "moisture": 1.3209420934856553e-06
+      }
+    }
+  ],
+  "separate_refinements": {
+    "space_640_1280_dt1p875": {
+      "temperature": 2.5287126810269456e-05,
+      "moisture": 1.800292050546659e-06
+    },
+    "time_1p875_0p9375": {
+      "temperature": 4.890508662924731e-06,
+      "moisture": 1.7351663061937472e-07
+    },
+    "time_0p9375_0p46875": {
+      "temperature": 1.4136961041799623e-06,
+      "moisture": 4.433397027270303e-08
+    },
+    "space_1280_2560_dt0p46875": {
+      "temperature": 6.988755252734791e-06,
+      "moisture": 4.743967521037007e-07
+    }
+  },
+  "dense_profiles": {
+    "radial_nodes": 2561,
+    "max_abs": {
+      "temperature": 1.8010994615735854e-06,
+      "moisture": 1.3209420934856553e-06
+    }
+  },
+  "scope": "Q1 0-1800s; independent nodal weak form and own BDF2; finite samples, not rigorous error bound",
+  "complete": true
+}
